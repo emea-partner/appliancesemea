@@ -1,0 +1,37 @@
+/* ABOUT US */
+.container--aboutUsTechnology {
+  position: relative;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.listContainer--aboutUsTechnology {
+  position: absolute;
+  z-index: 10;
+  top: 200px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+}
+.listItemActive--aboutUsTechnologyItem {
+  padding: 0;
+  margin: 0;
+}
+.listItem--aboutUsTechnologyItem {
+  margin: 0;
+  padding: 0;
+}
+.listItem--aboutUsTechnologyItem :global(.vtex-button) {
+  text-transform: none;
+  background-color: unset;
+  border: none;
+  border-radius: unset;
+  color: #fff;
+}
+.listItem--aboutUsTechnologyItem :global(.vtex-button__label) {
+  padding: 0;
+}
+.listItemActive--aboutUsTechnologyItem :global(.vtex-button) {
+  border-top: 3px solid #fff;
+}

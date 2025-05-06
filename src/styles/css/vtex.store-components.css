@@ -1,0 +1,1019 @@
+/* HISTORY BANNER */
+.imageElement--historyBannerImage {
+  max-width: 368px;
+}
+/* ----------------- */
+
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.infoCardContainer .infoCardContainer--info-card {
+  min-height: 861px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054e;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.image {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  border: none;
+  border-radius: 25px;
+  text-align: end;
+  background-color: transparent;
+  text-decoration-color: white;
+  text-decoration-style: dotted;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background: transparent;
+  border-radius: 0;
+  color-scheme: white;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border-radius: 30px;
+  border-color: white;
+  text-decoration-color: white;
+}
+
+.searchBarIcon {
+  color: white;
+}
+
+.imageElement--about-us {
+  object-fit: cover;
+  width: 100%;
+}
+
+.infoCardContainer--info-card {
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER */
+.searchBarContainer {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: white;
+}
+
+.searchBarInnerContainer--headerSearch :global(.vtex-styleguide-9-x-input) {
+  color: white;
+}
+
+/* SLIDER HOME CARDS */
+.imageElement--homeCardBackground {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageElement--homeCardBackground-mobile {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.imageElement--homeCard1 {
+  height: fit-content;
+}
+
+.imageElement--homeCard3 {
+  height: fit-content;
+  position: absolute;
+  bottom: -2rem;
+}
+
+/*PLP CARD */
+.imageElement--plpPromotionBanner {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.imageElement--plpPromotionBanner-mobile {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*PLP INFO-TEXT*/
+.imageElement--info-text {
+  width: 288px !important;
+  height: 192px;
+}
+
+.imageElement--info-text-mobile {
+  width: 288px !important;
+  height: 192px;
+}
+
+.container--info-text-mobile {
+  padding: 0 0;
+}
+
+.imageElement--sparePartsStock {
+  border-radius: 1rem;
+  margin-right: 10px;
+}
+
+/* MENU CATEGORIES */
+.imageElement--imageMenuHome {
+  height: 5rem;
+}
+
+/* HOME MIDDLE CONTENT */
+.imageElement--middleBannerBackground {
+  position: absolute;
+  /* top: 0;
+  right: 0; */
+  top: 4vh;
+  right: -10vw;
+  height: 65vw;
+}
+
+.infoCardTextContainer--transformSkewY8Deg,
+.infoCardImageContainer--transformSkewY8Deg {
+  transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(8deg)
+    scaleX(1) scaleY(1);
+}
+
+.infoCardContainer--infoCardHomeMiddle {
+  /* height: 948px; */
+  height: 65vw;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.infoCardTextContainer--infoCardHomeMiddle {
+  width: 35%;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.paragraph--infoCardHomeMiddle {
+  color: #fff;
+  margin-top: 0;
+}
+
+.infoCardImageContainer--infoCardHomeMiddle {
+  width: 65%;
+  display: flex;
+}
+
+.infoCardImage--infoCardHomeMiddle {
+  position: absolute;
+  /* margin-top: -73%;
+  height: 1200px; */
+  margin-top: -38vw;
+  height: 75vw;
+  object-position: right;
+}
+
+.infoCardCallActionContainer--infoCardHomeMiddle :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+}
+
+.infoCardContainer--infoCardHomeMiddle1 {
+  background-color: rgba(0, 33, 53, 1);
+}
+
+.headingLevel2--infoCardHomeMiddle1 {
+  color: #d5e4eb;
+  font-size: 2.25rem;
+}
+
+.infoCardContainer--infoCardHomeMiddle2 {
+  background-color: #333;
+}
+
+.headingLevel2--infoCardHomeMiddle2 {
+  color: #717171;
+  font-size: 2.25rem;
+}
+
+.infoCardCallActionContainer--infoCardHomeMiddle2 :global(.vtex-button) {
+  background-color: #ae4244;
+  border: #ae4244;
+}
+
+.infoCardCallActionContainer--infoCardHomeMiddle2 :global(.vtex-button):hover {
+  background-color: #717171;
+  border: #717171;
+}
+
+.infoCardImage--infoCardHomeMiddle2 {
+  object-position: left;
+}
+
+/* HOME BOTTOM CARDS */
+.infoCardContainer--infoCardHomeBottom {
+  position: relative;
+  overflow: hidden;
+  height: 64vw;
+}
+
+.infoCardTextContainer--infoCardHomeBottom {
+  z-index: 2;
+  position: absolute;
+  bottom: 8vw;
+  background-color: rgba(0, 33, 53, 0.75);
+  width: 100%;
+  /* padding: 5rem 1rem; */
+  /* margin-top: 23%; */
+  padding: 6vh 1vh;
+  /* margin-top: 42vh; */
+  transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+}
+
+.paragraph--infoCardHomeBottom {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.infoCardImageContainer--infoCardHomeBottom {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+}
+
+.infoCardImage--infoCardHomeBottom {
+  height: 64vw;
+  /* margin-top: -17%; */
+}
+
+.infoCardCallActionContainer--infoCardHomeBottom {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.infoCardCallActionContainer--infoCardHomeBottom :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+}
+
+/* HOME BOTTOM MOBILE CARDS */
+.infoCardContainer--infoCardHomeBottomMobile {
+  position: relative;
+  overflow: hidden;
+  height: 100vw;
+}
+
+.infoCardTextContainer--infoCardHomeBottomMobile {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 33, 53, 0.75);
+  width: 100%;
+  /* padding: 5rem 1rem; */
+  /* margin-top: 23%; */
+  padding: 6vw 5vw;
+  /* margin-top: 41vh; */
+}
+
+.paragraph--infoCardHomeBottomMobile {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.infoCardImageContainer--infoCardHomeBottomMobile {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.infoCardImage--infoCardHomeBottomMobile {
+  height: 100vw;
+  /* margin-top: -15%; */
+}
+
+.infoCardCallActionContainer--infoCardHomeBottomMobile {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.infoCardCallActionContainer--infoCardHomeBottomMobile :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+}
+
+/* HOME BOTTOM CONTENT */
+.imageElement--safetyRow {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+/* PLP */
+.imageElement--plpMarketingImage1 {
+  position: absolute;
+  top: 1%;
+  object-fit: cover;
+  width: 100%;
+  transform: translateY(calc(-50% - 1vw));
+}
+
+.infoCardContainer--infoCardPlpMarketing {
+  height: 515px;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.infoCardImageContainer--infoCardPlpMarketing {
+  width: 65%;
+  display: flex;
+}
+
+.infoCardTextContainer--infoCardPlpMarketing {
+  width: 35%;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.infoCardImage--infoCardPlpMarketing {
+  position: absolute;
+  /* margin-top: -40%;
+  height: 700px; */
+  margin-top: -25vw;
+  height: 50vw;
+  width: 100%;
+  object-position: right;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.infoCardContainer--infoCardPlpMarketing1 {
+  background-color: #f1f1f1;
+}
+
+.paragraph--infoCardPlpMarketing1 {
+  color: #343333;
+}
+
+.headingLevel2--infoCardPlpMarketing1 {
+  color: #56b632;
+  font-size: 2.25rem;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing1 :global(.vtex-button) {
+  background-color: #56b632;
+  border-color: #56b632;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing1
+  :global(.vtex-button):hover {
+  color: #56b632;
+  background-color: #fff;
+}
+
+.infoCardContainer--infoCardPlpMarketing2 {
+  background-color: #5E6E84;
+}
+
+.paragraph--infoCardPlpMarketing2 {
+  color: #fff;
+}
+
+.headingLevel2--infoCardPlpMarketing2 {
+  color: #95c2c9;
+  font-size: 2.25rem;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing2 :global(.vtex-button) {
+  color: #5E6E84;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing2
+  :global(.vtex-button):hover {
+  color: #fff;
+  background-color: #5E6E84;
+}
+
+.headingLevel2--infoCardPlpMarketing3 {
+  color: #F71963;
+  font-size: 2.25rem;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing3 :global(.vtex-button) {
+  color: #fff;
+  background-color: #F71963;
+  border-color: #F71963;
+}
+
+.infoCardCallActionContainer--infoCardPlpMarketing3
+  :global(.vtex-button):hover {
+  color: #F71963;
+  background-color: #fff;
+}
+
+.imageElement--energy-label {
+  max-height: 25px;
+  max-width: 60px;
+}
+
+.imageElement--10-years-image {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.infoCardImage--infoCardPlpMarketing {
+  margin-top: -30vw;
+  height: 65vw;
+}
+/* PRE PLP */
+.imageElement--prePlpCatCol {
+  max-height: 46rem;
+}
+.imageElement--prePlpFruit {
+  position: absolute;
+  max-height: 428px;
+}
+.imageElement--prePlpFruit1 {
+  top: -25px;
+  right: -208px;
+}
+.imageElement--prePlpFruit2 {
+  top: 500px;
+  left: -330px;
+}
+.imageElement--prePlpFruit3 {
+  bottom: 750px;
+  left: 9px;
+}
+.imageElement--prePlpFruit4 {
+  bottom: 430px;
+  right: -327px;
+}
+.imageElement--prePlpMarketingBannerBackground {
+  position: absolute;
+  top: 6vw;
+  height: 64vw;
+  object-fit: cover;
+}
+.infoCardContainer--infoCardPrePlpMarketing {
+  /* height: 948px; */
+  height: 30vw;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.infoCardTextContainer--infoCardPrePlpMarketing {
+  width: 65%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.paragraph--infoCardPrePlpMarketing {
+  color: #fff;
+  margin-top: 0;
+}
+
+.infoCardImageContainer--infoCardPrePlpMarketing {
+  width: 35%;
+  display: flex;
+}
+
+.infoCardImage--infoCardPrePlpMarketing {
+  position: absolute;
+  margin-top: -22vw;
+  height: 40vw;
+  object-position: center;
+}
+
+.infoCardCallActionContainer--infoCardPrePlpMarketing :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+}
+.imageElement--prePlpMarketing2 {
+  width: 100%;
+}
+.imageElement--prePlpMarketing2::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #5E6E84;
+  /* background-image: url("https://bekouk.vtexassets.com/arquivos/watch_video_icon.svg"); */
+  position: absolute;
+  display: inline-block;
+}
+.imageElement--prePlpMarketingSliderCard {
+  object-fit: contain;
+}
+.infoCardContainer--infoCardPrePlpMarketing1 {
+  background-color: #00436d;
+}
+.headingLevel2--infoCardPrePlpMarketing1 {
+  color: #fff;
+  font-size: 2.25rem;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketing1 :global(.vtex-button) {
+  background-color: #5E6E84;
+  color: #fff;
+  border: none;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketing1
+  :global(.vtex-button):hover {
+  color: #5E6E84;
+  background-color: #fff;
+}
+.infoCardContainer--prePlpMarketingBottom {
+  background-color: #e0e0e0;
+  position: relative;
+  padding: 5rem;
+}
+.infoCardImage--prePlpMarketingBottom {
+  position: absolute;
+  top: -15vw;
+  right: 7vw;
+  max-height: 600px;
+}
+.infoCardCallActionContainer--prePlpMarketingBottom :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+  background-color: #F71963;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.headingLevel2--prePlpMarketingBottom {
+  color: #F71963;
+  margin: 0;
+  font-weight: inherit;
+}
+.infoCardCallActionContainer--prePlpMarketingBottom
+  :global(.vtex-button):hover {
+  background-color: #5E6E84;
+}
+.infoCardContainer--infoCardPrePlpMarketingBottom {
+  overflow: hidden;
+}
+.infoCardTextContainer--infoCardPrePlpMarketingBottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 164, 219, 0.75);
+  width: 100%;
+  margin: 0;
+  height: 23vw;
+  top: 18vw;
+}
+.paragraph--infoCardPrePlpMarketingBottom {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketingBottom
+  :global(.vtex-button) {
+  border-radius: 9999px;
+  line-height: initial;
+  text-transform: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketingBottom1
+  :global(.vtex-button) {
+  background-color: #5E6E84;
+  color: #fff;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketingBottom1
+  :global(.vtex-button):hover {
+  background-color: #fff;
+  color: #5E6E84;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketingBottom2
+  :global(.vtex-button) {
+  background-color: #fff;
+  color: #00436d;
+}
+.infoCardCallActionContainer--infoCardPrePlpMarketingBottom2
+  :global(.vtex-button):hover {
+  background-color: #00436d;
+  color: #fff;
+}
+/* ABOUT US */
+.imageElement--aboutUsTabTechnologyItemInfo {
+  position: absolute;
+}
+.imageElement--aboutUsTabTechnologyItem5Info {
+  height: 100%;
+}
+.imageElement--aboutUsSliderCardBackground {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.imageElement--aboutUsSliderCardBackground::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 28, 53, 0.637);
+  position: absolute;
+  top: 0;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px) {
+  /* .imageElement--homeCardBackground {
+    object-position: right;
+  } */
+  .imageElement--homeCard1 {
+    display: none;
+  }
+
+  .imageElement--homeCard3 {
+    display: none;
+  }
+
+  /* HOME MIDDLE MOBILE */
+  .imageElement--homeMiddleBanner1Mobile {
+    position: absolute;
+    top: -8vw;
+    right: -10vw;
+    height: 70vw;
+  }
+
+  .imageElement--homeMiddleImageMobile {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .infoCardImageContainer--infoCardHomeMiddleMobile {
+    display: none;
+  }
+
+  .infoCardTextContainer--infoCardHomeMiddleMobile {
+    width: 100%;
+  }
+
+  .infoCardContainer--infoCardHomeMiddleMobile {
+    padding: 4rem;
+  }
+
+  .headingLevel2--infoCardHomeMiddleMobile {
+    text-align: center;
+  }
+
+  .paragraph--infoCardHomeMiddleMobile {
+    text-align: center;
+    color: #fff;
+  }
+
+  .infoCardCallActionContainer--infoCardHomeMiddleMobile :global(.vtex-button) {
+    border-radius: 9999px;
+    line-height: initial;
+    text-transform: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* PLP MOBILE */
+  .infoCardImageContainer--infoCardPlpMarketingMobile {
+    display: none;
+  }
+
+  .infoCardTextContainer--infoCardPlpMarketingMobile {
+    width: 100%;
+  }
+
+  .imageElement--plpMarketingImageMobile {
+    height: 50vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .infoCardContainer--infoCardPlpMarketingMobile {
+    padding: 4rem;
+  }
+
+  .headingLevel2--infoCardPlpMarketingMobile {
+    text-align: center;
+  }
+
+  .paragraph--infoCardPlpMarketingMobile {
+    text-align: center;
+  }
+
+  .infoCardCallActionContainer--infoCardPlpMarketingMobile
+    :global(.vtex-button) {
+    border-radius: 9999px;
+    line-height: initial;
+    text-transform: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* PRE PLP */
+  .imageElement--prePlpCatCol {
+    max-height: 32rem;
+  }
+  .imageElement--plpPromotionBannerMobile {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .imageElement--prePlpFruit {
+    display: none;
+  }
+  .imageElement--prePlpMarketingBannerBackground {
+    height: 100%;
+  }
+  .imageElement--prePlpMarketingBannerBackground {
+    top: 9vw;
+  }
+  .imageElement--prePlpMarketing2Mobile {
+    height: 60vh;
+  }
+  .imageElement--prePlpMarketingReevoo {
+    object-fit: contain;
+  }
+  .infoCardTextContainer--prePlpMarketingBottom {
+    width: 100%;
+  }
+  .infoCardImageContainer--prePlpMarketingBottom {
+    display: none;
+  }
+  .headingLevel2--prePlpMarketingBottom,
+  .paragraph--prePlpMarketingBottom {
+    text-align: center;
+  }
+  .paragraph--infoCardPrePlpMarketingBottom {
+    font-size: 1.5rem;
+  }
+  /* ABOUT US */
+  .imageElement--aboutUsTabTechnologyItemInfo {
+    position: relative;
+    top: 245px;
+  }
+  /* .imageElement--aboutUsTabTechnologyItem2Info {
+    bottom: -60vw;
+  } */
+}
+
+@media only screen and (max-width: 640px) {
+  /* PRE PLP */
+  .infoCardContainer--infoCardPrePlpMarketingBottom {
+    height: 40vh;
+  }
+  .infoCardTextContainer--infoCardPrePlpMarketingBottom {
+    height: 20vh;
+    top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* HOME MIDDLE CONTENT MOBILE */
+  .imageElement--homeMiddleBanner1Mobile {
+    top: 5vw;
+    height: 88vw;
+  }
+
+  .imageElement--homeMiddleImageMobile {
+    height: 50vh;
+  }
+
+  .infoCardContainer--infoCardHomeMiddleMobile {
+    padding: 2rem;
+  }
+
+  .headingLevel2--infoCardHomeMiddleMobile {
+    font-size: 1.25rem;
+  }
+
+  /* PLP MOBILE */
+  .imageElement--plpMarketingImageMobile {
+    height: 70vw;
+  }
+
+  .infoCardContainer--infoCardPlpMarketingMobile {
+    padding: 2rem;
+  }
+
+  .headingLevel2--infoCardPlpMarketingMobile {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  /* HOME MIDDLE CONTENT */
+  .imageElement--middleBannerBackground {
+    top: -5vh;
+    right: 5vw;
+    height: 60vw;
+  }
+
+  .infoCardContainer--infoCardHomeMiddle {
+    height: 45vw;
+  }
+
+  .infoCardImage--infoCardHomeMiddle {
+    margin-top: -39vw;
+    height: 77vw;
+  }
+
+  /* PLP BIG SCREENS */
+  .infoCardImage--infoCardPlpMarketing {
+    margin-top: -25vw;
+    height: 50vw;
+  }
+}
+
+.imageElement--pdp-trustpilot-image {
+  width: 185px !important;
+  height: 172px !important;
+}
+
+.imageElement--pdp-banner-product-image {
+  width: 100% !important;
+  padding-top: 2rem;
+}
+
+.imageElement--image-dimension {
+  height: 24px;
+  min-width: 32px;
+}
+
+.skuSelectorItemImage {
+  height: 15px;
+  width: 15px;
+}
+/* PDP */
+/* .productImagesThumbsSwiperContainer--productImagesGalleryPdp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.productImagesThumb--productImagesGalleryPdp {
+  display: flex;
+  align-items: center;
+  /* height: 90px !important; */
+  padding-right: 0.5rem;
+  margin-bottom: 0;
+}
+.thumbImg--productImagesGalleryPdp {
+  max-height: 90px !important;
+}
+.skuSelectorContainer--colorSelectorPdp {
+  display: flex;
+  justify-content: center;
+}
+.skuSelectorContainer--colorSelectorPdp
+  :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin-bottom: 0;
+}
+
+.imageElement--charity {
+  display: block;
+}

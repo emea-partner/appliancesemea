@@ -1,0 +1,108 @@
+.flexRow--orderByAndSwitcher {
+  padding-right: 1.5em;
+}
+
+.flexRowContent--savingsSummaryListDesktop {
+  justify-content: flex-start;
+}
+
+.flexCol--summaryRightListDesktop {
+  justify-content: space-around;
+}
+
+.flexRow--buyNowButton :global(.vtex-button) {
+  background: #eef3f7;
+  border-color: #eef3f7;
+  color: #0f3e99;
+}
+
+.flexCol--height-characteristic {
+  width: 133px;
+}
+
+.flexColChild--height-characteristic {
+  padding-bottom: 0.5rem;
+}
+
+.flexRowContent--rowDimension {
+  height: 36px;
+  width: 133px !important;
+}
+
+.flexRow--buyNow-pdp {
+  background: #002135;
+  color: white;
+}
+
+.flexRow--buyNow-pdp :global(.vtex-button) {
+  background: #002135;
+  border-color: #56b632;
+  color: white;
+  height: 37px;
+  width: 166px;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+.flexRow--buyNow-pdp :global(.vtex-button__label) {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+.flexRow--buyNow-pdp :global(.vtex-button):hover {
+  background: #56b632;
+  color: white;
+  height: 37px;
+  width: 166px;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.flexColChild--productMainContent :global(.vtex-button) {
+  background-color: #56b632;
+  border-color: #56b632;
+  border-radius: 15px;
+  width: 293px;
+  height: 47.6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.flexColChild--productMainContent :global(.vtex-button):hover {
+  background-color: white;
+  border-color: #56b632;
+  border-radius: 15px;
+  color: #56b632;
+  width: 293px;
+  height: 47.6px;
+}
+
+.flexRowContent--buyNow-pdp {
+  align-items: center;
+  height: 72px;
+}
+
+.flexRowContent--buyNow-pdp:hover .stretchChildrenWidth {
+  align-items: center;
+  height: 72px;
+}
+
+.flexCol--productRating {
+  margin-bottom: 3rem;
+}
+
+.flexCol--summaryDetailsListMobile {
+  justify-content: space-between;
+}
+
+.flexCol--summaryUpDetailsListMobile {
+  margin-bottom: 0.25rem;
+}
+
+.flexRow--about-us-sticky {
+  background: #5E6E84;
+  color: #fff;
+}
+
+.flexRowContent--about-us-sticky {
+  align-items: center;
+  height: 72px;
+}

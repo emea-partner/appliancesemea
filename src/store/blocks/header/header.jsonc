@@ -1,0 +1,251 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "title": "[HEADER DESKTOP] - Header Layout Desktop",
+    "children": [
+      // "sticky-layout#header-desktop"
+      "flex-layout.row#header-desktop"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "title": "[COL] - Spacer",
+    "props": {
+      "width": "grow"
+    }
+  },
+  // "sticky-layout#header-desktop": {
+  //   "props": {
+  //     "blockClass": "sticky-header"
+  //   },
+  //   "children": [
+  //     "flex-layout.row#header-desktop"
+  //   ]
+  // },
+  "flex-layout.row#header-desktop": {
+    "title": "[ROW] - Header Desktop",
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      // "category-menu",
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "search-bar#headerBlock",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "[COL] - Logo",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  // TRY OVERLAY LAYOUT FOR TOOLTIP
+  // "overlay-trigger#logo": {
+  //   "props": {
+  //     "trigger": "hover"
+  //   },
+  //   "children": [
+  //     // "rich-text#overlay-trigger",
+  //     "logo#desktop",
+  //     "overlay-layout#logo"
+  //   ]
+  // },
+  // "rich-text#tooltip-logo": {
+  //   "props": {
+  //     "blockClass": "tooltipLogo",
+  //     "text": ""
+  //   }
+  // },
+  // "overlay-layout#logo": {
+  //   "props": {
+  //     "placement": "bottom",
+  //     "showArrow": true,
+  //     "blockClass": "tooltipLogo"
+  //   },
+  //   "children": [
+  //     "rich-text#overlay-layout"
+  //   ]
+  // },
+  // "rich-text#overlay-layout": {
+  //   "props": {
+  //     "blockClass": "tooltipLogo",
+  //     "text": "Ajdnjas asjknfjs asjndjska asdjknsajkdn sakdnasn"
+  //   }
+  // },
+  // _____________________________
+  "flex-layout.col#category-menu": {
+    "title": "[COL] - Category Menu",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "category-menu"
+    ]
+  },
+  // "flex-layout.col#category-menu": {
+  //   "props": {
+  //     "verticalAlign": "middle"
+  //   },
+  //   "children": [
+  //     "menu-item#category-apparel"
+  //   ]
+  // },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/Vtex_Logo_white.svg",
+      "width": "150"
+    }
+  },
+  "search-bar#headerBlock": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "placeholder": "Search",
+      "openAutocompleteOnFocus": true,
+      "blockClass": "headerSearch"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "props": {
+      "maxSuggestedProducts": 2
+    },
+    "blocks": [
+      "product-summary.shelf#autocomplete-result"
+    ]
+  },
+  "product-summary.shelf#autocomplete-result": {
+    "props": {
+      "blockClass": "autocompleteResult"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name#summaryListDesktop",
+      "flex-layout.row#savingsSummaryListDesktop",
+      "flex-layout.col#priceSummaryListDesktop",
+      "add-to-cart-button"
+    ]
+  },
+  "header-layout.mobile": {
+    "title": "[HEADER MOBILE] - Header Layout Mobile",
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      // "logo#mobile",
+      // "flex-layout.col#spacer",
+      // "search-bar",
+      // "drawer",
+      "flex-layout.col#header-mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      // "preventHorizontalStretch": true,
+      // "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#header-mobile": {
+    "title": "[COL] - Header Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerMobile"
+    },
+    "children": [
+      "flex-layout.row#header-mobile",
+      "search-bar"
+    ]
+  },
+  "flex-layout.row#header-mobile": {
+    "title": "[ROW] - Header Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "headerMobile"
+    },
+    "children": [
+      "logo#mobile",
+      "drawer"
+    ]
+  },
+  "drawer": {
+    "children": [
+      // "menu#drawer"
+      "flex-layout.col#menu-mobile"
+    ],
+    "props": {
+      "slideDirection": "rightToLeft",
+      "blockClass": "header-prova"
+    }
+  },
+  "menu#drawer": {
+    "children": [
+      "flex-layout.col#menu-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "isFullWidth": true
+    }
+  },
+  "flex-layout.col#menu-mobile": {
+    "props": {
+      // "experimentalOptimizeRendering": true,
+      "verticalAlign": "middle",
+      "width": "100%",
+      "blockClass": "menuMobile"
+    },
+    "children": [
+      "menu-item#appliances-mobile",
+      // "flex-layout.row#prova",
+      "menu-item#refrigeration-mobile",
+      "menu-item#laundry-mobile",
+      "menu-item#dishwasher-mobile",
+      "menu-item#cooking-mobile",
+      "menu-item#small-appliances-mobile",
+      "menu-item#electronics",
+      "menu-item#before-you-buy-mobile",
+      "menu-item#support-mobile",
+      "menu-item#about-beko-mobile"
+    ]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/Vtex_Logo_white.svg",
+      "width": "150"
+    }
+  }
+}

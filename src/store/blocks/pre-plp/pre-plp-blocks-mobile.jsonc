@@ -1,0 +1,486 @@
+{
+  // TOP BANNER MOBILE
+  "flex-layout.row#pre-plp-banner-top-mobile": {
+    "title": "[ROW] - Pre PLP Banner Top Mobile",
+    "props": {
+      "blockClass": "plpPromotionBannerMobile",
+      // "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "image#pre-plp-banner-top-background-mobile",
+      "flex-layout.col#pre-plp-banner-top-mobile"
+    ]
+  },
+  "image#pre-plp-banner-top-background-mobile": {
+    "title": "[IMAGE] - Pre PLP Banner Top Background Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/hero@1x.jpg",
+      "blockClass": "plpPromotionBannerMobile"
+    }
+  },
+  "flex-layout.col#pre-plp-banner-top-mobile": {
+    "title": "[COL] - Pre PLP Banner Top Mobile",
+    "props": {
+      "blockClass": "plpPromotionBannerMobile",
+      "width": "100%",
+      "verticalAlign": "bottom"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-banner-top-ctas-mobile",
+      "rich-text#pre-plp-banner-top-mobile"
+    ]
+  },
+  "rich-text#pre-plp-banner-top-mobile": {
+    "title": "[RICH TEXT] - Pre PLP Banner Top Mobile",
+    "props": {
+      "text": "## Keeping your food fresh\n## Refrigerators",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "plpPromotionBannerMobile"
+    }
+  },
+  "flex-layout.row#pre-plp-banner-top-ctas-mobile": {
+    "title": "[ROW] - Pre PLP Banner CTAS Mobile",
+    "props": {
+      "colGap": 4,
+      "blockClass": "plpPromotionBannerCtasMobile"
+    },
+    "children": [
+      "link#pre-plp-banner-top-cta-1-mobile",
+      "link#pre-plp-banner-top-cta-2-mobile"
+    ]
+  },
+  "link#pre-plp-banner-top-cta-1-mobile": {
+    "title": "[LINK] - Pre PLP Banner CTA 1 Mobile",
+    "props": {
+      "label": "View Range",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBannerCtaMobile",
+        "prePlpCtaWhite"
+      ]
+    }
+  },
+  "link#pre-plp-banner-top-cta-2-mobile": {
+    "title": "[LINK] - Pre PLP Banner CTA 2 Mobile",
+    "props": {
+      "label": "Our technology",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBannerCtaMobile",
+        "prePlpCtaLightBlue"
+      ]
+    }
+  },
+  // MAIN CONTENT MOBILE
+  "flex-layout.row#pre-plp-main-content-mobile": {
+    "title": "[ROW] - Pre Plp Main Content Mobile",
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass": "prePlpMainContentMobile"
+    },
+    "children": [
+      "flex-layout.col#pre-plp-main-content-mobile"
+    ]
+  },
+  "flex-layout.col#pre-plp-main-content-mobile": {
+    "title": "[COL] - Pre Plp Main Content Mobile",
+    "props": {
+      "horizontalAlign": "center",
+      "rowGap": 4,
+      "blockClass": "prePlpMainContentMobile"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-main-content-row-1",
+      "flex-layout.row#pre-plp-main-content-row-2"
+    ]
+  },
+  // MARKETING CONTENT - MOBILE
+  "flex-layout.row#pre-plp-marketing-content-mobile": {
+    "title": "[ROW] - Pre PLP Marketing Content Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "homeMiddleContentMobile",
+        "prePlpMarketingContentMobile"
+      ]
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-content-mobile"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-content-mobile": {
+    "title": "[COL] - Pre PLP Marketing Content Mobile",
+    "props": {
+      "blockClass": [
+        "homeMiddleContentMobile",
+        "prePlpMarketingContentMobile"
+      ]
+    },
+    "children": [
+      "flex-layout.row#pre-plp-marketing-banner",
+      "flex-layout.row#diagonal-divider",
+      "image#pre-plp-marketing-1-mobile",
+      "info-card#pre-plp-marketing-1-mobile",
+      "flex-layout.row#diagonal-divider",
+      // "modal-trigger#pre-plp-marketing-2",
+      // "flex-layout.col#pre-plp-marketing-2"
+      "flex-layout.row#pre-plp-marketing-2-mobile"
+    ]
+  },
+  "image#pre-plp-marketing-1-mobile": {
+    "title": "[IMAGE] - Pre PLP Marketing 1 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/features/multizone@1x.jpg",
+      "blockClass": [
+        "homeMiddleImageMobile",
+        "homeMiddleImage2Mobile"
+      ]
+    }
+  },
+  "info-card#pre-plp-marketing-1-mobile": {
+    "title": "[INFO CARD] - Pre PLP Marketing 1 Mobile",
+    "props": {
+      "id": "info-card-pre-plp-marketing-1-mobile",
+      "textPosition": "center",
+      "headline": "## ![10 Year Guarantee](https://bekouk.myvtex.com/arquivos/10-year-guarantee.svg)<br>Added peace of mind with the 10 Year Parts Guarantee",
+      "subhead": "To help you feel confident in your purchasing decision, selected appliances are eligible for our 10 Year Parts Guarantee in addition to any 1 or 2 Year Labour Guarantees.",
+      "callToActionText": "Register your appliance today",
+      "blockClass": [
+        "infoCardHomeMiddleMobile",
+        "infoCardHomeMiddle1",
+        "infoCardHomeMiddle1Mobile",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "flex-layout.row#pre-plp-marketing-2-mobile": {
+    "title": "[ROW] - Pre PLP Marketing 2 Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "prePLpMarketingContent2Mobile"
+      ]
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-2-mobile"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-2-mobile": {
+    "title": "[COL] - Pre PLP Marketing 2 Mobile",
+    "props": {
+      "blockClass": [
+        "prePLpMarketingContent2Mobile"
+      ]
+    },
+    "children": [
+      "modal-trigger#pre-plp-marketing-2-mobile",
+      "flex-layout.row#pre-plp-marketing-2-content-mobile"
+    ]
+  },
+  "modal-trigger#pre-plp-marketing-2-mobile": {
+    "title": "[MODAL TRIGGER] - Pre PLP Marketing 2 Mobile",
+    "children": [
+      "image#pre-plp-marketing-2-mobile",
+      "modal-layout#pre-plp-marketing-2-mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "prePlpMarketing2"
+      ]
+    }
+  },
+  "image#pre-plp-marketing-2-mobile": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/features/frost-free@2x.jpg",
+      "blockClass": [
+        "prePlpMarketing2",
+        "prePlpMarketing2Mobile"
+      ]
+    }
+  },
+  "modal-layout#pre-plp-marketing-2-mobile": {
+    "title": "[MODAL LAYOUT] - Pre PLP Marketing 2 Mobile",
+    "children": [
+      "modal-header#pre-plp-marketing-2-mobile",
+      "modal-content#pre-plp-marketing-2-mobile"
+    ],
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-header#pre-plp-marketing-2-mobile": {
+    "title": "[MODAL HEADER] - Pre PLP Marketing 2",
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-content#pre-plp-marketing-2-mobile": {
+    "title": "[MODAL CONTENT] - Pre PLP Marketing 2",
+    "children": [
+      "video#pre-plp-marketing-2"
+    ],
+    "props": {
+      "blockClass": "homeCard"
+    }
+  },
+  "video#pre-plp-marketing-2": {
+    "title": "[VIDEO] - Pre PLP Marketing 2",
+    "props": {
+      "src": "https://www.youtube.com/watch?v=Skgjit6jlTw",
+      "width": "80%",
+      "height": "90%",
+      "autoPlay": true,
+      "blockClass": "homeCard"
+    }
+  },
+  "flex-layout.row#pre-plp-marketing-2-content-mobile": {
+    "title": "[ROW] - Pre PLP Marketing 2 Content Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "prePLpMarketing2MobileContent",
+        "transformSkewY8Deg"
+      ]
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-2"
+    ]
+  },
+  // SLIDER MOBILE
+  "flex-layout.row#pre-plp-marketing-slider-mobile": {
+    "title": "[ROW] - Pre PLP Marketing Slider Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "prePlpMarketingSlider"
+        // "transformSkewY8Deg"
+      ]
+    },
+    "children": [
+      "slider-layout#pre-plp-marketing-slider-mobile"
+    ]
+  },
+  "slider-layout#pre-plp-marketing-slider-mobile": {
+    "title": "[SLIDER LAYOUT] - Pre PLP Marketing Slider Mobile",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      // "autoplay": {
+      //   "timeout": 5000
+      // },
+      "showNavigationArrows": "never",
+      "blockClass": [
+        "prePLpMarketingSliderMobile"
+      ]
+    },
+    "children": [
+      "flex-layout.row#pre-plp-marketing-slider-card-1-mobile",
+      "flex-layout.row#pre-plp-marketing-slider-card-2-mobile",
+      "flex-layout.row#pre-plp-marketing-slider-card-3-mobile"
+    ]
+  },
+  // SLIDER CARD 1 MOBILE
+  "flex-layout.row#pre-plp-marketing-slider-card-1-mobile": {
+    "title": "[ROW] - Pre PLP Marketing Slider Card 1 Mobile",
+    "props": {
+      "blockClass": [
+        "prePlpMarketingSliderCardMobile"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-slider-card-1-mobile"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-slider-card-1-mobile": {
+    "title": "[COL] - Pre PLP Marketing Slider Card 1 Mobile",
+    "props": {
+      "blockClass": "prePlpMarketingSliderCardMobile"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-slider-card-1-image-mobile",
+      "flex-layout.row#pre-plp-slider-card-1-text-mobile"
+    ]
+  },
+  "flex-layout.row#pre-plp-slider-card-1-image-mobile": {
+    "title": "[ROW] - Pre Plp Slider Card 1 Image Mobile",
+    "children": [
+      "image#pre-plp-marketing-reevoo-1",
+      "image#pre-plp-marketing-slider-card-1"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": [
+        "prePlpSliderCardImageMobile",
+        "prePlpSliderCard1ImageMobile"
+      ]
+    }
+  },
+  "flex-layout.row#pre-plp-slider-card-1-text-mobile": {
+    "title": "[ROW] - Pre Plp Slider Card 1 Text Mobile",
+    "children": [
+      "flex-layout.col#pre-plp-slider-card-1-text-mobile"
+    ],
+    "props": {
+      "blockClass": "prePlpSliderCardTextMobile"
+    }
+  },
+  "flex-layout.col#pre-plp-slider-card-1-text-mobile": {
+    "title": "[COL] - Pre PLP Slider Card 1 Text Mobile",
+    "props": {
+      "blockClass": "prePlpSliderCardTextMobile",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#icon-quote-orange",
+      "rich-text#pre-plp-marketing-slider-card-1-quote",
+      "rich-text#pre-plp-marketing-slider-card-1-postilla"
+    ]
+  },
+  // SLIDER CARD 2 MOBILE
+  "flex-layout.row#pre-plp-marketing-slider-card-2-mobile": {
+    "title": "[ROW] - Pre PLP Marketing Slider Card 2 Mobile",
+    "props": {
+      "blockClass": [
+        "prePlpMarketingSliderCardMobile"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-slider-card-2-mobile"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-slider-card-2-mobile": {
+    "title": "[COL] - Pre PLP Marketing Slider Card 2 Mobile",
+    "props": {
+      "blockClass": "prePlpMarketingSliderCardMobile"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-slider-card-2-image-mobile",
+      "flex-layout.row#pre-plp-slider-card-2-text-mobile"
+    ]
+  },
+  "flex-layout.row#pre-plp-slider-card-2-image-mobile": {
+    "title": "[ROW] - Pre Plp Slider Card 2 Image Mobile",
+    "children": [
+      "image#pre-plp-marketing-reevoo-2",
+      "image#pre-plp-marketing-slider-card-2"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": [
+        "prePlpSliderCardImageMobile",
+        "prePlpSliderCard2ImageMobile"
+      ]
+    }
+  },
+  "flex-layout.row#pre-plp-slider-card-2-text-mobile": {
+    "title": "[ROW] - Pre Plp Slider Card 2 Text Mobile",
+    "children": [
+      "flex-layout.col#pre-plp-slider-card-2-text-mobile"
+    ],
+    "props": {
+      "blockClass": "prePlpSliderCardTextMobile"
+    }
+  },
+  "flex-layout.col#pre-plp-slider-card-2-text-mobile": {
+    "title": "[COL] - Pre PLP Slider Card 2 Text Mobile",
+    "props": {
+      "blockClass": "prePlpSliderCardTextMobile",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#icon-quote-orange",
+      "rich-text#pre-plp-marketing-slider-card-2-quote",
+      "rich-text#pre-plp-marketing-slider-card-2-postilla"
+    ]
+  },
+  // SLIDER CARD 3 MOBILE
+  "flex-layout.row#pre-plp-marketing-slider-card-3-mobile": {
+    "title": "[ROW] - Pre PLP Marketing Slider Card 3 Mobile",
+    "props": {
+      "blockClass": [
+        "prePlpMarketingSliderCardMobile"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-slider-card-3-mobile"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-slider-card-3-mobile": {
+    "title": "[COL] - Pre PLP Marketing Slider Card 3 Mobile",
+    "props": {
+      "blockClass": "prePlpMarketingSliderCardMobile"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-slider-card-3-image-mobile",
+      "flex-layout.row#pre-plp-slider-card-3-text-mobile"
+    ]
+  },
+  "flex-layout.row#pre-plp-slider-card-3-image-mobile": {
+    "title": "[ROW] - Pre Plp Slider Card 3 Image Mobile",
+    "children": [
+      "image#pre-plp-marketing-reevoo-3",
+      "image#pre-plp-marketing-slider-card-3"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": [
+        "prePlpSliderCardImageMobile",
+        "prePlpSliderCard3ImageMobile"
+      ]
+    }
+  },
+  "flex-layout.row#pre-plp-slider-card-3-text-mobile": {
+    "title": "[ROW] - Pre Plp Slider Card 3 Text Mobile",
+    "children": [
+      "flex-layout.col#pre-plp-slider-card-3-text-mobile"
+    ],
+    "props": {
+      "blockClass": "prePlpSliderCardTextMobile"
+    }
+  },
+  "flex-layout.col#pre-plp-slider-card-3-text-mobile": {
+    "title": "[COL] - Pre PLP Slider Card 3 Text Mobile",
+    "props": {
+      "blockClass": "prePlpSliderCardTextMobile",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#icon-quote-orange",
+      "rich-text#pre-plp-marketing-slider-card-3-quote",
+      "rich-text#pre-plp-marketing-slider-card-3-postilla"
+    ]
+  },
+  // MARKETING CONTENT - MOBILE - INFO CARD BOTTOM
+  "info-card#pre-plp-marketing-bottom-mobile": {
+    "title": "[INFO CARD] - Pre PLP Marketing Bottom",
+    "props": {
+      "id": "info-card-pre-plp-marketing-bottom-mobile",
+      // "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/buying-guide@1x.png",
+      "headline": "## Refrigeration Buying Guide",
+      "subhead": "Whether you have a small kitchen, a big kitchen, or are after the latest technologies, our refrigeration buying guide will help you find the best model from our range of fridges and freezers to help you enjoy the food you love every day.",
+      "callToActionText": "Refrigeration Buying Guide",
+      "blockClass": [
+        "prePlpMarketingBottom"
+      ],
+      "textAlignment": "center",
+      "textPosition": "center",
+      "textMode": "rich-text"
+    }
+  }
+}

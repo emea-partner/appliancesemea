@@ -1,0 +1,114 @@
+{
+  "stack-layout#live-like-a-pro": {
+    "children": [
+      "image#llapro",
+      "flex-layout.row#like-like-a-pro"
+    ],
+    "props": {
+      "blockClass": "like-like-a-pro"
+    }
+  },
+  "image#llapro": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/brand-message@1.5x.jpg",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "blockClass": "llapro-image"
+    }
+  },
+  "flex-layout.row#like-like-a-pro": {
+    "children": [
+      "flex-layout.col#like-like-a-pro"
+    ],
+    "props": {
+      "blockClass": "like-a-pro-row"
+    }
+  },
+  "flex-layout.col#like-like-a-pro": {
+    "children": [
+      "icon#live-like-a-pro",
+      "rich-text#live-like-a pro-title",
+      "rich-text#live-like-a pro-text"
+    ],
+    "props": {
+      "blockClass": "like-a-pro-row"
+    }
+  },
+  "icon#live-like-a-pro": {
+    "props": {
+      "id": "live-like-a-pro-logo",
+      "size": "150px",
+      "viewBox": "0 0 190 145"
+    }
+  },
+  "rich-text#live-like-a pro-title": {
+    "props": {
+      "text": "### Helping people live healthier and better is at the core of what we do!",
+      "blockClass": "like-a-pro-title",
+      "textColor": "base"
+    }
+  },
+  "rich-text#live-like-a pro-text": {
+    "props": {
+      "text": "We are committed to our purpose of helping people live healthier and better through our appliances. Featuring a host of innovative technologies our appliances are designed to make consumers lives easier saving them time, effort, energy and money.          ",
+      "blockClass": "like-a-pro-text",
+      "textColor": "base"
+    }
+  },
+  "stack-layout#live-like-a-pro-mobile": {
+    "children": [
+      "image#llapro-mobile",
+      "flex-layout.row#like-like-a-pro-mobile"
+    ],
+    "props": {
+      "blockClass": "like-like-a-pro-mobile"
+    }
+  },
+  "image#llapro-mobile": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/brand-message@1.5x.jpg",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "blockClass": "llapro-image"
+    }
+  },
+  "flex-layout.row#like-like-a-pro-mobile": {
+    "children": [
+      "flex-layout.col#like-like-a-pro-mobile"
+    ],
+    "props": {
+      "blockClass": "like-a-pro-row-mobile"
+    }
+  },
+  "flex-layout.col#like-like-a-pro-mobile": {
+    "children": [
+      "icon#live-like-a-pro-mobile",
+      "rich-text#live-like-a pro-title-mobile",
+      "rich-text#live-like-a pro-text-mobile"
+    ],
+    "props": {
+      "blockClass": "like-a-pro-row"
+    }
+  },
+  "icon#live-like-a-pro-mobile": {
+    "props": {
+      "id": "live-like-a-pro-logo",
+      "size": "100px",
+      "viewBox": "0 0 190 145"
+    }
+  },
+  "rich-text#live-like-a pro-title-mobile": {
+    "props": {
+      "text": "### Helping people live healthier and better is at the core of what we do!",
+      "blockClass": "like-a-pro-title-mobile",
+      "textColor": "base"
+    }
+  },
+  "rich-text#live-like-a pro-text-mobile": {
+    "props": {
+      "text": "We are committed to our purpose of helping people live healthier and better through our appliances. Featuring a host of innovative technologies our appliances are designed to make consumers lives easier saving them time, effort, energy and money.          ",
+      "blockClass": "like-a-pro-text-mobile",
+      "textColor": "base"
+    }
+  }
+}

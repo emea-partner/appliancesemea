@@ -1,0 +1,22 @@
+.menuIcon--header-prova {
+  color: #fff;
+}
+
+.opened--header-prova {
+  background-color: #5E6E84;
+  width: 100% !important;
+  max-width: 100% !important;
+  z-index: 3000;
+}
+.openIconContainer--header-prova {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.closeIconButton--header-prova {
+  color: white;
+}
+
+.closeIconContainer--header-prova {
+  justify-content: flex-end;
+}

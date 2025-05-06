@@ -1,0 +1,50 @@
+{
+  "stack-layout#about-us": {
+    "children": [
+      "image#mobile-phone",
+      "rich-text#title-about-us-whoweare"
+    ],
+    "props": {
+      "blockClass": "about-us"
+    }
+  },
+  "rich-text#title-about-us-whoweare": {
+    "props": {
+      "text": "# Who we are \n About Us",
+      "blockClass": "about-us-title",
+      "textColor": "base"
+    }
+  },
+  "image#mobile-phone": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/hero-v3@1.5x.jpg",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "blockClass": "about-us"
+    }
+  },
+  "stack-layout#about-us-mobile": {
+    "children": [
+      "image#mobile-phone",
+      "rich-text#title-about-us-whoweare-mobile"
+    ],
+    "props": {
+      "blockClass": "about-us-mobile"
+    }
+  },
+  "rich-text#title-about-us-whoweare-mobile": {
+    "props": {
+      "text": "# Who we are \n About Us",
+      "blockClass": "about-us-mobile",
+      "textColor": "base"
+    }
+  },
+  "image#mobile-phone-mobile": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/hero-v3@1.5x.jpg",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "blockClass": "about-us"
+    }
+  }
+}

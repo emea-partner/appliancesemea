@@ -1,0 +1,102 @@
+.popper--tooltipLogo :global(.vtex-overlay-layout-0-x-container) {
+  position: relative;
+  background-color: #000;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+.arrow--tooltipLogo {
+  color: #000;
+}
+/* PRODUCT CARD TOOLTIP */
+.trigger--product-card-overlay-trigger {
+  position: absolute;
+}
+
+.trigger--product-card-overlay-trigger-pdp {
+  position: absolute;
+  width: auto !important;
+  z-index: 0 !important;
+}
+.trigger .popper--overlay-tooltip {
+  left: 10px !important;
+  top: 100% !important;
+  transform: none !important;
+  width: 200px;
+}
+.container--overlay-tooltip {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+}
+.arrow--overlay-tooltip {
+  color: #000;
+  transform: translate(9px, 0) !important;
+}
+/* PRE PLP */
+.trigger--prePlpCatCol {
+  position: relative;
+  background-color: #5E6E84;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  width: calc(100% + 30px);
+  transition: all 0.5s ease-in-out;
+}
+.trigger--prePlpCatCol:hover {
+  background-color: #00436d;
+}
+.trigger--prePlpCatCol::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 1px solid #fff;
+  top: 0;
+  left: calc(100% - 50px);
+}
+.trigger--prePlpCatCol::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #fff;
+  left: calc(100% - 32px);
+  top: 48%;
+  transition: all 0.5s ease-in-out;
+}
+.trigger--prePlpCatCol:hover::after {
+  transform: rotate(180deg);
+}
+
+.container--prePlpCatCol {
+  padding: 0.75rem 0;
+  background-color: rgba(0, 33, 53, 0.9);
+  border: none;
+  width: 320px;
+}
+
+.trigger--prePlpMarketing2 {
+  width: auto !important;
+}
+
+/* PDP */
+.trigger--productCardOverlayTriggerPdpBottom {
+  position: relative;
+  z-index: 0 !important;
+  min-width: 150px;
+  padding-left: 25px;
+  border-right: 1px solid #c0cdd3;
+}
+@media only screen and (max-width: 1024px) {
+  .trigger--productCardOverlayTriggerPdpBottom {
+    min-width: unset;
+    padding-left: 0;
+    border-right: none;
+  }
+}

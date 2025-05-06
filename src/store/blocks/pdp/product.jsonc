@@ -1,0 +1,1041 @@
+{
+  "store.product.product-comparison": {
+    "children": [
+      "responsive-layout.desktop#product-pdp",
+      "responsive-layout.mobile#product-pdp"
+    ]
+  },
+  "responsive-layout.desktop#product-pdp": {
+    "title": "[RESPONSIVE LAYOUT DESKTOP] - Product PDP",
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      // "flex-layout.row#description",
+      "sticky-layout#pdp-reviews",
+      "flex-layout.row#specifications-title",
+      // "product-specification-group#table",
+      // HARD CODED SPECIFICATION
+      "flex-layout.row#spec-storage",
+      "flex-layout.row#main-features",
+      "flex-layout.row#net-volumes",
+      "flex-layout.row#dimension-weights",
+      "flex-layout.row#fridge-features",
+      // ------------------------
+      // "shelf.relatedProducts",
+      // "shelf.relatedProducts#exteded-warranty",
+      "flex-layout.row#product-slider-pdp",
+      "flex-layout.row#reviews"
+      // "product-reviews"
+    ]
+  },
+  "responsive-layout.mobile#product-pdp": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      // "flex-layout.row#description",
+      "flex-layout.row#product-breadcrumb",
+      // "add-to-cart-button#buyNow-mobile",
+      "flex-layout.row#specifications-title",
+      // "product-specification-group#table",
+      // HARD CODED SPECIFICATION
+      "flex-layout.row#spec-storage",
+      "flex-layout.row#main-features",
+      "flex-layout.row#net-volumes",
+      "flex-layout.row#dimension-weights",
+      "flex-layout.row#fridge-features",
+      // ------------------------
+      // "shelf.relatedProducts",
+      // "shelf.relatedProducts#exteded-warranty",
+      "flex-layout.row#product-slider-pdp",
+      "flex-layout.row#reviews-mobile"
+      // "product-reviews"
+      // "product-questions-and-answers"
+    ]
+  },
+  "flex-layout.row#specifications-title": {
+    "props": {
+      "blockClass": "specification-title"
+    },
+    "children": [
+      "rich-text#specifications"
+    ]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "blockClass": "product-spec-title",
+      "text": "##### Product Specifications"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "blockClass": "bekoBreadcrumbContainer"
+    },
+    "children": [
+      "breadcrumb#pdp"
+    ]
+  },
+  "breadcrumb#pdp": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": [
+        "bekoBreadcrumb",
+        "bekoBreadcrumb-pdp"
+      ]
+    }
+  },
+  // "flex-layout.row#description": {
+  //   "props": {
+  //     "marginBottom": 7
+  //   },
+  //   "children": [
+  //     "product-description"
+  //   ]
+  // },
+  "condition-layout.product#availability": {
+    "title": "[PRODUCT CONDITION LAYOUT] - Availability",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "flex-layout.row#product-main": {
+    "title": "[ROW] - Product Main",
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "fullWidth": true,
+      "blockClass": "pdpProductMain"
+    },
+    "children": [
+      "flex-layout.col#product-main"
+    ]
+  },
+  "flex-layout.col#product-main": {
+    "title": "[COL] - Product Main",
+    "props": {
+      "horizontalAlign": "center",
+      "paddingLeft": 4,
+      "paddingRight": 4,
+      "width": "100%",
+      "blockClass": "pdpProductMain"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#model",
+      "flex-layout.row#product-main-content"
+    ]
+  },
+  // MODEL PROD SPEC
+  "flex-layout.row#model": {
+    "children": [
+      "product-specification-group#model"
+    ]
+  },
+  "product-specification-group#model": {
+    "children": [
+      "flex-layout.row#product-specification-model"
+    ],
+    "props": {
+      "filter": {
+        "type": "show",
+        "specificationGroups": [
+          "Product model"
+        ]
+      }
+    }
+  },
+  "flex-layout.row#product-specification-model": {
+    "children": [
+      "product-specification#model"
+    ]
+  },
+  "product-specification#model": {
+    "children": [
+      "product-specification-values#model"
+    ]
+  },
+  "product-specification-values#model": {
+    "children": [
+      "product-specification-text#model-value"
+    ]
+  },
+  "product-specification-text#model-value": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  },
+  // --------------
+  // PRODUCT MAIN CONTENT
+  "flex-layout.row#product-main-content": {
+    "title": "[ROW] - Product Main Content",
+    "props": {
+      "width": "100%",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass": [
+        "productMainContent"
+      ]
+    },
+    "children": [
+      "flex-layout.col#product"
+    ]
+  },
+  "flex-layout.col#product": {
+    "title": "[COL] - Main Product",
+    "children": [
+      "rich-text#beko-recommended",
+      "flex-layout.row#product-main-content1",
+      "flex-layout.row#color-selector-pdp",
+      // "product-assembly-options-custom", // custom
+      "flex-layout.row#savings-and-price-pdp",
+      "flex-layout.row#productAssemblyOptionsCustom",
+      "flex-layout.row#add-to-cart-button",
+      "image#pdp-banner",
+      "flex-layout.row#bottom-banner-card"
+    ],
+    "props": {
+      "blockClass": [
+        "productMainContent",
+        "productWidth"
+      ]
+    }
+  },
+  "flex-layout.row#color-selector-pdp": {
+    "children": [
+      "sku-selector#color-selector-pdp"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "blockClass": "colorSelectorPdp"
+    }
+  },
+  "sku-selector#color-selector-pdp": {
+    "props": {
+      // "showValueForVariation": "all",
+      "showVariationsLabels": "itemValue",
+      "blockClass": "colorSelectorPdp"
+    }
+  },
+  "flex-layout.row#productAssemblyOptionsCustom": {
+    "title": "[ROW] - Product Assembly Options",
+    "props": {
+      "blockClass": "productAssemblyOptionsCustom"
+    },
+    "children": [
+      "flex-layout.col#productAssemblyOptionsCustom"
+    ]
+  },
+  "flex-layout.row#savings-and-price-pdp": {
+    "children": [
+      "flex-layout.col#savings-and-price-pdp"
+    ],
+    "props": {
+      "paddingBottom": 4,
+      "blockClass": "savingsAndPricePdp"
+    }
+  },
+  "flex-layout.col#savings-and-price-pdp": {
+    "children": [
+      "flex-layout.row#savings-price",
+      "flex-layout.row#list-and-selling-price"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "savingsAndPricePdp"
+    }
+  },
+  "flex-layout.row#savings-price": {
+    "children": [
+      "product-price-savings#summaryPercentage",
+      "product-price-savings#summary"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "savingsPrice"
+    }
+  },
+  "flex-layout.row#list-and-selling-price": {
+    "children": [
+      "product-list-price#summary",
+      "product-selling-price#summary"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "listAndSellingPrice"
+    }
+  },
+  "flex-layout.col#productAssemblyOptionsCustom": {
+    "title": "[COL] - Product Assembly Options Custom",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "productAssemblyOptionsCustom"
+    },
+    "children": [
+      "product-assembly-options"
+    ]
+  },
+  "product-assembly-options": {
+    "props":{
+      "initiallyOpened": "always"
+     },
+    "children": [
+      "flex-layout.row#product-assembly-options",
+      "assembly-option-input-values"
+    ]
+   },
+  "flex-layout.row#add-to-cart-button": {
+    "children": [
+      "add-to-cart-button#buyNow-card"
+    ],
+    "props": {
+      "paddingTop": "5"
+    }
+  },
+  "add-to-cart-button#buyNow-card": {
+    "props": {
+      "text": "Buy now",
+      "isOneClickBuy": true,
+      "onClickEventPropagation": "enabled",
+      "blockClass": "buyNow-card-pdp"
+    }
+  },
+  "rich-text#beko-recommended": {
+    "props": {
+      "text": "Recommended",
+      "textAlignment": "center",
+      "blockClass": "pdp-title-card"
+    }
+  },
+  "flex-layout.row#product-main-content1": {
+    "title": "[ROW] - Product Main Content",
+    "props": {
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "blockClass": "productMainContent1"
+    },
+    "children": [
+      "overlay-trigger#10-years-pdp",
+      "product-images#product-main-content",
+      "image#pdp-trustpilot"
+    ]
+  },
+  "overlay-trigger#10-years-pdp": {
+    "props": {
+      "blockClass": "product-card-overlay-trigger-pdp",
+      "trigger": "hover"
+    },
+    "children": [
+      "image#10-year-pdp",
+      "overlay-layout#pdp"
+    ]
+  },
+  "image#10-year-pdp": {
+    "props": {
+      "blockClass": "10-years-image",
+      "src": "https://storage.beko.co.uk/assets/beko/cornerflashes/guarantee/10-year-parts.png",
+      "maxWidth": 75
+    }
+  },
+  "overlay-layout#pdp": {
+    "props": {
+      "showArrow": true,
+      "blockClass": "overlay-tooltip"
+    },
+    "children": [
+      "rich-text#tooltip"
+    ]
+  },
+  "rich-text#tooltip": {
+    "props": {
+      "blockClass": "tooltip-text",
+      "text": "For added peace of mind, this appliance is eligible for our 10 year Parts Guarantee"
+    }
+  },
+  "product-images#product-main-content": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "thumbnailsOrientation": "horizontal",
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "zoomMode": "in-place-hover",
+      "blockClass": "productImagesGalleryPdp"
+    }
+  },
+  "image#pdp-trustpilot": {
+    "props": {
+      "src": "assets/pdp-trustpilot.png",
+      "blockClass": "pdp-trustpilot-image"
+    }
+  },
+  "image#pdp-banner": {
+    "props": {
+      "src": "assets/banner-product.png",
+      "blockClass": "pdp-banner-product-image"
+    }
+  },
+  "flex-layout.row#bottom-banner-card": {
+    "title": "[ROW] - Bottom Banner Card",
+    "children": [
+      "overlay-trigger#10-years-pdp-bottom",
+      "flex-layout.col#characteristics",
+      "rich-text#description-banner"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "bottom-banner-card"
+    }
+  },
+  "overlay-trigger#10-years-pdp-bottom": {
+    "title": "[OVERLAY TRIGGER] - 10 Years Pdp Bottom",
+    "props": {
+      "blockClass": "productCardOverlayTriggerPdpBottom",
+      "trigger": "hover"
+    },
+    "children": [
+      "image#10-year-pdp-bottom",
+      "overlay-layout#pdp-bottom"
+    ]
+  },
+  "image#10-year-pdp-bottom": {
+    "title": "[IMAGE] - Pdp Bottom",
+    "props": {
+      "blockClass": "10-years-image-pdp-bottom",
+      "src": "https://storage.beko.co.uk/assets/beko/cornerflashes/guarantee/10-year-parts.png",
+      "maxWidth": 75
+    }
+  },
+  "overlay-layout#pdp-bottom": {
+    "title": "[OVERLAY LAYOUT] - Pdp Bottom",
+    "props": {
+      "showArrow": true,
+      "blockClass": "overlay-tooltip"
+    },
+    "children": [
+      "rich-text#tooltip-pdp-bottom"
+    ]
+  },
+  "rich-text#tooltip-pdp-bottom": {
+    "title": "[RICH TEXT] - Tooltip Pdp Bottom",
+    "props": {
+      "blockClass": "tooltip-text",
+      "text": "For added peace of mind, this appliance is eligible for our 10 year Parts Guarantee"
+    }
+  },
+  "flex-layout.col#characteristics": {
+    "title": "[COL] - Product Characteristics",
+    "children": [
+      "flex-layout.row#height",
+      "flex-layout.row#width",
+      "flex-layout.row#depth"
+    ],
+    "props": {
+      "blockClass": "height-characteristic"
+    }
+  },
+  "flex-layout.row#width": {
+    "children": [
+      "image#width",
+      "rich-text#width"
+    ],
+    "props": {
+      "blockClass": "row-dimension"
+    }
+  },
+  "flex-layout.row#height": {
+    "children": [
+      "image#height",
+      "rich-text#height"
+    ],
+    "props": {
+      "blockClass": "row-dimension"
+    }
+  },
+  "flex-layout.row#depth": {
+    "children": [
+      "image#depth",
+      "rich-text#depth"
+    ],
+    "props": {
+      "blockClass": "row-dimension"
+    }
+  },
+  "image#depth": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/product2020/icon-depth.svg",
+      "blockClass": "image-dimension"
+    }
+  },
+  "image#height": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/product2020/icon-height.svg",
+      "blockClass": "image-dimension"
+    }
+  },
+  "image#width": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/product2020/icon-width.svg",
+      "blockClass": "image-dimension"
+    }
+  },
+  "rich-text#height": {
+    "props": {
+      "text": "Height: 186.5cm",
+      "blockClass": "bottom-banner-card"
+    }
+  },
+  "rich-text#width": {
+    "props": {
+      "text": "Width: 59.7cm",
+      "blockClass": "bottom-banner-card"
+    }
+  },
+  "rich-text#depth": {
+    "props": {
+      "text": "Depth: 70.9cm",
+      "blockClass": "bottom-banner-card"
+    }
+  },
+  "rich-text#description-banner": {
+    "props": {
+      "text": "Convenient and easy to use, this freestanding larder fridge is designed to make your life easier. To make the most out of every inch of space, this model features a slim line water tank which sits neatly on the fridge door, leaving you with more space to store your groceries. If you are looking to create stylish and co-ordinated look to your kitchen, you can pair this appliance with the matching freezer- FFG1545",
+      "blockClass": "description-bottom-banner-card"
+    }
+  },
+  // "image#pdp-trustpilot": {
+  //   "props": {
+  //     "src": "assets/pdp-trustpilot.png",
+  //     "blockClass": "pdp-trustpilot-image"
+  //   }
+  // },
+  // "image#pdp-banner": {
+  //   "props": {
+  //     "src": "assets/banner-product.png",
+  //     "blockClass": "pdp-banner-product-image"
+  //   }
+  // },
+  // "flex-layout.row#bottom-banner-card": {
+  //   "children": [
+  //     "overlay-trigger#10-years-pdp",
+  //     "flex-layout.col#characteristics",
+  //     "rich-text#description-banner"
+  //   ],
+  //   "props": {
+  //     "blockClass": "bottom-banner-card"
+  //   }
+  // },
+  // "flex-layout.col#characteristics": {
+  //   "children": [
+  //     "flex-layout.row#height",
+  //     "flex-layout.row#width",
+  //     "flex-layout.row#depth"
+  //   ],
+  //   "props": {
+  //     "blockClass": "height-characteristic"
+  //   }
+  // },
+  // "flex-layout.row#width": {
+  //   "children": [
+  //     "image#width",
+  //     "rich-text#width"
+  //   ],
+  //   "props": {
+  //     "blockClass": "row-dimension"
+  //   }
+  // },
+  // "flex-layout.row#height": {
+  //   "children": [
+  //     "image#height",
+  //     "rich-text#height"
+  //   ],
+  //   "props": {
+  //     "blockClass": "row-dimension"
+  //   }
+  // },
+  // "flex-layout.row#depth": {
+  //   "children": [
+  //     "image#depth",
+  //     "rich-text#depth"
+  //   ],
+  //   "props": {
+  //     "blockClass": "row-dimension"
+  //   }
+  // },
+  // "image#depth": {
+  //   "props": {
+  //     "src": "https://storage.beko.co.uk/assets/beko/product2020/icon-depth.svg",
+  //     "blockClass": "image-dimension"
+  //   }
+  // },
+  // "image#height": {
+  //   "props": {
+  //     "src": "https://storage.beko.co.uk/assets/beko/product2020/icon-height.svg",
+  //     "blockClass": "image-dimension"
+  //   }
+  // },
+  // "image#width": {
+  //   "props": {
+  //     "src": "https://storage.beko.co.uk/assets/beko/product2020/icon-width.svg",
+  //     "blockClass": "image-dimension"
+  //   }
+  // },
+  // "rich-text#height": {
+  //   "props": {
+  //     "text": "Height: 186.5cm",
+  //     "blockClass": "bottom-banner-card"
+  //   }
+  // },
+  // "rich-text#width": {
+  //   "props": {
+  //     "text": "Width: 59.7cm",
+  //     "blockClass": "bottom-banner-card"
+  //   }
+  // },
+  // "rich-text#depth": {
+  //   "props": {
+  //     "text": "Depth: 70.9cm",
+  //     "blockClass": "bottom-banner-card"
+  //   }
+  // },
+  // "rich-text#description-banner": {
+  //   "props": {
+  //     "text": "Aeroflow Tall Larder Fridge with Harvestfresh Technology",
+  //     "blockClass": "description-bottom-banner-card"
+  //   }
+  // },
+  // --------------------
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+  "flex-layout.col#stack": {
+    "children": [
+      "stack-layout"
+    ],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "product-installments",
+      "product-separator",
+      "product-identifier.product",
+      "sku-selector",
+      "product-quantity",
+      // "product-assembly-options-custom",
+      "product-gifts",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share#default"
+    ]
+  },
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": [
+      "vtex.store-components:product-name"
+    ]
+  },
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": [
+      "add-to-cart-button"
+    ]
+  },
+  "flex-layout.row#product-availability": {
+    "props": {
+      "colGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability"
+    ]
+  },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "info-availability"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "sku-selector",
+      "flex-layout.row#availability"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": [
+      "availability-subscriber"
+    ]
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  },
+  "sticky-layout#pdp-reviews": {
+    "children": [
+      "flex-layout.row#buyNow"
+    ]
+  },
+  "flex-layout.row#buyNow": {
+    "children": [
+      "add-to-cart-button#buyNow",
+      "rich-text#features",
+      "rich-text#specification",
+      "rich-text#reviews",
+      "rich-text#support"
+    ],
+    "props": {
+      "blockClass": "buyNow-pdp"
+    }
+  },
+  "rich-text#features": {
+    "title": "Features",
+    "props": {
+      "text": "[Features](#features)",
+      "textAlignment": "center",
+      "blockClass": "buyNow-pdp-text"
+    }
+  },
+  "rich-text#specification": {
+    "title": "Specification",
+    "props": {
+      "text": "[Specification](#specification)",
+      "textAlignment": "center",
+      "blockClass": "buyNow-pdp-text"
+    }
+  },
+  "rich-text#reviews": {
+    "title": "Reviews",
+    "props": {
+      "text": "[Reviews](#reviews)",
+      "textAlignment": "center",
+      "blockClass": "buyNow-pdp-text"
+    }
+  },
+  "rich-text#support": {
+    "title": "Support",
+    "props": {
+      "text": "[Support](#support)",
+      "textAlignment": "center",
+      "blockClass": "buyNow-pdp-text"
+    }
+  },
+  "add-to-cart-button#buyNow": {
+    "props": {
+      "text": "Buy now",
+      "isOneClickBuy": true,
+      "onClickEventPropagation": "enabled",
+      "blockClass": "buyNow-pdp"
+    }
+  },
+  "flex-layout.row#reviews": {
+    "props": {
+      "htmlId": "reviews"
+    },
+    "children": [
+      "flex-layout.col#pdp-reviews"
+    ]
+  },
+  "flex-layout.col#pdp-reviews": {
+    "children": [
+      "rich-text#pdp-reviews",
+      "image#pdp-reviews",
+      "disclosure-layout#all-pdp-reviews"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "pdp-reviews"
+    }
+  },
+  "rich-text#pdp-reviews": {
+    "title": "Fridge Reviews",
+    "props": {
+      "text": "## Fridge Reviews\n We welcome customer reviews for all our appliances. We work alongside review collection platform Reevoo to gather your honest opinions and share genuine independent reviews of our products.",
+      "textAlignment": "center",
+      "blockClass": "pdp-text"
+    }
+  },
+  "image#pdp-reviews": {
+    "props": {
+      "src": "assets/pdp-reviews.png"
+    }
+  },
+  // "disclosure-trigger#all-pdp-reviews": {
+  //   "children": [
+  //     "disclosure-layout#all-pdp-reviews"
+  //   ],
+  //   "props": {
+  //     "trigger": "click",
+  //     "label": "Read All Reviews",
+  //     "href": "#",
+  //     "blockClass": [
+  //       "plpPromotionBanner-cta-mobile",
+  //       "cardCtaBluePromotionBanner2"
+  //     ]
+  //   }
+  // },
+  "disclosure-layout#all-pdp-reviews": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#first",
+      "disclosure-content#first"
+    ]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": "question-pdp",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#all-pdp-reviews"
+      // "link#all-pdp-reviews"
+    ]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": [
+        "pdp-reviews",
+        "answer"
+      ]
+    },
+    "children": [
+      "product-reviews"
+    ]
+  },
+  "rich-text#all-pdp-reviews": {
+    "props": {
+      "text": "Read All Reviews",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta-mobile",
+        "cardCtaBluePromotionBanner2"
+      ]
+    }
+  },
+  // "link#all-pdp-reviews": {
+  //   "props": {
+  //     "label": "Read All Reviews",
+  //     "href": "#",
+  //     "blockClass": [
+  //       "plpPromotionBanner-cta-mobile",
+  //       "cardCtaBluePromotionBanner2"
+  //     ]
+  //   }
+  // },
+  // "disclosure-layout#all-pdp-reviews": {
+  //   "children": [
+  //     "product-reviews"
+  //   ],
+  //   "props": {
+  //     "placement": "bottom",
+  //     "offsets": {
+  //       "distance": -80
+  //     }
+  //   }
+  // },
+  "add-to-cart-button#buyNow-mobile": {
+    "props": {
+      "text": "Buy now",
+      "isOneClickBuy": false,
+      "onClickEventPropagation": "enabled",
+      "blockClass": "buyNow-pdp"
+    }
+  },
+  "flex-layout.row#reviews-mobile": {
+    "children": [
+      "flex-layout.col#pdp-reviews-mobile"
+    ]
+  },
+  "flex-layout.col#pdp-reviews-mobile": {
+    "children": [
+      "rich-text#pdp-reviews-mobile",
+      "image#pdp-reviews-mobile",
+      "disclosure-layout#all-pdp-reviews"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "pdp-reviews-mobile"
+    }
+  },
+  "rich-text#pdp-reviews-mobile": {
+    "title": "Fridge Reviews",
+    "props": {
+      "text": "## Fridge Reviews\n We welcome customer reviews for all our appliances. We work alongside review collection platform Reevoo to gather your honest opinions and share genuine independent reviews of our products.",
+      "textAlignment": "center",
+      "blockClass": "pdp-text-mobile"
+    }
+  },
+  "image#pdp-reviews-mobile": {
+    "props": {
+      "src": "assets/pdp-reviews-mobile.png"
+    }
+  },
+  "link#all-pdp-reviews-mobile": {
+    "props": {
+      "label": "Read All Reviews",
+      "href": "#",
+      "blockClass": [
+        "pdpPromotionBanner-cta-mobile",
+        "cardCtaBluePromotionBanner2"
+      ]
+    }
+  },
+  "shelf.relatedProducts#exteded-warranty": {
+    "title": "[RELATED-PRODUCTS] - Extended Warranty",
+    "props": {
+      "recommendation": "accessories",
+      "productList": {
+        "titleText": "Test Related Products",
+        "itemsPerPage": 4
+      }
+    },
+    "blocks": [
+      "product-summary.shelf#extended-warranty"
+    ]
+  },
+  "product-summary.shelf#extended-warranty": {
+    "children": [
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
+    ]
+  },
+  "product-summary-name": {
+    "title": "Product Summary Name",
+    "props": {
+      "blockClass": "productSummaryName"
+    }
+  },
+  "flex-layout.row#product-slider-pdp": {
+    "title": "[ROW] - Product Slider Pdp",
+    "children": [
+      "flex-layout.col#product-slider-pdp"
+      // "list-context.product-list#product-slider-pdp"
+    ],
+    "props": {
+      "fullWidth": true,
+      "marginTop": 4,
+      "marginBottom": 4,
+      "blockClass": "productsSliderPdp"
+    }
+  },
+  "flex-layout.col#product-slider-pdp": {
+    "children": [
+      "rich-text#recommended-products",
+      "list-context.product-list#product-slider-pdp"
+    ]
+  },
+  "rich-text#recommended-products": {
+    "props": {
+      "blockClass": "product-spec-title-with-padding",
+      "text": "##### Recommended products",
+      "textAlignment": "CENTER"
+    }
+  },
+  "list-context.product-list#product-slider-pdp": {
+    "title": "[LIST CONTEXT - PRODUCT LIST] - Products Slider PDP",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#product-slider-pdp"
+    ],
+    "props": {
+      "collection": "137",
+      "blockClass": "productsSliderPdp"
+    }
+  },
+  "slider-layout#product-slider-pdp": {
+    "title": "[SLIDER LAYOUT] - Products Slider PDP",
+    "props": {
+      "blockClass": "productsSliderPdp",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+  }
+}

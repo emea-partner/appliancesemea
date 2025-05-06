@@ -1,0 +1,354 @@
+{
+  "flex-layout.row#home-middle-content": {
+    "title": "[ROW] - Home Middle Content",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "homeMiddleContent"
+    },
+    "children": [
+      "flex-layout.col#home-middle-content"
+    ]
+  },
+  "flex-layout.col#home-middle-content": {
+    "title": "[COL] - Home Middle Content",
+    "props": {
+      "blockClass": "homeMiddleContent"
+    },
+    "children": [
+      "flex-layout.row#home-middle-banner",
+      "flex-layout.row#diagonal-divider",
+      "info-card#home-middle-1",
+      "flex-layout.row#diagonal-divider",
+      "info-card#home-middle-2",
+      "flex-layout.row#diagonal-divider",
+      "flex-layout.row#home-bottom-cards"
+    ]
+  },
+  "flex-layout.row#home-middle-banner": {
+    "title": "[ROW] - Home Middle Banner",
+    "props": {
+      "blockClass": [
+        "homeMiddleBanner",
+        "transformSkewY8Deg"
+      ]
+    },
+    "children": [
+      "flex-layout.col#home-middle-banner"
+    ]
+  },
+  "flex-layout.col#home-middle-banner": {
+    "title": "[COL] - Home Middle Banner",
+    "props": {
+      "blockClass": "homeMiddleBanner"
+    },
+    "children": [
+      "rich-text#home-middle-banner",
+      "image#home-middle-banner",
+      "image#middle-banner-background"
+    ]
+  },
+  "rich-text#home-middle-banner": {
+    "title": "[RICH TEXT] - Home Middle Banner",
+    "props": {
+      "text": "# Appliances designed <br> to make your life easier\n## UK’s No.1 Best Selling Brand†\n†The UK’s number one large home appliance brand, recommended <br> by over 95% of our customers.",
+      "blockClass": "homeMiddleBanner"
+    }
+  },
+  "image#home-middle-banner": {
+    "title": "[IMAGE] - Home Middle Banner",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/reevoo_trustpilot_img.png",
+      "blockClass": "homeMiddleBanner"
+    }
+  },
+  "image#middle-banner-background": {
+    "title": "[IMAGE] - Middle Banner Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/reevoo/woman.png",
+      "blockClass": "middleBannerBackground"
+    }
+  },
+  // DIAGONAL DIVIDER
+  "flex-layout.row#diagonal-divider": {
+    "props": {
+      "blockClass": "diagonalDivider"
+    }
+  },
+  // INFO CARDS
+  "info-card#home-middle-1": {
+    "props": {
+      "id": "info-card-home-middle-1",
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/10-year-guarantee/kitchen@2x.jpg",
+      "headline": "## ![10 Year Guarantee](https://bekouk.myvtex.com/arquivos/10-year-guarantee.svg)<br>Added peace of mind with the 10 Year Parts Guarantee",
+      "subhead": "To help you feel confident in your purchasing decision, selected appliances are eligible for our 10 Year Parts Guarantee in addition to any 1 or 2 Year Labour Guarantees.",
+      "callToActionText": "Register your appliance today",
+      "blockClass": [
+        "infoCardHomeMiddle",
+        "infoCardHomeMiddle1",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#home-middle-2": {
+    "props": {
+      "id": "info-card-home-middle-2",
+      "textPosition": "right",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/aeroperfect/kitchen@2x.jpg",
+      "headline": "## ![10 Year Guarantee](https://bekouk.myvtex.com/arquivos/10-year-guarantee.svg)<br>Award winning technology, for perfect cooking results",
+      "subhead": "Enjoy delicious meals at home with AeroPerfect™ ovens, giving you faster and more even cooking results every time.",
+      "callToActionText": "Explore AeroPerfect™ Ovens",
+      "blockClass": [
+        "infoCardHomeMiddle",
+        "infoCardHomeMiddle2",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  // BOTTOM CARDS
+  "flex-layout.row#home-bottom-cards": {
+    "title": "[ROW] - Home Bottom Cards",
+    "props": {
+      "fullWidth": true,
+      "rowGap": 4,
+      "blockClass": "homeBottomCards"
+    },
+    "children": [
+      "info-card#home-bottom-1",
+      "info-card#home-bottom-2"
+    ]
+  },
+  "info-card#home-bottom-1": {
+    "props": {
+      "id": "info-card-home-bottom-1",
+      "textPosition": "center",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/bottom-links/charity-work@1x.jpg",
+      "headline": "Giving Back\nCharity Work",
+      "callToActionText": "See Latest Projects",
+      "blockClass": [
+        "infoCardHomeBottom",
+        "infoCardHomeBottom1",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#home-bottom-2": {
+    "props": {
+      "id": "info-card-home-middle-2",
+      "textPosition": "center",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/bottom-links/easy-home-guide-packs@1x.jpg",
+      "headline": "Helpful Tips\nFor Your Home",
+      "callToActionText": "Make Life Easier",
+      "blockClass": [
+        "infoCardHomeBottom",
+        "infoCardHomeBottom2",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "rich-text#home-bottom-text": {
+    "title": "[RICH TEXT] - Home Bottom Text",
+    "props": {
+      "text": "†Source Euromonitor International Limited; Consumer Appliances 2022 ed, as per major appliances definition, retail volume sales in units, 2021 data",
+      "blockClass": "homeBottomText"
+    }
+  },
+  "flex-layout.row#home-middle-content-mobile": {
+    "title": "[ROW] - Home Middle Content Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "homeMiddleContentMobile"
+    },
+    "children": [
+      "flex-layout.col#home-middle-content-mobile"
+    ]
+  },
+  "flex-layout.col#home-middle-content-mobile": {
+    "title": "[COL] - Home Middle Content Mobile",
+    "props": {
+      "blockClass": "homeMiddleContentMobile"
+    },
+    "children": [
+      // ROW 1 WITH IMAGE
+      "flex-layout.row#home-middle-1-mobile",
+      // ROW 2 COL TEXT + IMAGE
+      "flex-layout.row#home-middle-2-mobile",
+      // "flex-layout.row#home-middle-banner",
+      "flex-layout.row#diagonal-divider",
+      "image#home-middle-2-mobile",
+      "info-card#home-middle-1-mobile",
+      "flex-layout.row#diagonal-divider",
+      "image#home-middle-3-mobile",
+      "info-card#home-middle-2-mobile",
+      "flex-layout.row#diagonal-divider"
+      // "info-card#home-middle-3-mobile",
+      // "flex-layout.row#diagonal-divider",
+      // "info-card#home-middle-4-mobile"
+    ]
+  },
+  // ROW 1
+  "flex-layout.row#home-middle-1-mobile": {
+    "title": "[ROW] - Home Middle 1 Mobile",
+    "props": {
+      "blockClass": [
+        "transformSkewY8Deg",
+        "homeMiddleBannerMobile",
+        "homeMiddleBanner1Mobile"
+      ]
+    },
+    "children": [
+      "rich-text#home-middle-1-mobile",
+      "image#home-middle-banner-1-mobile"
+    ]
+  },
+  "rich-text#home-middle-1-mobile": {
+    "title": "[RICH TEXT] - Home Middle 1 Mobile",
+    "props": {
+      "text": "## Appliances designed to make your life easier\nUK’s No.1 Best Selling Brand†",
+      "blockClass": "homeMiddle1Mobile"
+    }
+  },
+  "image#home-middle-banner-1-mobile": {
+    "title": "[IMAGE] - Home Middle Banner 1 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/reevoo/woman.png",
+      "blockClass": "homeMiddleBanner1Mobile"
+    }
+  },
+  // ROW 2
+  "flex-layout.row#home-middle-2-mobile": {
+    "title": "[ROW] - Home Middle 2 Mobile",
+    "props": {
+      "blockClass": [
+        "transformSkewY8Deg",
+        "homeMiddleBannerMobile",
+        "homeMiddleBanner2Mobile"
+      ]
+    },
+    "children": [
+      "image#home-middle-banner-2-mobile-1",
+      "rich-text#home-middle-2-mobile",
+      "image#home-middle-banner-2-mobile-2"
+    ]
+  },
+  "image#home-middle-banner-2-mobile-1": {
+    "title": "[IMAGE] - Home Middle Banner 2 Mobile 1",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/img1_banner2_mobile.png",
+      "blockClass": "homeMiddleBanner2Mobile"
+    }
+  },
+  "rich-text#home-middle-2-mobile": {
+    "title": "[RICH TEXT] - Home Middle 2 Mobile",
+    "props": {
+      "text": "† The UK’s number one large home appliance brand, recommended by over 95% of our customers.",
+      "blockClass": "homeMiddle2Mobile"
+    }
+  },
+  "image#home-middle-banner-2-mobile-2": {
+    "title": "[IMAGE] - Home Middle Banner 2 Mobile 2",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/img2_banner2_mobile.png",
+      "blockClass": "homeMiddleBanner2Mobile"
+    }
+  },
+  // -----
+  "image#home-middle-2-mobile": {
+    "title": "[IMAGE] - Home Middle 2 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/10-year-guarantee/kitchen@2x.jpg",
+      "blockClass": [
+        "homeMiddleImageMobile",
+        "homeMiddleImage2Mobile"
+      ]
+    }
+  },
+  "info-card#home-middle-1-mobile": {
+    "title": "[INFO CARD] - Home Middle Marketing 1 Mobile",
+    "props": {
+      "id": "info-card-home-middle-1-mobile",
+      "textPosition": "center",
+      "headline": "## ![10 Year Guarantee](https://bekouk.myvtex.com/arquivos/10-year-guarantee.svg)<br>Added peace of mind with the 10 Year Parts Guarantee",
+      "subhead": "To help you feel confident in your purchasing decision, selected appliances are eligible for our 10 Year Parts Guarantee in addition to any 1 or 2 Year Labour Guarantees.",
+      "callToActionText": "Register your appliance today",
+      "blockClass": [
+        "infoCardHomeMiddleMobile",
+        "infoCardHomeMiddle1",
+        "infoCardHomeMiddle1Mobile",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#home-middle-2-mobile": {
+    "title": "[INFO CARD] - Home Middle Marketing 2 Mobile",
+    "props": {
+      "id": "info-card-home-middle-2-mobile",
+      "textPosition": "center",
+      "headline": "## ![10 Year Guarantee](https://bekouk.myvtex.com/arquivos/10-year-guarantee.svg)<br>Award winning technology, for perfect cooking results",
+      "subhead": "Enjoy delicious meals at home with AeroPerfect™ ovens, giving you faster and more even cooking results every time.",
+      "callToActionText": "Explore AeroPerfect™ Ovens",
+      "blockClass": [
+        "infoCardHomeMiddleMobile",
+        "infoCardHomeMiddle2",
+        "infoCardHomeMiddle2Mobile",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "image#home-middle-3-mobile": {
+    "title": "[IMAGE] - Home Middle 3 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/aeroperfect/kitchen@2x.jpg",
+      "blockClass": [
+        "homeMiddleImageMobile",
+        "homeMiddleImage2Mobile"
+      ]
+    }
+  },
+  "info-card#home-middle-3-mobile": {
+    "title": "[INFO CARD] - Home Middle 3 Mobile",
+    "props": {
+      "id": "info-card-home-middle-3-mobile",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/bottom-links/charity-work@1x.jpg",
+      "textPosition": "center",
+      "headline": "Giving Back\nCharity Work",
+      "callToActionText": "See Latest Projects",
+      "blockClass": [
+        "infoCardHomeBottomMobile",
+        "infoCardHomeMiddle3Mobile"
+        // "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#home-middle-4-mobile": {
+    "title": "[INFO CARD] - Home Middle 4 Mobile",
+    "props": {
+      "id": "info-card-home-middle-4-mobile",
+      "textPosition": "center",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/bottom-links/easy-home-guide-packs@1x.jpg",
+      "headline": "Helpful Tips\nFor Your Home",
+      "callToActionText": "Make Life Easier",
+      "blockClass": [
+        "infoCardHomeBottomMobile",
+        "infoCardHomeMiddle4Mobile"
+        // "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  }
+}

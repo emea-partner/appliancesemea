@@ -1,0 +1,50 @@
+.optionsInputValue--itemCustomize,
+.productAssemblyOptionItemCustomize--firstLevel {
+  display: none;
+}
+
+.productAssemblyOptionItemAdditionalText--customAssemblyOptionItemCustomize {
+  margin-left: 4px;
+}
+
+.productAssemblyGroupName {
+  font-size: 1rem;
+  color: #343333;
+  font-weight: bold;
+}
+.productAssemblyGroupNameRow :global(.vtex-button) {
+  width: auto !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 9px !important;
+  border: none;
+  background-color: #F71963 !important;
+}
+.productAssemblyGroupNameRow :global(.vtex-button):hover {
+  background-color: #005783 !important;
+}
+.productAssemblyGroupNameRow :global(.vtex-button__label) {
+  padding: 0 !important;
+  color: #fff;
+  text-transform: none;
+}
+.productAssemblyOptionItemCustomize :global(.vtex-button) {
+  height: auto !important;
+  background-color: #fff !important;
+  border-color: #F71963 !important;
+  border-radius: 11px !important;
+}
+.productAssemblyOptionItemCustomize :global(.vtex-button):hover {
+  background-color: #dbe9fd !important;
+  border-color: #dbe9fd !important;
+}
+.productAssemblyOptionItemCustomizeLabel {
+  color: #F71963 !important;
+}
+.itemContainer {
+  padding: 1.5rem 0 0 0;
+  border-radius: 1rem;
+}
+.productAssemblyOptionItemName, .productAssemblyOptionItemPrice {
+  font-size: 0.9rem;
+}

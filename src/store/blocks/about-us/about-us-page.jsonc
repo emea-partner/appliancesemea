@@ -1,0 +1,1950 @@
+{
+  "store.custom#about-us": {
+    "children": [
+      "responsive-layout.desktop#about-us",
+      "responsive-layout.mobile#about-us-mobile"
+    ]
+  },
+  "responsive-layout.desktop#about-us": {
+    "title": "[RESPONSIVE LAYOUT DESKTOP] - About Us",
+    "children": [
+      "stack-layout#about-us",
+      "sticky-layout#abous-us",
+      "flex-layout.row#historyBanner",
+      "stack-layout#live-like-a-pro",
+      "flex-layout.row#reviews-about-us",
+      "flex-layout.row#trust-row",
+      "__fold__",
+      "tab-layout#about-us-technology",
+      "slider-layout#about-us",
+      "flex-layout.row#charity-partner"
+    ]
+  },
+  /* -------------HISTORY BANNER-----------------*/
+  "flex-layout.row#historyBanner": {
+    "title": "[ROW] - History Banner",
+    "props": {
+      "blockClass": "historyBanner"
+    },
+    "children": [
+      "slider-layout#historyBanner"
+    ]
+  },
+  "slider-layout#historyBanner": {
+    "title": "[SLIDER LAYOUT] - History Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "blockClass": "historyBanner",
+      "slideTransition": {
+        "speed": 800,
+        "delay": 0,
+        "timing": ""
+      }
+    },
+    "children": [
+      "flex-layout.row#historyBannerSlide1",
+      "flex-layout.row#historyBannerSlide2",
+      "flex-layout.row#historyBannerSlide3"
+    ]
+  },
+  // SLIDE 1
+  "flex-layout.row#historyBannerSlide1": {
+    "title": "[ROW] - History Banner Slide 1",
+    "props": {
+      "blockClass": "historyBannerSlide"
+    },
+    "children": [
+      "flex-layout.col#historyBannerSlideLeft1",
+      "flex-layout.col#historyBannerSlideRight1"
+    ]
+  },
+  "flex-layout.col#historyBannerSlideLeft1": {
+    "props": {
+      "blockClass": "historyBannerSlideLeft",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#historyBannerText1",
+      "rich-text#historyBannerText2",
+      "rich-text#historyBannerText3",
+      "rich-text#historyBannerText4"
+    ]
+  },
+  "rich-text#historyBannerText1": {
+    "props": {
+      "text": "## UK’s No.1 Best Selling Brand*",
+      "blockClass": "historyBannerText1"
+    }
+  },
+  "rich-text#historyBannerText2": {
+    "props": {
+      "text": "## Making appliances designed to make your life easier",
+      "blockClass": "historyBannerText2"
+    }
+  },
+  "rich-text#historyBannerText3": {
+    "props": {
+      "text": "As well as being the leading home appliance brand in the UK, we are the second largest home appliance brand in Western Europe and one of Europe's fastest growing large home appliance brands, available in 130+ countries worldwide.",
+      "blockClass": "historyBannerText3"
+    }
+  },
+  "rich-text#historyBannerText4": {
+    "props": {
+      "text": "*The UK’s number one large home appliance brand.",
+      "blockClass": "historyBannerText4"
+    }
+  },
+  "flex-layout.col#historyBannerSlideRight1": {
+    "props": {
+      "blockClass": "historyBannerSlideRight",
+      "width": "40%"
+    },
+    "children": [
+      "image#historyBannerImage1"
+    ]
+  },
+  "image#historyBannerImage1": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/our-history/1@1x.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "historyBannerImage"
+    }
+  },
+  // SLIDE 2
+  "flex-layout.row#historyBannerSlide2": {
+    "title": "[ROW] - History Banner Slide 2",
+    "props": {
+      "blockClass": "historyBannerSlide"
+    },
+    "children": [
+      "flex-layout.col#historyBannerSlideLeft2",
+      "flex-layout.col#historyBannerSlideRight2"
+    ]
+  },
+  "flex-layout.col#historyBannerSlideLeft2": {
+    "props": {
+      "blockClass": "historyBannerSlideLeft",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#historyBannerText1",
+      "rich-text#historyBannerText2",
+      "rich-text#historyBannerText3",
+      "rich-text#historyBannerText4"
+    ]
+  },
+  "flex-layout.col#historyBannerSlideRight2": {
+    "props": {
+      "blockClass": "historyBannerSlideRight",
+      "width": "40%"
+    },
+    "children": [
+      "image#historyBannerImage2"
+    ]
+  },
+  "image#historyBannerImage2": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/our-history/2@1x.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "historyBannerImage"
+    }
+  },
+  // SLIDE 3
+  "flex-layout.row#historyBannerSlide3": {
+    "title": "[ROW] - History Banner Slide 3",
+    "props": {
+      "blockClass": "historyBannerSlide"
+    },
+    "children": [
+      "flex-layout.col#historyBannerSlideLeft3",
+      "flex-layout.col#historyBannerSlideRight3"
+    ]
+  },
+  "flex-layout.col#historyBannerSlideLeft3": {
+    "props": {
+      "blockClass": "historyBannerSlideLeft",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#historyBannerText1",
+      "rich-text#historyBannerText2",
+      "rich-text#historyBannerText3",
+      "rich-text#historyBannerText4"
+    ]
+  },
+  "flex-layout.col#historyBannerSlideRight3": {
+    "props": {
+      "blockClass": "historyBannerSlideRight",
+      "width": "40%"
+    },
+    "children": [
+      "image#historyBannerImage3"
+    ]
+  },
+  "image#historyBannerImage3": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/our-history/3@1x.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "historyBannerImage"
+    }
+  },
+  /* ------------------------------*/
+  "video#about-us": {
+    "props": {
+      "src": "https://www.youtube.com/embed/JgkrlaF52WQ",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  "responsive-layout.mobile#about-us-mobile": {
+    "title": "[RESPONSIVE LAYOUT MOBILE] - About Us Mobile",
+    "children": [
+      "stack-layout#about-us-mobile",
+      "stack-layout#live-like-a-pro-mobile",
+      "flex-layout.row#reviews-about-us-mobile",
+      "flex-layout.row#trust-row",
+      "slider-layout#about-us-technology",
+      "slider-layout#about-us-mobile",
+      "flex-layout.row#charity-partner-mobile"
+    ]
+  },
+  "sticky-layout#abous-us": {
+    "children": [
+      "flex-layout.row#abous-us"
+    ]
+  },
+  "flex-layout.row#abous-us": {
+    "children": [
+      "rich-text#our-history",
+      "rich-text#customer-satisfaction",
+      "rich-text#innovation",
+      "rich-text#sustainability",
+      "rich-text#charity&partnerships"
+    ],
+    "props": {
+      "blockClass": "about-us-sticky"
+    }
+  },
+  "rich-text#our-history": {
+    "title": "Our History",
+    "props": {
+      "text": "[Our History](#our-history)",
+      "textAlignment": "center",
+      "blockClass": "about-us-sticky-text"
+    }
+  },
+  "rich-text#customer-satisfaction": {
+    "title": "Customer Satisfaction",
+    "props": {
+      "text": "[Customer Satisfaction](#customer-satisfaction)",
+      "textAlignment": "center",
+      "blockClass": "about-us-sticky-text"
+    }
+  },
+  "rich-text#innovation": {
+    "title": "Innovation",
+    "props": {
+      "text": "[Innovation](#innovation)",
+      "textAlignment": "center",
+      "blockClass": "about-us-sticky-text"
+    }
+  },
+  "rich-text#sustainability": {
+    "title": "Sustainability",
+    "props": {
+      "text": "[Sustainability](#sustainability)",
+      "textAlignment": "center",
+      "blockClass": "about-us-sticky-text"
+    }
+  },
+  "rich-text#charity&partnerships": {
+    "title": "Charity & Partnerships",
+    "props": {
+      "text": "[Charity & Partnerships](#charity-and-partnerships)",
+      "textAlignment": "center",
+      "blockClass": "about-us-sticky-text"
+    }
+  },
+  "flex-layout.row#charity-partner-mobile": {
+    "children": [
+      "flex-layout.col#charity-partner-mobile"
+    ],
+    "props": {
+      "blockClass": "first-row-barnado-mobile-padding"
+    }
+  },
+  "flex-layout.row#charity-partner": {
+    "children": [
+      "flex-layout.col#charity-partner"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "first-row-barnado-padding"
+    }
+  },
+  "flex-layout.col#charity-partner-mobile": {
+    "children": [
+      "image#charity-mobile",
+      "flex-layout.row#text-charity-mobile"
+    ],
+    "props": {
+      "blockClass": "first-row-barnado-mobile"
+    }
+  },
+  "flex-layout.row#text-charity-mobile": {
+    "children": [
+      "flex-layout.col#first-col-text-charity-mobile",
+      "flex-layout.col#second-col-text-charity1-mobile"
+    ],
+    "props": {
+      "blockClass": "charity-partner-backgroud-mobile"
+    }
+  },
+  "flex-layout.col#first-col-text-charity-mobile": {
+    "children": [
+      "rich-text#title-mobile",
+      "rich-text#subtitle-mobile",
+      "rich-text#counter-mobile",
+      "rich-text#subtext-mobile"
+    ]
+  },
+  "rich-text#title-mobile": {
+    "props": {
+      "text": "# Supporting Barnado's.",
+      "blockClass": "title-barnado-mobile"
+    }
+  },
+  "rich-text#subtitle-mobile": {
+    "props": {
+      "text": "# Charity Partner.",
+      "blockClass": "subtitle-barnado-mobile"
+    }
+  },
+  "rich-text#counter-mobile": {
+    "props": {
+      "text": "# £200,00",
+      "blockClass": "counter-mobile"
+    }
+  },
+  "rich-text#subtext-mobile": {
+    "props": {
+      "text": "# Working together to help the most disadvantaged children and families in communities in the UK. Since 2014 we have donated over £200,000 and provided over 800 appliances to families, as well as young people leaving care.",
+      "blockClass": "subtext-mobile"
+    }
+  },
+  "flex-layout.col#second-col-text-charity-mobile": {
+    "children": [
+      "rich-text#title-2-mobile",
+      "rich-text#subtitle-2-mobile",
+      "rich-text#barnardo's-mobile"
+    ]
+  },
+  "rich-text#title-2-mobile": {
+    "props": {
+      "text": "# Proud to support",
+      "blockClass": "subtext-mobile"
+    }
+  },
+  "rich-text#subtitle-2-mobile": {
+    "props": {
+      "text": "# Believe in children",
+      "blockClass": "title-barnado-mobile-col2"
+    }
+  },
+  "flex-layout.col#second-col-text-charity1-mobile": {
+    "children": [
+      "flex-layout.row#barnado's-mobile",
+      "link#about-partnership-mobile"
+    ]
+  },
+  "flex-layout.row#barnado's-mobile": {
+    "children": [
+      "image#barnardo's-mobile",
+      "flex-layout.col#second-col-text-charity-mobile"
+    ],
+    "props": {
+      "blockClass": "row-col2-mobile"
+    }
+  },
+  "link#about-partnership-mobile": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Learn more about \n Partnership",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "about-us-button-mobile"
+      ]
+    }
+  },
+  "image#barnardo's-mobile": {
+    "props": {
+      "src": "assets/barnardo's-logo.png",
+      "width": "50px",
+      "height": "50px"
+    }
+  },
+  "rich-text#barnardo's-mobile": {
+    "props": {
+      "text": "# Barnardo's",
+      "blockClass": "title-barnado-mobile"
+    }
+  },
+  "image#charity-mobile": {
+    "props": {
+      "src": "assets/charity.png",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#charity-partner": {
+    "children": [
+      "image#charity",
+      "flex-layout.row#text-charity"
+    ]
+  },
+  "flex-layout.row#text-charity": {
+    "children": [
+      "flex-layout.col#first-col-text-charity",
+      "flex-layout.col#second-col-text-charity1"
+    ],
+    "props": {
+      "blockClass": "charity-partner-backgroud"
+    }
+  },
+  "flex-layout.col#first-col-text-charity": {
+    "children": [
+      "rich-text#title",
+      "rich-text#subtitle",
+      "rich-text#counter",
+      "rich-text#subtext"
+    ]
+  },
+  "rich-text#title": {
+    "props": {
+      "text": "# Supporting Barnado's.",
+      "blockClass": "title-barnado"
+    }
+  },
+  "rich-text#subtitle": {
+    "props": {
+      "text": "# Charity Partner.",
+      "blockClass": "subtitle-barnado"
+    }
+  },
+  "rich-text#counter": {
+    "props": {
+      "text": "# £200,00",
+      "blockClass": "counter"
+    }
+  },
+  "rich-text#subtext": {
+    "props": {
+      "text": "# Working together to help the most disadvantaged children and families in communities in the UK. Since 2014 we have donated over £200,000 and provided over 800 appliances to families, as well as young people leaving care.",
+      "blockClass": "subtext"
+    }
+  },
+  "flex-layout.col#second-col-text-charity": {
+    "children": [
+      "rich-text#title-2",
+      "rich-text#subtitle-2",
+      "rich-text#barnardo's"
+    ]
+  },
+  "rich-text#title-2": {
+    "props": {
+      "text": "# Proud to support",
+      "blockClass": "subtext"
+    }
+  },
+  "rich-text#subtitle-2": {
+    "props": {
+      "text": "# Believe in children",
+      "blockClass": "title-barnado"
+    }
+  },
+  "flex-layout.col#second-col-text-charity1": {
+    "children": [
+      "flex-layout.row#barnado's",
+      "link#about-partnership"
+    ]
+  },
+  "flex-layout.row#barnado's": {
+    "children": [
+      "image#barnardo's",
+      "flex-layout.col#second-col-text-charity"
+    ],
+    "props": {
+      "blockClass": "row-col2"
+    }
+  },
+  "link#about-partnership": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Learn more about Partnership",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "about-us-button"
+      ]
+    }
+  },
+  "image#barnardo's": {
+    "props": {
+      "src": "assets/barnardo's-logo.png",
+      "width": "61px",
+      "height": "58px"
+    }
+  },
+  "rich-text#barnardo's": {
+    "props": {
+      "text": "# Barnardo's",
+      "blockClass": "title-barnado-col2"
+    }
+  },
+  "image#charity": {
+    "props": {
+      "src": "assets/charity.png",
+      "width": "100%",
+      "blockClass": "charity"
+    }
+  },
+  "slider-layout#about-us": {
+    "title": "Slider Layout - Banner Home",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "blockClass": [
+        "carousel-about-us"
+      ],
+      "arrowSize": "15"
+    },
+    "children": [
+      "flex-layout.row#home-card-about-us-1",
+      "flex-layout.row#home-card-about-us-2",
+      "flex-layout.row#home-card-about-us-3"
+    ]
+  },
+  "flex-layout.row#home-card-about-us-1": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-1-background-about-us",
+      "flex-layout.col#home-card-1-about-us"
+    ]
+  },
+  "image#home-card-1-background-about-us": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/sustainability/1@1x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-1-about-us": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard-about-us",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-about-us-1-title",
+      "rich-text#home-card-about-us-1-subtitle"
+    ]
+  },
+  "rich-text#home-card-about-us-1-title": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Sustainability \nChange Starts Today",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us-title"
+    }
+  },
+  "rich-text#home-card-about-us-1-subtitle": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## We strive to minimise the impact we have on the environment. With the biggest part of our carbon emissions resulting from the use of our products by our customers, we not only need to look at how we produce our products and the materials we use, but we also need to ensure we are bringing energy-efficient products to the market. As a company, we are committed to improving the average energy efficiency of our products year after year.",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us"
+    }
+  },
+  "flex-layout.row#home-card-about-us-2": {
+    "title": "[ROW] - About us Card 2",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-2-background-about-us",
+      "flex-layout.col#home-card-2-about-us"
+    ]
+  },
+  "image#home-card-2-background-about-us": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/sustainability/2@1x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-2-about-us": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard-about-us",
+      "verticalAlign": "middle",
+      "textAlignment": "center"
+    },
+    "children": [
+      "rich-text#home-card-about-us-2-title",
+      "rich-text#home-card-about-us-2-subtitle",
+      "link#abous-us-card-1-cta"
+    ]
+  },
+  "link#abous-us-card-1-cta": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Discover RecycledTub range",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaGreenAboutUs"
+      ]
+    }
+  },
+  "rich-text#home-card-about-us-2-title": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Recycling \nA new lease of life for plastic",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us-title"
+    }
+  },
+  "rich-text#home-card-about-us-2-subtitle": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## We are also working to increase the use of recycled materials within our appliances. Our washing machines, tumble dryers, cookers, and dishwashers now feature parts made from recycled materials, including plastic bottles and discarded fishing nets. By transforming waste materials for use in our appliances, we are taking small steps to reduce the embedded carbon footprint of our products, whilst also promoting the circularity of materials.",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us"
+    }
+  },
+  "flex-layout.row#home-card-about-us-3": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-3-background-about-us",
+      "flex-layout.col#home-card-3-about-us"
+    ]
+  },
+  "image#home-card-3-background-about-us": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/sustainability/4@1x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-3-about-us": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard-about-us",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-about-us-3-title",
+      "rich-text#home-card-about-us-3-subtitle",
+      "link#abous-us-card-2-cta"
+    ]
+  },
+  "rich-text#home-card-about-us-3-title": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Transforming waste material\n For healthy living, on a healthy planet",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us-title"
+    }
+  },
+  "rich-text#home-card-about-us-3-subtitle": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Using innovative technology, we recycle fishing nets and industrial thread waste, transforming them into high-performance materials used in the door décor plastic, display cover, and inner plastic display cover of our RecycledNet® ovens. As a company, we have set a target for there to be 40% recycled plastic in all products by 2030. This target will be reached without compromising the quality or reliability of our appliances.",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us"
+    }
+  },
+  "link#abous-us-card-2-cta": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Discover Recyclednet range",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaGreenAboutUs"
+      ]
+    }
+  },
+  "slider-layout#about-us-mobile": {
+    "title": "Slider Layout - Banner Home",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "blockClass": [
+        "carousel-about-us-mobile"
+      ]
+    },
+    "children": [
+      "stack-layout#home-card-about-us-1-mobile",
+      "stack-layout#home-card-about-us-2-mobile",
+      "stack-layout#home-card-about-us-3-mobile"
+    ]
+  },
+  // ABOUT US - DESKTOP - TECHNOLOGY
+  // TAB TECHNOLOGY
+  "tab-layout#about-us-technology": {
+    "title": "[TAB LAYOUT] - About Us Technology",
+    "props": {
+      "blockClass": "aboutUsTechnology"
+    },
+    "children": [
+      "tab-list#about-us-technology",
+      "tab-content#about-us-technology"
+    ]
+  },
+  "tab-list#about-us-technology": {
+    "title": "[TAB LIST] - About Us Technology",
+    "props": {
+      "blockClass": "aboutUsTechnology"
+    },
+    "children": [
+      "tab-list.item#about-us-technology-item-1",
+      "tab-list.item#about-us-technology-item-2",
+      "tab-list.item#about-us-technology-item-3",
+      "tab-list.item#about-us-technology-item-4",
+      "tab-list.item#about-us-technology-item-5"
+    ]
+  },
+  "tab-content#about-us-technology": {
+    "title": "[TAB CONTENT] - About Us Technology",
+    "props": {
+      "blockClass": "aboutUsTechnology"
+    },
+    "children": [
+      "tab-content.item#about-us-technology-item-1",
+      "tab-content.item#about-us-technology-item-2",
+      "tab-content.item#about-us-technology-item-3",
+      "tab-content.item#about-us-technology-item-4",
+      "tab-content.item#about-us-technology-item-5"
+    ]
+  },
+  // TAB ITEM 1
+  "tab-list.item#about-us-technology-item-1": {
+    "title": "[TAB LIST ITEM] - Technology Item 1",
+    "props": {
+      "tabId": "about-us-technology-item-1",
+      "label": "HarvestFresh™",
+      // "defaultActiveTab": true,
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem1"
+      ]
+    }
+  },
+  "tab-content.item#about-us-technology-item-1": {
+    "title": "[TAB CONTENT ITEM] - Technology Item 1",
+    "props": {
+      "tabId": "about-us-technology-item-1",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem1"
+      ]
+    },
+    "children": [
+      "stack-layout#about-us-tab-technology-item-1"
+    ]
+  },
+  // TAB ITEM 2
+  "tab-list.item#about-us-technology-item-2": {
+    "title": "[TAB LIST ITEM] - Technology Item 2",
+    "props": {
+      "tabId": "about-us-technology-item-2",
+      "label": "AquaTech®",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem2"
+      ]
+    }
+  },
+  "tab-content.item#about-us-technology-item-2": {
+    "title": "[TAB CONTENT ITEM] - Technology Item 2",
+    "props": {
+      "tabId": "about-us-technology-item-2",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem2"
+      ]
+    },
+    "children": [
+      "stack-layout#about-us-tab-technology-item-2"
+    ]
+  },
+  // TAB ITEM 3
+  "tab-list.item#about-us-technology-item-3": {
+    "title": "[TAB LIST ITEM] - Technology Item 3",
+    "props": {
+      "tabId": "about-us-technology-item-3",
+      "label": "AeroPerfect®",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem3"
+      ]
+    }
+  },
+  "tab-content.item#about-us-technology-item-3": {
+    "title": "[TAB CONTENT ITEM] - Technology Item 3",
+    "props": {
+      "tabId": "about-us-technology-item-3",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem3"
+      ]
+    },
+    "children": [
+      "stack-layout#about-us-tab-technology-item-3"
+    ]
+  },
+  // TAB ITEM 4
+  "tab-list.item#about-us-technology-item-4": {
+    "title": "[TAB LIST ITEM] - Technology Item 4",
+    "props": {
+      "tabId": "about-us-technology-item-4",
+      "label": "HygieneShield™",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem4"
+      ]
+    }
+  },
+  "tab-content.item#about-us-technology-item-4": {
+    "title": "[TAB CONTENT ITEM] - Technology Item 4",
+    "props": {
+      "tabId": "about-us-technology-item-4",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem4"
+      ]
+    },
+    "children": [
+      "stack-layout#about-us-tab-technology-item-4"
+    ]
+  },
+  // TAB ITEM 5
+  "tab-list.item#about-us-technology-item-5": {
+    "title": "[TAB LIST ITEM] - Technology Item 5",
+    "props": {
+      "tabId": "about-us-technology-item-5",
+      "label": "PowerClean Vacuum",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem4"
+      ]
+    }
+  },
+  "tab-content.item#about-us-technology-item-5": {
+    "title": "[TAB CONTENT ITEM] - Technology Item 5",
+    "props": {
+      "tabId": "about-us-technology-item-5",
+      "blockClass": [
+        "aboutUsTechnologyItem",
+        "aboutUsTechnologyItem4"
+      ]
+    },
+    "children": [
+      "stack-layout#about-us-tab-technology-item-5"
+    ]
+  },
+  // STACK LAYOUT - TAB ITEM 1
+  "stack-layout#about-us-tab-technology-item-1": {
+    "title": "[STACK LAYOUT] - Tab Technology",
+    "props": {
+      "blockClass": "aboutUsTabTechnology"
+    },
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-1-video",
+      "flex-layout.row#about-us-tab-technology-item-1-main"
+    ]
+  },
+  // STACK LAYOUT - TAB ITEM 1 - VIDEO BACKGROUND
+  "flex-layout.row#about-us-tab-technology-item-1-video": {
+    "title": "[ROW] - Technology Item 1 Video",
+    "children": [
+      "video#about-us-tab-technology-item-1-video"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemVideo",
+        "aboutUsTabTechnologyItem1Video"
+      ]
+    }
+  },
+  "video#about-us-tab-technology-item-1-video": {
+    "title": "[VIDEO] - Technology Item 1 Video",
+    "props": {
+      // "src": "assets/videos/harvest_fresh.m3u8",
+      "src": "https://www.youtube.com/watch?v=Skgjit6jlTw&pp=ugMICgJpdBABGAHKBRViZWtvIHVrIGhhcnZlc3QgZnJlc2g%3D",
+      "loop": true,
+      "autoPlay": true,
+      "controlsType": "none",
+      "blockClass": "aboutUsTabTechnologyItemVideo"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 1 - MAIN
+  "flex-layout.row#about-us-tab-technology-item-1-main": {
+    "title": "[ROW] - Technology Item 1 Main",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-1-main"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem1Main"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-1-main": {
+    "title": "[COL] - Technology Item 1 Main",
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-1-title",
+      "flex-layout.row#about-us-tab-technology-item-1-info"
+    ],
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem1Main"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 1 - TITLE
+  "flex-layout.row#about-us-tab-technology-item-1-title": {
+    "title": "[ROW] - Technology Item 1 Title",
+    "children": [
+      "rich-text#about-us-tab-technology-item-1-title"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemTitle",
+        "aboutUsTabTechnologyItem1Title"
+      ]
+    }
+  },
+  "rich-text#about-us-tab-technology-item-1-title": {
+    "title": "[RICH TEXT] - Technology Item 1 Title",
+    "props": {
+      "text": "Technology that makes your life easier\n**Refrigeration innovation**",
+      "textAlignment": "CENTER",
+      "blockClass": "aboutUsTabTechnologyItemTitle"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 1 - INFO
+  "flex-layout.row#about-us-tab-technology-item-1-info": {
+    "title": "[ROW] - Technology Item 1 Info",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-1-info",
+      "image#about-us-tab-technology-item-1-info"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem1Info"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-1-info": {
+    "title": "[COL] - Technology Item 1 Info",
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem1Info"
+      ]
+    },
+    "children": [
+      "image#home-card-3-image",
+      "rich-text#home-card-3",
+      "flex-layout.row#home-card-3-ctas"
+    ]
+  },
+  "image#about-us-tab-technology-item-1-info": {
+    "title": "[IMAGE] - Technology Item 1 Info",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/appliances/fridge.png",
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem1Info"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 2
+  "stack-layout#about-us-tab-technology-item-2": {
+    "title": "[STACK LAYOUT] - Tab Technology",
+    "props": {
+      "blockClass": "aboutUsTabTechnology"
+    },
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-2-video",
+      "flex-layout.row#about-us-tab-technology-item-2-main"
+    ]
+  },
+  // STACK LAYOUT - TAB ITEM 2 - VIDEO BACKGROUND
+  "flex-layout.row#about-us-tab-technology-item-2-video": {
+    "title": "[ROW] - Technology Item 2 Video",
+    "children": [
+      "video#about-us-tab-technology-item-2-video"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemVideo",
+        "aboutUsTabTechnologyItem2Video"
+      ]
+    }
+  },
+  "video#about-us-tab-technology-item-2-video": {
+    "title": "[VIDEO] - Technology Item 2 Video",
+    "props": {
+      "src": "https://www.youtube.com/watch?v=8K9F-hqqiMM&pp=ygUOYXF1YSB0ZWNoIGJla28%3D",
+      "loop": true,
+      "autoPlay": true,
+      "controlsType": "none",
+      "blockClass": "aboutUsTabTechnologyItemVideo"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 2 - MAIN
+  "flex-layout.row#about-us-tab-technology-item-2-main": {
+    "title": "[ROW] - Technology Item 2 Main",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-2-main"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-2-main": {
+    "title": "[COL] - Technology Item 2 Main",
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-2-title",
+      "flex-layout.row#about-us-tab-technology-item-2-info"
+    ],
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 2 - TITLE
+  "flex-layout.row#about-us-tab-technology-item-2-title": {
+    "title": "[ROW] - Technology Item 2 Title",
+    "children": [
+      "rich-text#about-us-tab-technology-item-2-title"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemTitle",
+        "aboutUsTabTechnologyItem2Title"
+      ]
+    }
+  },
+  "rich-text#about-us-tab-technology-item-2-title": {
+    "title": "[RICH TEXT] - Technology Item 2 Title",
+    "props": {
+      "text": "Technology that makes your life easier\n**Laundry innovation**",
+      "textAlignment": "CENTER",
+      "blockClass": "aboutUsTabTechnologyItemTitle"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 2 - INFO
+  "flex-layout.row#about-us-tab-technology-item-2-info": {
+    "title": "[ROW] - Technology Item 2 Info",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-2-info",
+      "image#about-us-tab-technology-item-2-info"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem2Info"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-2-info": {
+    "title": "[COL] - Technology Item 2 Info",
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem2Info"
+      ]
+    },
+    "children": [
+      "image#home-card-4-image",
+      "rich-text#home-card-4",
+      "flex-layout.row#home-card-3-ctas"
+    ]
+  },
+  "image#about-us-tab-technology-item-2-info": {
+    "title": "[IMAGE] - Technology Item 2 Info",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/aquatech@1x.png",
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem2Info"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 3
+  "stack-layout#about-us-tab-technology-item-3": {
+    "title": "[STACK LAYOUT] - Tab Technology",
+    "props": {
+      "blockClass": "aboutUsTabTechnology"
+    },
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-3-video",
+      "flex-layout.row#about-us-tab-technology-item-3-main"
+    ]
+  },
+  // STACK LAYOUT - TAB ITEM 3 - VIDEO BACKGROUND
+  "flex-layout.row#about-us-tab-technology-item-3-video": {
+    "title": "[ROW] - Technology Item 3 Video",
+    "children": [
+      "video#about-us-tab-technology-item-3-video"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemVideo",
+        "aboutUsTabTechnologyItem2Video"
+      ]
+    }
+  },
+  "video#about-us-tab-technology-item-3-video": {
+    "title": "[VIDEO] - Technology Item 3 Video",
+    "props": {
+      "src": "https://www.youtube.com/watch?v=tsN20OaymAM&pp=ygURYWVybyBwZXJmZWN0IGJla28%3D",
+      "loop": true,
+      "autoPlay": true,
+      "controlsType": "none",
+      "blockClass": "aboutUsTabTechnologyItemVideo"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 3 - MAIN
+  "flex-layout.row#about-us-tab-technology-item-3-main": {
+    "title": "[ROW] - Technology Item 3 Main",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-3-main"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-3-main": {
+    "title": "[COL] - Technology Item 3 Main",
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-3-title",
+      "flex-layout.row#about-us-tab-technology-item-3-info"
+    ],
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 3 - TITLE
+  "flex-layout.row#about-us-tab-technology-item-3-title": {
+    "title": "[ROW] - Technology Item 3 Title",
+    "children": [
+      "rich-text#about-us-tab-technology-item-3-title"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemTitle",
+        "aboutUsTabTechnologyItem2Title"
+      ]
+    }
+  },
+  "rich-text#about-us-tab-technology-item-3-title": {
+    "title": "[RICH TEXT] - Technology Item 3 Title",
+    "props": {
+      "text": "Technology that makes your life easier\n**Cooking innovation**",
+      "textAlignment": "CENTER",
+      "blockClass": "aboutUsTabTechnologyItemTitle"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 3 - INFO
+  "flex-layout.row#about-us-tab-technology-item-3-info": {
+    "title": "[ROW] - Technology Item 3 Info",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-3-info",
+      "image#about-us-tab-technology-item-3-info"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem2Info"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-3-info": {
+    "title": "[COL] - Technology Item 3 Info",
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem3Info"
+      ]
+    },
+    "children": [
+      "image#home-card-2-image",
+      "rich-text#home-card-2",
+      "flex-layout.row#home-card-2-ctas"
+    ]
+  },
+  "image#about-us-tab-technology-item-3-info": {
+    "title": "[IMAGE] - Technology Item 3 Info",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/aeroperfect@1x.png",
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem3Info"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 4
+  "stack-layout#about-us-tab-technology-item-4": {
+    "title": "[STACK LAYOUT] - Tab Technology",
+    "props": {
+      "blockClass": "aboutUsTabTechnology"
+    },
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-4-video",
+      "flex-layout.row#about-us-tab-technology-item-4-main"
+    ]
+  },
+  // STACK LAYOUT - TAB ITEM 4 - VIDEO BACKGROUND
+  "flex-layout.row#about-us-tab-technology-item-4-video": {
+    "title": "[ROW] - Technology Item 4 Video",
+    "children": [
+      "video#about-us-tab-technology-item-4-video"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemVideo",
+        "aboutUsTabTechnologyItem2Video"
+      ]
+    }
+  },
+  "video#about-us-tab-technology-item-4-video": {
+    "title": "[VIDEO] - Technology Item 4 Video",
+    "props": {
+      "src": "https://www.youtube.com/watch?v=nqakQY4s6FM",
+      "loop": true,
+      "autoPlay": true,
+      "controlsType": "none",
+      "blockClass": "aboutUsTabTechnologyItemVideo"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 4 - MAIN
+  "flex-layout.row#about-us-tab-technology-item-4-main": {
+    "title": "[ROW] - Technology Item 4 Main",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-4-main"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-4-main": {
+    "title": "[COL] - Technology Item 4 Main",
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-4-title",
+      "flex-layout.row#about-us-tab-technology-item-4-info"
+    ],
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 4 - TITLE
+  "flex-layout.row#about-us-tab-technology-item-4-title": {
+    "title": "[ROW] - Technology Item 4 Title",
+    "children": [
+      "rich-text#about-us-tab-technology-item-4-title"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemTitle",
+        "aboutUsTabTechnologyItem2Title"
+      ]
+    }
+  },
+  "rich-text#about-us-tab-technology-item-4-title": {
+    "title": "[RICH TEXT] - Technology Item 4 Title",
+    "props": {
+      "text": "Technology that makes your life easier\n**Hygienic innovation**",
+      "textAlignment": "CENTER",
+      "blockClass": "aboutUsTabTechnologyItemTitle"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 4 - INFO
+  "flex-layout.row#about-us-tab-technology-item-4-info": {
+    "title": "[ROW] - Technology Item 4 Info",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-4-info",
+      "image#about-us-tab-technology-item-4-info"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem2Info"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-4-info": {
+    "title": "[COL] - Technology Item 4 Info",
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem3Info"
+      ]
+    },
+    "children": [
+      "image#home-card-3-image",
+      "rich-text#home-card-3",
+      "flex-layout.row#home-card-3-ctas"
+    ]
+  },
+  "image#about-us-tab-technology-item-4-info": {
+    "title": "[IMAGE] - Technology Item 4 Info",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/hygieneshield@1x.png",
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem3Info"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 5
+  "stack-layout#about-us-tab-technology-item-5": {
+    "title": "[STACK LAYOUT] - Tab Technology",
+    "props": {
+      "blockClass": "aboutUsTabTechnology"
+    },
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-5-video",
+      "flex-layout.row#about-us-tab-technology-item-5-main"
+    ]
+  },
+  // STACK LAYOUT - TAB ITEM 5 - VIDEO BACKGROUND
+  "flex-layout.row#about-us-tab-technology-item-5-video": {
+    "title": "[ROW] - Technology Item 5 Video",
+    "children": [
+      "video#about-us-tab-technology-item-5-video"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemVideo",
+        "aboutUsTabTechnologyItem2Video"
+      ]
+    }
+  },
+  "video#about-us-tab-technology-item-5-video": {
+    "title": "[VIDEO] - Technology Item 5 Video",
+    "props": {
+      "src": "https://www.youtube.com/watch?v=gmPU7hudzRs",
+      "loop": true,
+      "autoPlay": true,
+      "controlsType": "none",
+      "blockClass": "aboutUsTabTechnologyItemVideo"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 5 - MAIN
+  "flex-layout.row#about-us-tab-technology-item-5-main": {
+    "title": "[ROW] - Technology Item 5 Main",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-5-main"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-5-main": {
+    "title": "[COL] - Technology Item 5 Main",
+    "children": [
+      "flex-layout.row#about-us-tab-technology-item-5-title",
+      "flex-layout.row#about-us-tab-technology-item-5-info"
+    ],
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemMain",
+        "aboutUsTabTechnologyItem2Main"
+      ]
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 5 - TITLE
+  "flex-layout.row#about-us-tab-technology-item-5-title": {
+    "title": "[ROW] - Technology Item 5 Title",
+    "children": [
+      "rich-text#about-us-tab-technology-item-5-title"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemTitle",
+        "aboutUsTabTechnologyItem2Title"
+      ]
+    }
+  },
+  "rich-text#about-us-tab-technology-item-5-title": {
+    "title": "[RICH TEXT] - Technology Item 5 Title",
+    "props": {
+      "text": "Technology that makes your life easier\n**Cleaning innovation**",
+      "textAlignment": "CENTER",
+      "blockClass": "aboutUsTabTechnologyItemTitle"
+    }
+  },
+  // STACK LAYOUT - TAB ITEM 5 - INFO
+  "flex-layout.row#about-us-tab-technology-item-5-info": {
+    "title": "[ROW] - Technology Item 5 Info",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-5-info",
+      "image#about-us-tab-technology-item-5-info"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem5Info"
+      ]
+    }
+  },
+  "flex-layout.col#about-us-tab-technology-item-5-info": {
+    "title": "[COL] - Technology Item 5 Info",
+    "props": {
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem3Info"
+      ]
+    },
+    "children": [
+      "image#home-card-3-image",
+      "rich-text#home-card-3",
+      "flex-layout.row#home-card-3-ctas"
+    ]
+  },
+  "image#about-us-tab-technology-item-5-info": {
+    "title": "[IMAGE] - Technology Item 5 Info",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/powerclean-vacuum@1x.png",
+      "blockClass": [
+        "aboutUsTabTechnologyItemInfo",
+        "aboutUsTabTechnologyItem5Info"
+      ]
+    }
+  },
+  "stack-layout#home-card-about-us-1-mobile": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "about-us-mobile",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "image#home-card-1-background-about-us-mobile",
+      "flex-layout.row#home-card-1-about-us-mobile"
+    ]
+  },
+  "image#home-card-1-background-about-us-mobile": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/sustainability/1@1x.jpg",
+      "blockClass": "homeCardBackground-mobile"
+    }
+  },
+  "flex-layout.row#home-card-1-about-us-mobile": {
+    "children": [
+      "flex-layout.col#home-card-1-about-us-mobile"
+    ]
+  },
+  "flex-layout.col#home-card-1-about-us-mobile": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard-about-us-mobile",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-about-us-1-title-mobile",
+      "rich-text#home-card-about-us-1-subtitle-mobile"
+    ]
+  },
+  "rich-text#home-card-about-us-1-title-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Sustainability \nChange Starts Today",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us-title"
+    }
+  },
+  "rich-text#home-card-about-us-1-subtitle-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## We strive to minimise the impact we have on the environment. With the biggest part of our carbon emissions resulting from the use of our products by our customers, we not only need to look at how we produce our products and the materials we use, but we also need to ensure we are bringing energy-efficient products to the market. As a company, we are committed to improving the average energy efficiency of our products year after year.",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us"
+    }
+  },
+  "stack-layout#home-card-about-us-2-mobile": {
+    "title": "[ROW] - About us Card 2",
+    "props": {
+      "blockClass": "about-us-mobile",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-2-background-about-us-mobile",
+      "flex-layout.row#home-card-2-about-us-mobile"
+    ]
+  },
+  "image#home-card-2-background-about-us-mobile": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/sustainability/2@1x.jpg",
+      "blockClass": "homeCardBackground-mobile"
+    }
+  },
+  "flex-layout.row#home-card-2-about-us-mobile": {
+    "children": [
+      "flex-layout.col#home-card-2-about-us-mobile"
+    ]
+  },
+  "flex-layout.col#home-card-2-about-us-mobile": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard-about-us-mobile",
+      "verticalAlign": "middle",
+      "textAlignment": "center"
+    },
+    "children": [
+      "rich-text#home-card-about-us-2-title-mobile",
+      "rich-text#home-card-about-us-2-subtitle-mobile",
+      "link#abous-us-card-1-cta-mobile"
+    ]
+  },
+  "link#abous-us-card-1-cta-mobile": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Discover RecycledTub range",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaGreenAboutUs"
+      ]
+    }
+  },
+  "rich-text#home-card-about-us-2-title-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Recycling \nA new lease of life for plastic",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us-title"
+    }
+  },
+  "rich-text#home-card-about-us-2-subtitle-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## We are also working to increase the use of recycled materials within our appliances. Our washing machines, tumble dryers, cookers, and dishwashers now feature parts made from recycled materials, including plastic bottles and discarded fishing nets. By transforming waste materials for use in our appliances, we are taking small steps to reduce the embedded carbon footprint of our products, whilst also promoting the circularity of materials.",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us"
+    }
+  },
+  "stack-layout#home-card-about-us-3-mobile": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "about-us-mobile",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-3-background-about-us-mobile",
+      "flex-layout.row#home-card-3-about-us-mobile"
+    ]
+  },
+  "image#home-card-3-background-about-us-mobile": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/sustainability/4@1.5x.jpg",
+      "blockClass": "homeCardBackground-mobile"
+    }
+  },
+  "flex-layout.row#home-card-3-about-us-mobile": {
+    "children": [
+      "flex-layout.col#home-card-3-about-us-mobile"
+    ]
+  },
+  "flex-layout.col#home-card-3-about-us-mobile": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard-about-us-mobile",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-about-us-3-title-mobile",
+      "rich-text#home-card-about-us-3-subtitle-mobile",
+      "link#abous-us-card-2-cta"
+    ]
+  },
+  "rich-text#home-card-about-us-3-title-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Transforming waste material\n For healthy living, on a healthy planet",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us-title"
+    }
+  },
+  "rich-text#home-card-about-us-3-subtitle-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Using innovative technology, we recycle fishing nets and industrial thread waste, transforming them into high-performance materials used in the door décor plastic, display cover, and inner plastic display cover of our RecycledNet® ovens. As a company, we have set a target for there to be 40% recycled plastic in all products by 2030. This target will be reached without compromising the quality or reliability of our appliances.",
+      "textAlignment": "center",
+      "blockClass": "homeCard-about-us"
+    }
+  },
+  "link#abous-us-card-2-cta-mobile": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Discover Recyclednet range",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaGreenAboutUs"
+      ]
+    }
+  },
+  // ABOUT US - MOBILE - TECHNOLOGY
+  // SLIDER LAYOUT - MOBILE - TECHNOLOGY
+  "slider-layout#about-us-technology": {
+    "title": "[SLIDER LAYOUT] - About Us Technology",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      // "autoplay": {
+      //   "timeout": 5000,
+      //   "stopOnHover": true
+      // },
+      "infinite": false,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": [
+        "aboutUsTechnology"
+      ]
+    },
+    "children": [
+      "stack-layout#about-us-slider-card-technology-1",
+      "stack-layout#about-us-slider-card-technology-2",
+      "stack-layout#about-us-slider-card-technology-3",
+      "stack-layout#about-us-slider-card-technology-4",
+      "stack-layout#about-us-slider-card-technology-5"
+    ]
+  },
+  // STACK LAYOUT - SLIDER CARD 1
+  "stack-layout#about-us-slider-card-technology-1": {
+    "title": "[STACK LAYOUT] - About Us Slider Card Technology 1",
+    "props": {
+      "blockClass": "aboutUsSliderCard"
+    },
+    "children": [
+      "flex-layout.row#about-us-slider-card-technology-1-background",
+      "flex-layout.row#about-us-slider-card-technology-1-content"
+    ]
+  },
+  "flex-layout.row#about-us-slider-card-technology-1-background": {
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "aboutUsSliderCardBackground"
+    },
+    "children": [
+      "image#about-us-slider-card-technology-1-background"
+    ]
+  },
+  "image#about-us-slider-card-technology-1-background": {
+    "title": "[IMAGE] - About Us Slider Card Technology 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/bg/harvestfresh@low.jpg",
+      "blockClass": "aboutUsSliderCardBackground"
+    }
+  },
+  "flex-layout.row#about-us-slider-card-technology-1-content": {
+    "title": "[ROW] - About Us Slider Card Technology 1 Content",
+    "children": [
+      "flex-layout.col#about-us-slider-card-technology-1-content"
+    ],
+    "props": {
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  "flex-layout.col#about-us-slider-card-technology-1-content": {
+    "title": "[COL] - About Us Slider Card Technology 1 Content",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-1-info",
+      "image#about-us-tab-technology-item-1-info"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  // STACK LAYOUT - SLIDER CARD 2
+  "stack-layout#about-us-slider-card-technology-2": {
+    "title": "[STACK LAYOUT] - About Us Slider Card Technology 2",
+    "props": {
+      "blockClass": "aboutUsSliderCard"
+    },
+    "children": [
+      "flex-layout.row#about-us-slider-card-technology-2-background",
+      "flex-layout.row#about-us-slider-card-technology-2-content"
+    ]
+  },
+  "flex-layout.row#about-us-slider-card-technology-2-background": {
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "aboutUsSliderCardBackground"
+    },
+    "children": [
+      "image#about-us-slider-card-technology-2-background"
+    ]
+  },
+  "image#about-us-slider-card-technology-2-background": {
+    "title": "[IMAGE] - About Us Slider Card Technology 2 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/bg/aquatech@1x.jpg",
+      "blockClass": "aboutUsSliderCardBackground"
+    }
+  },
+  "flex-layout.row#about-us-slider-card-technology-2-content": {
+    "title": "[ROW] - About Us Slider Card Technology 2 Content",
+    "children": [
+      "flex-layout.col#about-us-slider-card-technology-2-content"
+    ],
+    "props": {
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  "flex-layout.col#about-us-slider-card-technology-2-content": {
+    "title": "[COL] - About Us Slider Card Technology 1 Content",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-2-info",
+      "image#about-us-tab-technology-item-2-info"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  // STACK LAYOUT - SLIDER CARD 3
+  "stack-layout#about-us-slider-card-technology-3": {
+    "title": "[STACK LAYOUT] - About Us Slider Card Technology 3",
+    "props": {
+      "blockClass": "aboutUsSliderCard"
+    },
+    "children": [
+      "flex-layout.row#about-us-slider-card-technology-3-background",
+      "flex-layout.row#about-us-slider-card-technology-3-content"
+    ]
+  },
+  "flex-layout.row#about-us-slider-card-technology-3-background": {
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "aboutUsSliderCardBackground"
+    },
+    "children": [
+      "image#about-us-slider-card-technology-3-background"
+    ]
+  },
+  "image#about-us-slider-card-technology-3-background": {
+    "title": "[IMAGE] - About Us Slider Card Technology 3 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/bg/aeroperfect@1x.jpg",
+      "blockClass": "aboutUsSliderCardBackground"
+    }
+  },
+  "flex-layout.row#about-us-slider-card-technology-3-content": {
+    "title": "[ROW] - About Us Slider Card Technology 3 Content",
+    "children": [
+      "flex-layout.col#about-us-slider-card-technology-3-content"
+    ],
+    "props": {
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  "flex-layout.col#about-us-slider-card-technology-3-content": {
+    "title": "[COL] - About Us Slider Card Technology 1 Content",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-3-info",
+      "image#about-us-tab-technology-item-3-info"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  // STACK LAYOUT - SLIDER CARD 4
+  "stack-layout#about-us-slider-card-technology-4": {
+    "title": "[STACK LAYOUT] - About Us Slider Card Technology 4",
+    "props": {
+      "blockClass": "aboutUsSliderCard"
+    },
+    "children": [
+      "flex-layout.row#about-us-slider-card-technology-4-background",
+      "flex-layout.row#about-us-slider-card-technology-4-content"
+    ]
+  },
+  "flex-layout.row#about-us-slider-card-technology-4-background": {
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "aboutUsSliderCardBackground"
+    },
+    "children": [
+      "image#about-us-slider-card-technology-4-background"
+    ]
+  },
+  "image#about-us-slider-card-technology-4-background": {
+    "title": "[IMAGE] - About Us Slider Card Technology 4 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/bg/hygieneshield@1x.jpg",
+      "blockClass": "aboutUsSliderCardBackground"
+    }
+  },
+  "flex-layout.row#about-us-slider-card-technology-4-content": {
+    "title": "[ROW] - About Us Slider Card Technology 4 Content",
+    "children": [
+      "flex-layout.col#about-us-slider-card-technology-4-content"
+    ],
+    "props": {
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  "flex-layout.col#about-us-slider-card-technology-4-content": {
+    "title": "[COL] - About Us Slider Card Technology 1 Content",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-4-info",
+      "image#about-us-tab-technology-item-4-info"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  // STACK LAYOUT - SLIDER CARD 5
+  "stack-layout#about-us-slider-card-technology-5": {
+    "title": "[STACK LAYOUT] - About Us Slider Card Technology 5",
+    "props": {
+      "blockClass": "aboutUsSliderCard"
+    },
+    "children": [
+      "flex-layout.row#about-us-slider-card-technology-5-background",
+      "flex-layout.row#about-us-slider-card-technology-5-content"
+    ]
+  },
+  "flex-layout.row#about-us-slider-card-technology-5-background": {
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "aboutUsSliderCardBackground"
+    },
+    "children": [
+      "image#about-us-slider-card-technology-5-background"
+    ]
+  },
+  "image#about-us-slider-card-technology-5-background": {
+    "title": "[IMAGE] - About Us Slider Card Technology 5 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/innovation/bg/powerclean-vacuum@1x.jpg",
+      "blockClass": "aboutUsSliderCardBackground"
+    }
+  },
+  "flex-layout.row#about-us-slider-card-technology-5-content": {
+    "title": "[ROW] - About Us Slider Card Technology 5 Content",
+    "children": [
+      "flex-layout.col#about-us-slider-card-technology-5-content"
+    ],
+    "props": {
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  },
+  "flex-layout.col#about-us-slider-card-technology-5-content": {
+    "title": "[COL] - About Us Slider Card Technology 1 Content",
+    "children": [
+      "flex-layout.col#about-us-tab-technology-item-5-info",
+      "image#about-us-tab-technology-item-5-info"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "aboutUsSliderCardContent"
+    }
+  }
+}

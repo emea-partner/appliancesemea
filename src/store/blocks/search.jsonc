@@ -1,0 +1,989 @@
+{
+  "store.search.product-comparison": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search.product-comparison#brand": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search.product-comparison#department": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search.product-comparison#category": {
+    "blocks": [
+      "search-result-layout#pre-plp"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      },
+      "blockClass": "prePlp"
+    }
+  },
+  "store.search.product-comparison#subcategory": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "search-result-layout#pre-plp": {
+    "blocks": [
+      "search-result-layout.desktop.product-comparison#pre-plp",
+      "search-result-layout.mobile#pre-plp",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop.product-comparison#pre-plp": {
+    "title": "[SEARCH RESULT LAYOUT] - Pre PLP Desktop",
+    "children": [
+      // "flex-layout.row#pre-plp-banner-top",
+      // "flex-layout.row#bread-pre-plp",
+      // "flex-layout.row#pre-plp-disclaimer-top",
+      // "rich-text#pre-plp-seo-text",
+      // "flex-layout.row#pre-plp-main-content",
+      // "rich-text#pre-plp-marketing",
+      // "flex-layout.row#pre-plp-marketing-content",
+      // "flex-layout.row#pre-plp-marketing-slider",
+      // "info-card#pre-plp-marketing-bottom",
+      // "flex-layout.row#diagonal-divider",
+      // "flex-layout.row#pre-plp-marketing-bottom-cards"
+      "condition-layout.category#refrigerator"
+    ]
+  },
+  "search-result-layout.mobile#pre-plp": {
+    "title": "[SEARCH RESULT LAYOUT] - Pre PLP Mobile",
+    "children": [
+      // "flex-layout.row#pre-plp-banner-top-mobile",
+      // "flex-layout.row#bread-pre-plp",
+      // "flex-layout.row#pre-plp-disclaimer-top",
+      // "rich-text#pre-plp-seo-text",
+      // "flex-layout.row#pre-plp-main-content-mobile",
+      // "rich-text#pre-plp-marketing",
+      // "flex-layout.row#pre-plp-marketing-content-mobile",
+      // "flex-layout.row#pre-plp-marketing-slider-mobile",
+      // "info-card#pre-plp-marketing-bottom-mobile",
+      // "flex-layout.row#diagonal-divider",
+      // "flex-layout.row#pre-plp-marketing-bottom-cards",
+      // "flex-layout.row#diagonal-divider"
+      "condition-layout.category#refrigerator-mobile"
+    ]
+  },
+  // USED TO PREVENT ISSUE ON FILTERS GOING TO PRE-PLP
+  // DESKTOP
+  "condition-layout.category#refrigerator": {
+    "title": "[CONDITION LAYOUT] - Category Refrigerator",
+    "props": {
+      "conditions": [
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": [
+              "2"
+            ]
+          }
+        }
+      ],
+      "Then": "flex-layout.row#pre-plp-content",
+      "Else": "flex-layout.row#plp-content"
+    }
+  },
+  "flex-layout.row#pre-plp-content": {
+    "title": "[ROW] - Pre PLP Content",
+    "children": [
+      "flex-layout.col#pre-plp-content"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prePlpContent"
+    }
+  },
+  "flex-layout.col#pre-plp-content": {
+    "title": "[COL] - Pre PLP Content",
+    "props": {
+      "blockClass": "prePlpContent"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-banner-top",
+      "flex-layout.row#bread-pre-plp",
+      "flex-layout.row#pre-plp-disclaimer-top",
+      "rich-text#pre-plp-seo-text",
+      "flex-layout.row#pre-plp-main-content",
+      "rich-text#pre-plp-marketing",
+      "flex-layout.row#pre-plp-marketing-content",
+      "flex-layout.row#pre-plp-marketing-slider",
+      "info-card#pre-plp-marketing-bottom",
+      "flex-layout.row#diagonal-divider",
+      "flex-layout.row#pre-plp-marketing-bottom-cards"
+    ]
+  },
+  "flex-layout.row#plp-content": {
+    "title": "[ROW] - PLP Content",
+    "children": [
+      "flex-layout.col#plp-content"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "plpContent"
+    }
+  },
+  "flex-layout.col#plp-content": {
+    "title": "[COL] - PLP Content",
+    "props": {
+      "blockClass": "plpContent"
+    },
+    "children": [
+      "flex-layout.row#home-card-1-plp",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#info-text",
+      "flex-layout.row#search-content",
+      "flex-layout.row#plp-marketing-content",
+      "product-comparison-drawer"
+    ]
+  },
+  // MOBILE
+  "condition-layout.category#refrigerator-mobile": {
+    "title": "[CONDITION LAYOUT] - Category Refrigerator Mobile",
+    "props": {
+      "conditions": [
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": [
+              "2"
+            ]
+          }
+        }
+      ],
+      "Then": "flex-layout.row#pre-plp-content-mobile",
+      "Else": "flex-layout.row#plp-content-mobile"
+    }
+  },
+  "flex-layout.row#pre-plp-content-mobile": {
+    "title": "[ROW] - Pre PLP Content",
+    "children": [
+      "flex-layout.col#pre-plp-content-mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prePlpContentMobile"
+    }
+  },
+  "flex-layout.col#pre-plp-content-mobile": {
+    "title": "[COL] - Pre PLP Content",
+    "props": {
+      "blockClass": "prePlpContentMobile"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-banner-top-mobile",
+      "flex-layout.row#bread-pre-plp",
+      "flex-layout.row#pre-plp-disclaimer-top",
+      "rich-text#pre-plp-seo-text",
+      "flex-layout.row#pre-plp-main-content-mobile",
+      "rich-text#pre-plp-marketing",
+      "flex-layout.row#pre-plp-marketing-content-mobile",
+      "flex-layout.row#pre-plp-marketing-slider-mobile",
+      "info-card#pre-plp-marketing-bottom-mobile",
+      "flex-layout.row#diagonal-divider",
+      "flex-layout.row#pre-plp-marketing-bottom-cards",
+      "flex-layout.row#diagonal-divider"
+    ]
+  },
+  "flex-layout.row#plp-content-mobile": {
+    "title": "[ROW] - PLP Content",
+    "children": [
+      "flex-layout.col#plp-content-mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "plpContentMobile"
+    }
+  },
+  "flex-layout.col#plp-content-mobile": {
+    "title": "[COL] - PLP Content",
+    "props": {
+      "blockClass": "plpContentMobile"
+    },
+    "children": [
+      "flex-layout.row#home-card-1-plp-mobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#info-text-mobile",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "flex-layout.row#plp-marketing-content-mobile"
+    ]
+  },
+  // -------------------------------------------------
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop.product-comparison",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop.product-comparison": {
+    "title": "[SEARCH RESULT LAYOUT] - Desktop",
+    "children": [
+      "flex-layout.row#home-card-1-plp",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#info-text",
+      "flex-layout.row#search-content",
+      "flex-layout.row#plp-marketing-content",
+      "product-comparison-drawer"
+    ],
+    "props": {
+      "fullWidth": true,
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "blockClass": "prova-height-width"
+    }
+  },
+  "flex-layout.row#home-card-1-plp": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "plpPromotionBanner",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-1-background-plp",
+      "flex-layout.col#home-card-1-plp"
+      // "image#home-card-1"
+    ]
+  },
+  "image#home-card-1-background-plp": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/headers/refrigeration_desktop@2x.jpg",
+      "blockClass": "plpPromotionBanner"
+    }
+  },
+  "flex-layout.col#home-card-1-plp": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "plpPromotionBanner",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-1-plp",
+      "flex-layout.row#home-card-1-ctas-plp"
+    ]
+  },
+  "rich-text#home-card-1-plp": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Keeping your food fresh Fridge Freezers",
+      "textAlignment": "LEFT",
+      "blockClass": "plpPromotionBanner"
+    }
+  },
+  "flex-layout.row#home-card-1-ctas-plp": {
+    "title": "[ROW] - Home Card 1 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "plpPromotionBanner-ctas"
+    },
+    "children": [
+      "link#home-card-1-cta-plp",
+      "link#home-card-2-cta-plp"
+    ]
+  },
+  "link#home-card-1-cta-plp": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "View Prodcuts",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta",
+        "cardCtaBluePromotionBanner1"
+      ]
+    }
+  },
+  "link#home-card-2-cta-plp": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Read Reviews",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta",
+        "cardCtaBluePromotionBanner2"
+      ]
+    }
+  },
+  "flex-layout.row#searchbread": {
+    "title": "[ROW] - Breadcrumb",
+    "children": [
+      "breadcrumb.search#plp"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": false,
+      "fullWidth": true,
+      "blockClass": "bekoBreadcrumbContainer"
+    }
+  },
+  "breadcrumb.search#plp": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "bekoBreadcrumb"
+    }
+  },
+  "flex-layout.row#search-content": {
+    "title": "[ROW] - Search Content",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "searchContent"
+    },
+    "children": [
+      "flex-layout.col#search-content"
+    ]
+  },
+  "flex-layout.col#search-content": {
+    "title": "[COL] - Search Content",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "searchContent"
+    },
+    "children": [
+      // "flex-layout.row#searchtitle",
+      "flex-layout.row#result"
+    ]
+  },
+  "flex-layout.row#info-text": {
+    "children": [
+      "rich-text#info-text-plp",
+      "image#trust-pilot-plp"
+    ],
+    "props": {
+      "blockClass": "info-text"
+    }
+  },
+  "rich-text#info-text-plp": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "Designed with quality and reliability in mind, our range of [freestanding fridge freezers](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/freestanding) and [integrated fridge freezers](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/freestanding) keep your food fresher for longer with innovative technology like [HarvestFresh™](https://www.beko.co.uk/harvestfresh), which preserves the vitamins in your fresh fruit and veg in the crisper drawer. Whilst our FreezerGuard technology means your appliance can be kept anywhere in your home, even [the garage](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/outdoor-fridge-freezers-for-garages), our [Frost-Free](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/frost-free) technology means you won’t have to waste time manually defrosting your fridge freezer. Looking for more information? Check out our detailed [fridge freezer buying guide](https://www.beko.co.uk/support/buying-guides/fridge-freezer). Or, if you’re looking to make a statement in your home, check out our [American-style fridge freezer buying guide](https://www.beko.co.uk/support/buying-guides/american-style-fridge-freezer). For added peace of mind, selected appliances are eligible for the 10 Year Parts Guarantee.",
+      "textAlignment": "LEFT",
+      "blockClass": "info-text"
+    }
+  },
+  "image#trust-pilot-plp": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "assets/trustpilot.png",
+      "blockClass": "info-text"
+    }
+  },
+  "flex-layout.row#searchtitle": {
+    "children": [
+      "search-title.v2"
+    ]
+  },
+  "flex-layout.row#result": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#content"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  // PLP MARKETING CONTENT DESKTOP
+  "flex-layout.row#plp-marketing-content": {
+    "title": "[ROW] - PLP Marketing Content",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "plpMarketingContent"
+    },
+    "children": [
+      "flex-layout.col#plp-marketing-content"
+    ]
+  },
+  "flex-layout.col#plp-marketing-content": {
+    "title": "[COL] - PLP Marketing Content",
+    "props": {
+      "blockClass": "plpMarketingContent"
+    },
+    "children": [
+      "image#plp-marketing-1",
+      "flex-layout.row#diagonal-divider",
+      "info-card#plp-marketing-1",
+      "flex-layout.row#diagonal-divider",
+      "info-card#plp-marketing-2",
+      "flex-layout.row#diagonal-divider",
+      "info-card#plp-marketing-3"
+    ]
+  },
+  "image#plp-marketing-1": {
+    "title": "[IMAGE] - PLP Marketing 1",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/common/strips/metal@1x.jpg",
+      "blockClass": "plpMarketingImage1"
+    }
+  },
+  // INFO CARDS
+  "info-card#plp-marketing-1": {
+    "title": "[INFO CARD] - PLP Marketing 1",
+    "props": {
+      "id": "info-card-plp-marketing-1",
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/appliances/content-blocks/harvest-fresh.jpg",
+      "headline": "## Eat healthier with our fridge freezer technology",
+      "subhead": "HarvestFresh™ technology in fridge freezers preserves the vitamins in fruit and veg so you get more nutrients from the food you eat.",
+      "callToActionText": "Eat healthier",
+      "blockClass": [
+        "infoCardPlpMarketing",
+        "infoCardPlpMarketing1",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#plp-marketing-2": {
+    "title": "[INFO CARD] - PLP Marketing 2",
+    "props": {
+      "id": "info-card-plp-marketing-2",
+      "textPosition": "right",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/appliances/content-blocks/make-a-style-statement.jpg",
+      "headline": "## Make a style statement",
+      "subhead": "With a host of innovative features and modern and stylish design, an American Style fridge freezer will truly be the focal point of any kitchen.",
+      "callToActionText": "Find out more",
+      "blockClass": [
+        "infoCardPlpMarketing",
+        "infoCardPlpMarketing2",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#plp-marketing-3": {
+    "title": "[INFO CARD] - PLP Marketing 3",
+    "props": {
+      "id": "info-card-plp-marketing-3",
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/appliances/content-blocks/what-foods-should-store-in-fridge.jpg",
+      "headline": "## What foods should you store in the fridge?",
+      "subhead": "Ever wondered what to refrigerate or what not to? Find out the answers to this long standing kitchen debate.",
+      "callToActionText": "Keep food fresh",
+      "blockClass": [
+        "infoCardPlpMarketing",
+        "infoCardPlpMarketing3",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  // ----------------------
+  "flex-layout.col#filter": {
+    "children": [
+      "filter-navigator.v3"
+    ],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "flex-layout.col#content": {
+    "children": [
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#searchinfo": {
+    "children": [
+      "flex-layout.col#productCount",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
+  },
+  "flex-layout.row#orderByAndSwitcher": {
+    "children": [
+      "order-by.v2"
+      // "gallery-layout-switcher"
+    ],
+    "props": {
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "blockClass": "orderByAndSwitcher",
+      "colGap": 3
+    }
+  },
+  "flex-layout.col#productCount": {
+    "children": [
+      "total-products.v2"
+    ],
+    "props": {
+      "blockClass": "productCountCol"
+    }
+  },
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": [
+      "search-fetch-previous"
+    ]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 3
+    },
+    "children": [
+      "search-fetch-more"
+    ]
+  },
+  "search-fetch-previous": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "flex-layout.row#products": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "search-result-layout.mobile": {
+    "title": "[SEARCH RESULT LAYOUT] - Mobile",
+    "children": [
+      "flex-layout.row#home-card-1-plp-mobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#info-text-mobile",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "flex-layout.row#plp-marketing-content-mobile"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      "blockClass": "prova-height-width-mobile",
+      "fullWidth": true
+    }
+  },
+  // PLP MARKETING CONTENT MOBILE
+  "flex-layout.row#plp-marketing-content-mobile": {
+    "title": "[ROW] - PLP Marketing Content Mobile",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "plpMarketingContentMobile"
+    },
+    "children": [
+      "flex-layout.col#plp-marketing-content-mobile"
+    ]
+  },
+  "flex-layout.col#plp-marketing-content-mobile": {
+    "title": "[COL] - PLP Marketing Content Mobile",
+    "props": {
+      "blockClass": "plpMarketingContentMobile"
+    },
+    "children": [
+      "flex-layout.row#diagonal-divider",
+      "image#plp-marketing-1-mobile",
+      "flex-layout.row#diagonal-divider",
+      "image#plp-marketing-2-mobile",
+      "flex-layout.row#diagonal-divider",
+      "info-card#plp-marketing-1-mobile",
+      "flex-layout.row#diagonal-divider",
+      "image#plp-marketing-3-mobile",
+      "flex-layout.row#diagonal-divider",
+      "info-card#plp-marketing-2-mobile",
+      "flex-layout.row#diagonal-divider",
+      "image#plp-marketing-4-mobile",
+      "flex-layout.row#diagonal-divider",
+      "info-card#plp-marketing-3-mobile",
+      "flex-layout.row#diagonal-divider"
+    ]
+  },
+  "image#plp-marketing-1-mobile": {
+    "title": "[IMAGE] - PLP Marketing 1 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/common/strips/metal@1x.jpg",
+      "blockClass": "plpMarketingImage1Mobile"
+    }
+  },
+  "image#plp-marketing-2-mobile": {
+    "title": "[IMAGE] - PLP Marketing 2 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/appliances/content-blocks/harvest-fresh.jpg",
+      "blockClass": [
+        "plpMarketingImageMobile",
+        "plpMarketingImage2Mobile"
+      ]
+    }
+  },
+  "info-card#plp-marketing-1-mobile": {
+    "title": "[INFO CARD] - PLP Marketing 1",
+    "props": {
+      "id": "info-card-plp-marketing-1-mobile",
+      "textPosition": "center",
+      "headline": "## Eat healthier with fridge freezer technology",
+      "subhead": "HarvestFresh™ technology in fridge freezers preserves the vitamins in fruit and veg so you get more nutrients from the food you eat.",
+      "callToActionText": "Eat healthier",
+      "blockClass": [
+        "infoCardPlpMarketingMobile",
+        "infoCardPlpMarketing1",
+        "infoCardPlpMarketing1Mobile",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#plp-marketing-2-mobile": {
+    "title": "[INFO CARD] - PLP Marketing 2 Mobile",
+    "props": {
+      "id": "info-card-plp-marketing-2-mobile",
+      "textPosition": "center",
+      "headline": "## Make a style statement",
+      "subhead": "With a host of innovative features and modern and stylish design, an American Style fridge freezer will truly be the focal point of any kitchen.",
+      "callToActionText": "Find out more",
+      "blockClass": [
+        "infoCardPlpMarketingMobile",
+        "infoCardPlpMarketing2",
+        "infoCardPlpMarketing2Mobile",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#plp-marketing-3-mobile": {
+    "title": "[INFO CARD] - PLP Marketing 3 Mobile",
+    "props": {
+      "id": "info-card-plp-marketing-3-mobile",
+      "textPosition": "center",
+      "headline": "## What foods should you store in the fridge?",
+      "subhead": "Ever wondered what to refrigerate or what not to? Find out the answers to this long standing kitchen debate.",
+      "callToActionText": "Keep food fresh",
+      "blockClass": [
+        "infoCardPlpMarketingMobile",
+        "infoCardPlpMarketing3",
+        "infoCardPlpMarketing3Mobile",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "image#plp-marketing-3-mobile": {
+    "title": "[IMAGE] - PLP Marketing 3 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/appliances/content-blocks/make-a-style-statement.jpg",
+      "blockClass": [
+        "plpMarketingImageMobile",
+        "plpMarketingImage3Mobile"
+      ]
+    }
+  },
+  "image#plp-marketing-4-mobile": {
+    "title": "[IMAGE] - PLP Marketing 4 Mobile",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/appliances/content-blocks/what-foods-should-store-in-fridge.jpg",
+      "blockClass": [
+        "plpMarketingImageMobile",
+        "plpMarketingImage4Mobile"
+      ]
+    }
+  },
+  // ----------------------
+  "flex-layout.row#contentmobile": {
+    "children": [
+      "search-content"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#filterMobile",
+      "flex-layout.col#orderByMobile"
+      // "flex-layout.col#switcherMobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+  "flex-layout.col#orderByMobile": {
+    "children": [
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "orderByMobileCol"
+    }
+  },
+  "flex-layout.row#productCountMobile": {
+    "children": [
+      "total-products.v2"
+    ],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  },
+  "flex-layout.col#filterMobile": {
+    "children": [
+      "filter-navigator.v3"
+    ],
+    "props": {
+      "blockClass": "filterMobileCol"
+    }
+  },
+  "flex-layout.col#switcherMobile": {
+    "children": [
+      "gallery-layout-switcher"
+    ],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "search-not-found-layout": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"
+    ]
+  },
+  "flex-layout.row#notfound": {
+    "children": [
+      "not-found"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "breadcrumb": {
+    "props": {
+      // "showOnMobile": true
+    }
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#listLayout",
+      "GridSummary": "product-summary.shelf"
+    }
+  },
+  "gallery-layout-switcher": {
+    "children": [
+      /*
+       * For accessbility to work properly,
+       * It's important to define the options in the same order as the layouts
+       */
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid"
+    },
+    "children": [
+      "icon-grid",
+      "responsive-layout.desktop#textOptionGrid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list"
+    },
+    "children": [
+      "icon-inline-grid",
+      "responsive-layout.desktop#textOptionList"
+    ]
+  },
+  "responsive-layout.desktop#textOptionGrid": {
+    "children": [
+      "rich-text#option-grid"
+    ]
+  },
+  "responsive-layout.desktop#textOptionList": {
+    "children": [
+      "rich-text#option-list"
+    ]
+  },
+  "rich-text#option-grid": {
+    "props": {
+      "text": "Grid",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "rich-text#option-list": {
+    "props": {
+      "text": "List",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "flex-layout.row#home-card-1-plp-mobile": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "plpPromotionBanner-mobile",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-1-background-plp-mobile",
+      "flex-layout.col#home-card-1-plp-mobile"
+      // "image#home-card-1"
+    ]
+  },
+  "image#home-card-1-background-plp-mobile": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/headers/refrigeration_mobile@2x.jpg",
+      "blockClass": "plpPromotionBanner-mobile"
+    }
+  },
+  "flex-layout.col#home-card-1-plp-mobile": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "plpPromotionBanner-mobile",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-1-plp-mobile",
+      "flex-layout.row#home-card-1-ctas-plp-mobile"
+    ]
+  },
+  "rich-text#home-card-1-plp-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Keeping your food fresh Fridge Freezers",
+      "textAlignment": "LEFT",
+      "blockClass": "plpPromotionBanner-mobile"
+    }
+  },
+  "flex-layout.row#home-card-1-ctas-plp-mobile": {
+    "title": "[ROW] - Home Card 1 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "plpPromotionBanner-ctas-mobile"
+    },
+    "children": [
+      "link#home-card-1-cta-plp-mobile",
+      "link#home-card-2-cta-plp-mobile"
+    ]
+  },
+  "link#home-card-1-cta-plp-mobile": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "View Prodcuts",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta-mobile",
+        "cardCtaBluePromotionBanner1-mobile"
+      ]
+    }
+  },
+  "link#home-card-2-cta-plp-mobile": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Read Reviews",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta-mobile",
+        "cardCtaBluePromotionBanner2-mobile"
+      ]
+    }
+  },
+  "flex-layout.row#info-text-mobile": {
+    "children": [
+      "rich-text#info-text-plp-mobile",
+      "image#trust-pilot-plp-mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "info-text-mobile"
+    }
+  },
+  "rich-text#info-text-plp-mobile": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Designed with quality and reliability in mind, our range of [freestanding fridge freezers](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/freestanding) and [integrated fridge freezers](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/freestanding) keep your food fresher for longer with innovative technology like [HarvestFresh™](https://www.beko.co.uk/harvestfresh), which preserves the vitamins in your fresh fruit and veg in the crisper drawer. Whilst our FreezerGuard technology means your appliance can be kept anywhere in your home, even [the garage](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/outdoor-fridge-freezers-for-garages), our [Frost-Free](https://www.beko.co.uk/appliances/refrigerators/fridge-freezers/frost-free) technology means you won’t have to waste time manually defrosting your fridge freezer. Looking for more information? Check out our detailed [fridge freezer buying guide](https://www.beko.co.uk/support/buying-guides/fridge-freezer). Or, if you’re looking to make a statement in your home, check out our [American-style fridge freezer buying guide](https://www.beko.co.uk/support/buying-guides/american-style-fridge-freezer). For added peace of mind, selected appliances are eligible for the 10 Year Parts Guarantee.",
+      "textAlignment": "LEFT",
+      "blockClass": "info-text-mobile"
+    }
+  },
+  "image#trust-pilot-plp-mobile": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "assets/trustpilot-mobile.png",
+      "blockClass": "info-text-mobile"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.drawerContainer {
+	z-index: 2000;
+}
+.drawerContainer :global(.vtex-product-summary-2-x-clearLink) {
+	position: relative;
+}
+.comparisonButtons {
+  background-color: #5E6E84;
+	color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+.expandCollapseButton, .expandCollapseButton:focus, .expandCollapseButton:hover {
+	color: #fff;
+}
+.drawer {
+	background-color: #c0cdd3;
+	margin-left: 0.5rem;
+	padding: 30px 0;
+}
+.closeButton {
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 50%;
+	color: #fff;
+	padding: 2px;
+}
+.closeButtonContainer {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.closeIcon {
+	display: block;
+	height: 15px;
+	width: 15px;
+}

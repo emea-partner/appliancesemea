@@ -1,0 +1,1707 @@
+{
+  /* "product-specification-group#table": {
+    "children": [
+      "flex-layout.row#spec-storage",
+      "flex-layout.row#main-features",
+      "flex-layout.row#net-volumes",
+      "flex-layout.row#dimension-weights",
+      "flex-layout.row#fridge-features",
+      "flex-layout.row#freezer-features",
+      "flex-layout.row#consumption-values",
+      "flex-layout.row#model-codes"
+    ]
+  },
+  // STORAGE VOLUMES 
+  "flex-layout.row#spec-storage": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#storage"]
+  },
+  "disclosure-layout#storage": {
+    "children": [
+      "disclosure-trigger#storage",
+      "disclosure-content#storage",
+      "disclosure-state-indicator"
+    ]
+  },
+  // GROUP NAME 
+  "disclosure-trigger#storage": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-storage-group-name"]
+  },
+  "flex-layout.row#spec-storage-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#storage"]
+  },
+  "product-specification-text#storage": {
+    "props": {
+      "message": "Storage Volumes"
+    }
+  },
+  // GROUP DATA 
+  "disclosure-content#storage": {
+    "children": ["product-specification#storage"]
+  },
+  "product-specification#storage": {
+    "children": [
+      "flex-layout.row#spec-item#fresh-food",
+      "flex-layout.row#spec-item#total-volume"
+    ]
+  },
+  // FIRST ROW 
+  "flex-layout.row#spec-item#fresh-food": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-fresh-food",
+      "flex-layout.col#spec-value-fresh-food"
+    ]
+  },
+  "flex-layout.col#spec-name-fresh-food": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-storage"]
+  },
+  "product-specification-text#specification-storage": {
+    "props": {
+      "message": "Fresh food compartment volume - ltrs"
+    }
+  },
+  "flex-layout.col#spec-value-fresh-food": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-fresh-food"]
+  },
+  "product-specification#values-fresh-food": {
+    "children": ["product-specification-text#value-fresh-food"]
+  },
+
+  "product-specification-text#value-fresh-food": {
+    "props": {
+      "message": "365"
+    }
+  },
+  // SECOND ROW 
+  "flex-layout.row#spec-item#total-volume": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-total-volume",
+      "flex-layout.col#spec-value-total-volume"
+    ]
+  },
+  "flex-layout.col#spec-name-total-volume": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-total-volume"]
+  },
+  "product-specification-text#specification-total-volume": {
+    "props": {
+      "message": "Total Volume - ltrs"
+    }
+  },
+  "flex-layout.col#spec-value-total-volume": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-total-volume"]
+  },
+  "product-specification#values-total-volume": {
+    "children": ["product-specification-text#value-total-volume"]
+  },
+
+  "product-specification-text#value-total-volume": {
+    "props": {
+      "message": "365"
+    }
+  },
+  // MAIN FEATURES 
+  "flex-layout.row#main-features": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#main-features"]
+  },
+  "disclosure-layout#main-features": {
+    "children": [
+      "disclosure-trigger#main-features",
+      "disclosure-content#main-features",
+      "disclosure-state-indicator"
+    ]
+  },
+  // GROUP NAME 
+  "disclosure-trigger#main-features": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-main-features-group-name"]
+  },
+  "flex-layout.row#spec-main-features-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#main-features"]
+  },
+  "product-specification-text#main-features": {
+    "props": {
+      "message": "Main Features"
+    }
+  },
+  // GROUP DATA 
+  "disclosure-content#main-features": {
+    "children": ["product-specification#main-features"]
+  },
+  "product-specification#main-features": {
+    "children": [
+      "flex-layout.row#spec-item#refrigeration-class",
+      "flex-layout.row#spec-item#refrigeration-type",
+      "flex-layout.row#spec-item#energy-class",
+      "flex-layout.row#spec-item#flame-back",
+      "flex-layout.row#spec-item#water-dispenser",
+      "flex-layout.row#spec-item#rev-door",
+      "flex-layout.row#spec-item#amb-temperature",
+      "flex-layout.row#spec-item#door-handles",
+      "flex-layout.row#spec-item#min-temp"
+    ]
+  },
+  // FIRST ROW 
+  "flex-layout.row#spec-item#refrigeration-class": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-refrigeration-class",
+      "flex-layout.col#spec-value-refrigeration-class"
+    ]
+  },
+  "flex-layout.col#spec-name-refrigeration-class": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-refrigeration-class"]
+  },
+  "product-specification-text#specification-refrigeration-class": {
+    "props": {
+      "message": "Regrigeration Class"
+    }
+  },
+  "flex-layout.col#spec-value-refrigeration-class": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-refrigeration-class"]
+  },
+  "product-specification#values-refrigeration-class": {
+    "children": ["product-specification-text#value-refrigeration-class"]
+  },
+
+  "product-specification-text#value-refrigeration-class": {
+    "props": {
+      "message": "Tall Larder Fridge"
+    }
+  },
+  // SECOND ROW 
+  "flex-layout.row#spec-item#refrigeration-type": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-refrigeration-type",
+      "flex-layout.col#spec-value-refrigeration-type"
+    ]
+  },
+  "flex-layout.col#spec-name-refrigeration-type": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-refrigeration-type"]
+  },
+  "product-specification-text#specification-refrigeration-type": {
+    "props": {
+      "message": "Refrigeration Type"
+    }
+  },
+  "flex-layout.col#spec-value-refrigeration-type": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-refrigeration-type"]
+  },
+  "product-specification#values-refrigeration-type": {
+    "children": ["product-specification-text#value-refrigeration-type"]
+  },
+
+  "product-specification-text#value-refrigeration-type": {
+    "props": {
+      "message": "Auto Defrost"
+    }
+  },
+  // THIRD ROW 
+  "flex-layout.row#spec-item#energy-class": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-energy-class",
+      "flex-layout.col#spec-value-energy-class"
+    ]
+  },
+  "flex-layout.col#spec-name-energy-class": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-energy-class"]
+  },
+  "product-specification-text#specification-energy-class": {
+    "props": {
+      "message": "Energy Efficiency Class"
+    }
+  },
+  "flex-layout.col#spec-value-energy-class": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-energy-class"]
+  },
+  "product-specification#values-energy-class": {
+    "children": ["product-specification-text#value-energy-class"]
+  },
+
+  "product-specification-text#value-energy-class": {
+    "props": {
+      "message": "E"
+    }
+  },
+  // FOURTH ROW 
+  "flex-layout.row#spec-item#flame-back": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-flame-back",
+      "flex-layout.col#spec-value-flame-back"
+    ]
+  },
+  "flex-layout.col#spec-name-flame-back": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-flame-back"]
+  },
+  "product-specification-text#specification-flame-back": {
+    "props": {
+      "message": "Flame Retardant Back"
+    }
+  },
+  "flex-layout.col#spec-value-flame-back": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-flame-back"]
+  },
+  "product-specification#values-flame-back": {
+    "children": ["product-specification-text#value-flame-back"]
+  },
+
+  "product-specification-text#value-flame-back": {
+    "props": {
+      "message": "Yes"
+    }
+  },
+  // FIFTH ROW 
+  "flex-layout.row#spec-item#water-dispenser": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-water-dispenser",
+      "flex-layout.col#spec-value-water-dispenser"
+    ]
+  },
+  "flex-layout.col#spec-name-water-dispenser": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-water-dispenser"]
+  },
+  "product-specification-text#specification-water-dispenser": {
+    "props": {
+      "message": "Stored Water Dispenser"
+    }
+  },
+  "flex-layout.col#spec-value-water-dispenser": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-water-dispenser"]
+  },
+  "product-specification#values-water-dispenser": {
+    "children": ["product-specification-text#value-water-dispenser"]
+  },
+
+  "product-specification-text#value-water-dispenser": {
+    "props": {
+      "message": "No"
+    }
+  },
+  // SIXTH ROW 
+  "flex-layout.row#spec-item#rev-door": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-rev-door",
+      "flex-layout.col#spec-value-rev-door"
+    ]
+  },
+  "flex-layout.col#spec-name-rev-door": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-rev-door"]
+  },
+  "product-specification-text#specification-rev-door": {
+    "props": {
+      "message": "Reversible door for LH or RH opening"
+    }
+  },
+  "flex-layout.col#spec-value-rev-door": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-rev-door"]
+  },
+  "product-specification#values-rev-door": {
+    "children": ["product-specification-text#value-rev-door"]
+  },
+
+  "product-specification-text#value-rev-door": {
+    "props": {
+      "message": "Yes"
+    }
+  },
+  // SEVENTH ROW 
+  "flex-layout.row#spec-item#amb-temperature": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-amb-temperature",
+      "flex-layout.col#spec-value-amb-temperature"
+    ]
+  },
+  "flex-layout.col#spec-name-amb-temperature": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-amb-temperature"]
+  },
+  "product-specification-text#specification-amb-temperature": {
+    "props": {
+      "message": "Maximum ambient temperature for satisfactory operation"
+    }
+  },
+  "flex-layout.col#spec-value-amb-temperature": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-amb-temperature"]
+  },
+  "product-specification#values-amb-temperature": {
+    "children": ["product-specification-text#value-amb-temperature"]
+  },
+
+  "product-specification-text#value-amb-temperature": {
+    "props": {
+      "message": "43°C"
+    }
+  },
+  // EIGHTH ROW 
+  "flex-layout.row#spec-item#door-handles": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-door-handles",
+      "flex-layout.col#spec-value-door-handles"
+    ]
+  },
+  "flex-layout.col#spec-name-door-handles": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-door-handles"]
+  },
+  "product-specification-text#specification-door-handles": {
+    "props": {
+      "message": "Door Handles"
+    }
+  },
+  "flex-layout.col#spec-value-door-handles": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-door-handles"]
+  },
+  "product-specification#values-door-handles": {
+    "children": ["product-specification-text#value-door-handles"]
+  },
+  "product-specification-text#value-door-handles": {
+    "props": {
+      "message": "External handle"
+    }
+  },
+  // NINTH ROW 
+  "flex-layout.row#spec-item#min-temp": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-min-temp",
+      "flex-layout.col#spec-value-min-temp"
+    ]
+  },
+  "flex-layout.col#spec-name-min-temp": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-min-temp"]
+  },
+  "product-specification-text#specification-min-temp": {
+    "props": {
+      "message": "Minimum ambient temperature required for satisfactory operation"
+    }
+  },
+  "flex-layout.col#spec-value-min-temp": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-min-temp"]
+  },
+  "product-specification#values-min-temp": {
+    "children": ["product-specification-text#value-min-temp"]
+  },
+  "product-specification-text#value-min-temp": {
+    "props": {
+      "message": "10°C"
+    }
+  },
+  // NET & GROSS VOLUMES 
+  "flex-layout.row#net-volumes": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#net-volumes"]
+  },
+  "disclosure-layout#net-volumes": {
+    "children": [
+      "disclosure-trigger#net-volumes",
+      "disclosure-content#net-volumes",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-trigger#net-volumes": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-net-volumes-group-name"]
+  },
+  "flex-layout.row#spec-net-volumes-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#net-volumes"]
+  },
+  "product-specification-text#net-volumes": {
+    "props": {
+      "message": "Net & Gross Volumes"
+    }
+  },
+  "disclosure-content#net-volumes": {
+    "children": []
+  },
+  // DIMENSION & WEIGHTS 
+  "flex-layout.row#dimension-weights": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#dimension-weights"]
+  },
+  "disclosure-layout#dimension-weights": {
+    "children": [
+      "disclosure-trigger#dimension-weights",
+      "disclosure-content#dimension-weights",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-trigger#dimension-weights": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-dimension-weights-group-name"]
+  },
+  "flex-layout.row#spec-dimension-weights-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#dimension-weights"]
+  },
+  "product-specification-text#dimension-weights": {
+    "props": {
+      "message": "Dimension & Weights"
+    }
+  },
+  // GROUP DATA 
+  "disclosure-content#dimension-weights": {
+    "children": ["product-specification#dimension-weights"]
+  },
+  "product-specification#dimension-weights": {
+    "children": [
+      "flex-layout.row#spec-item#height",
+      "flex-layout.row#spec-item#width",
+      "flex-layout.row#spec-item#depth",
+      "flex-layout.row#spec-item#carton-height",
+      "flex-layout.row#spec-item#carton-width",
+      "flex-layout.row#spec-item#carton-depth",
+      "flex-layout.row#spec-item#net-weight",
+      "flex-layout.row#spec-item#gross-weight"
+    ]
+  },
+  // FIRST ROW 
+  "flex-layout.row#spec-item#height": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-height",
+      "flex-layout.col#spec-value-height"
+    ]
+  },
+  "flex-layout.col#spec-name-height": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-height"]
+  },
+  "product-specification-text#specification-height": {
+    "props": {
+      "message": "Product Height (mm)"
+    }
+  },
+  "flex-layout.col#spec-value-height": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-height"]
+  },
+  "product-specification#values-height": {
+    "children": ["product-specification-text#value-height"]
+  },
+
+  "product-specification-text#value-height": {
+    "props": {
+      "message": "1865"
+    }
+  },
+  // SECOND ROW 
+  "flex-layout.row#spec-item#width": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-width",
+      "flex-layout.col#spec-value-width"
+    ]
+  },
+  "flex-layout.col#spec-name-width": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-width"]
+  },
+  "product-specification-text#specification-width": {
+    "props": {
+      "message": "Product width (mm)"
+    }
+  },
+  "flex-layout.col#spec-value-width": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-width"]
+  },
+  "product-specification#values-width": {
+    "children": ["product-specification-text#value-width"]
+  },
+
+  "product-specification-text#value-width": {
+    "props": {
+      "message": "597"
+    }
+  },
+  // THIRD ROW 
+  "flex-layout.row#spec-item#depth": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-depth",
+      "flex-layout.col#spec-value-depth"
+    ]
+  },
+  "flex-layout.col#spec-name-depth": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-depth"]
+  },
+  "product-specification-text#specification-depth": {
+    "props": {
+      "message": "Product depth (mm)"
+    }
+  },
+  "flex-layout.col#spec-value-depth": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-depth"]
+  },
+  "product-specification#values-depth": {
+    "children": ["product-specification-text#value-depth"]
+  },
+
+  "product-specification-text#value-depth": {
+    "props": {
+      "message": "709"
+    }
+  },
+  // FOURTH ROW 
+  "flex-layout.row#spec-item#carton-height": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-carton-height",
+      "flex-layout.col#spec-value-carton-height"
+    ]
+  },
+  "flex-layout.col#spec-name-carton-height": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-carton-height"]
+  },
+  "product-specification-text#specification-carton-height": {
+    "props": {
+      "message": "Carton height (mm)"
+    }
+  },
+  "flex-layout.col#spec-value-carton-height": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-carton-height"]
+  },
+  "product-specification#values-carton-height": {
+    "children": ["product-specification-text#value-carton-height"]
+  },
+
+  "product-specification-text#value-carton-height": {
+    "props": {
+      "message": "1932"
+    }
+  },
+  // FIFTH ROW 
+  "flex-layout.row#spec-item#carton-width": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-carton-width",
+      "flex-layout.col#spec-value-carton-width"
+    ]
+  },
+  "flex-layout.col#spec-name-carton-width": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-carton-width"]
+  },
+  "product-specification-text#specification-carton-width": {
+    "props": {
+      "message": "Carton width (mm)"
+    }
+  },
+  "flex-layout.col#spec-value-carton-width": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-carton-width"]
+  },
+  "product-specification#values-carton-width": {
+    "children": ["product-specification-text#value-carton-width"]
+  },
+
+  "product-specification-text#value-carton-width": {
+    "props": {
+      "message": "661"
+    }
+  },
+  // SIXTH ROW 
+  "flex-layout.row#spec-item#carton-depth": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-carton-depth",
+      "flex-layout.col#spec-value-carton-depth"
+    ]
+  },
+  "flex-layout.col#spec-name-carton-depth": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-carton-depth"]
+  },
+  "product-specification-text#specification-carton-depth": {
+    "props": {
+      "message": "Carton depth (mm)"
+    }
+  },
+  "flex-layout.col#spec-value-carton-depth": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-carton-depth"]
+  },
+  "product-specification#values-carton-depth": {
+    "children": ["product-specification-text#value-carton-depth"]
+  },
+
+  "product-specification-text#value-carton-depth": {
+    "props": {
+      "message": "762"
+    }
+  },
+  // SEVENTH ROW 
+  "flex-layout.row#spec-item#net-weight": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-net-weight",
+      "flex-layout.col#spec-value-net-weight"
+    ]
+  },
+  "flex-layout.col#spec-name-net-weight": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-net-weight"]
+  },
+  "product-specification-text#specification-net-weight": {
+    "props": {
+      "message": "Net Weight (kg)"
+    }
+  },
+  "flex-layout.col#spec-value-net-weight": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-net-weight"]
+  },
+  "product-specification#values-net-weight": {
+    "children": ["product-specification-text#value-net-weight"]
+  },
+
+  "product-specification-text#value-net-weight": {
+    "props": {
+      "message": "66"
+    }
+  },
+  // EIGHTH ROW 
+  "flex-layout.row#spec-item#gross-weight": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-gross-weight",
+      "flex-layout.col#spec-value-gross-weight"
+    ]
+  },
+  "flex-layout.col#spec-name-gross-weight": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-gross-weight"]
+  },
+  "product-specification-text#specification-gross-weight": {
+    "props": {
+      "message": "Gross Weight (kg)"
+    }
+  },
+  "flex-layout.col#spec-value-gross-weight": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-gross-weight"]
+  },
+  "product-specification#values-gross-weight": {
+    "children": ["product-specification-text#value-gross-weight"]
+  },
+  "product-specification-text#value-gross-weight": {
+    "props": {
+      "message": "73"
+    }
+  },
+  // Fridge features 
+  "flex-layout.row#fridge-features": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#fridge-features"]
+  },
+  "disclosure-layout#fridge-features": {
+    "children": [
+      "disclosure-trigger#fridge-features",
+      "disclosure-content#fridge-features",
+      "disclosure-state-indicator"
+    ]
+  },
+  "flex-layout.row#spec-fridge-features-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#fridge-features"]
+  },
+  "product-specification-text#fridge-features": {
+    "props": {
+      "message": "Fridge features"
+    }
+  },
+  // GROUP DATA 
+  "disclosure-trigger#fridge-features": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-fridge-features-group-name"]
+  },
+  //PROD SPEC 
+  "disclosure-content#fridge-features": {
+    "children": ["product-specification#fridge-features"]
+  },
+  "product-specification#fridge-features": {
+    "children": [
+      "flex-layout.row#spec-item#door-racks",
+      "flex-layout.row#spec-item#shelvesNumber",
+      "flex-layout.row#spec-item#chillerZone",
+      "flex-layout.row#spec-item#wineRack",
+      "flex-layout.row#spec-item#shelvesType",
+      "flex-layout.row#spec-item#adjustableShelves",
+      "flex-layout.row#spec-item#eggTray",
+      "flex-layout.row#spec-item#saladCrispers",
+      "flex-layout.row#spec-item#interiorLight"
+    ]
+  },
+  // FIRST ROW 
+  "flex-layout.row#spec-item#door-racks": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-door-racks",
+      "flex-layout.col#spec-value-door-racks"
+    ]
+  },
+  "flex-layout.col#spec-name-door-racks": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-door-racks"]
+  },
+  "product-specification-text#specification-door-racks": {
+    "props": {
+      "message": "No. of Door Racks"
+    }
+  },
+  "flex-layout.col#spec-value-door-racks": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-door-racks"]
+  },
+  "product-specification#values-door-racks": {
+    "children": ["product-specification-text#value-door-racks"]
+  },
+
+  "product-specification-text#value-door-racks": {
+    "props": {
+      "message": "4"
+    }
+  },
+  // SECOND ROW 
+  "flex-layout.row#spec-item#shelvesNumber": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-shelvesNumber",
+      "flex-layout.col#spec-value-shelvesNumber"
+    ]
+  },
+  "flex-layout.col#spec-name-shelvesNumber": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-shelvesNumber"]
+  },
+  "product-specification-text#specification-shelvesNumber": {
+    "props": {
+      "message": "No. of Shelves [Including salad crisper cover]"
+    }
+  },
+  "flex-layout.col#spec-value-shelvesNumber": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-shelvesNumber"]
+  },
+  "product-specification#values-shelvesNumber": {
+    "children": ["product-specification-text#value-shelvesNumber"]
+  },
+
+  "product-specification-text#value-shelvesNumber": {
+    "props": {
+      "message": "6"
+    }
+  },
+  // THIRD ROW 
+  "flex-layout.row#spec-item#chillerZone": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-chillerZone",
+      "flex-layout.col#spec-value-chillerZone"
+    ]
+  },
+  "flex-layout.col#spec-name-chillerZone": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-chillerZone"]
+  },
+  "product-specification-text#specification-chillerZone": {
+    "props": {
+      "message": "Chiller Zone Compartment"
+    }
+  },
+  "flex-layout.col#spec-value-chillerZone": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-chillerZone"]
+  },
+  "product-specification#values-chillerZone": {
+    "children": ["product-specification-text#value-chillerZone"]
+  },
+
+  "product-specification-text#value-chillerZone": {
+    "props": {
+      "message": "Yes"
+    }
+  },
+  // FOURTH ROW 
+  "flex-layout.row#spec-item#wineRack": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-wineRack",
+      "flex-layout.col#spec-value-wineRack"
+    ]
+  },
+  "flex-layout.col#spec-name-wineRack": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-wineRack"]
+  },
+  "product-specification-text#specification-wineRack": {
+    "props": {
+      "message": "Chrome wire wine rack"
+    }
+  },
+  "flex-layout.col#spec-value-wineRack": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-wineRack"]
+  },
+  "product-specification#values-wineRack": {
+    "children": ["product-specification-text#value-wineRack"]
+  },
+
+  "product-specification-text#value-wineRack": {
+    "props": {
+      "message": "Yes"
+    }
+  },
+  // FIFTH ROW 
+  "flex-layout.row#spec-item#shelvesType": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-shelvesType",
+      "flex-layout.col#spec-value-shelvesType"
+    ]
+  },
+  "flex-layout.col#spec-name-shelvesType": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-shelvesType"]
+  },
+  "product-specification-text#specification-shelvesType": {
+    "props": {
+      "message": "Shelves Type"
+    }
+  },
+  "flex-layout.col#spec-value-shelvesType": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-shelvesType"]
+  },
+  "product-specification#values-shelvesType": {
+    "children": ["product-specification-text#value-shelvesType"]
+  },
+
+  "product-specification-text#value-shelvesType": {
+    "props": {
+      "message": "Glass"
+    }
+  },
+  // SIXTH ROW 
+  "flex-layout.row#spec-item#adjustableShelves": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-adjustableShelves",
+      "flex-layout.col#spec-value-adjustableShelves"
+    ]
+  },
+  "flex-layout.col#spec-name-adjustableShelves": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-adjustableShelves"]
+  },
+  "product-specification-text#specification-adjustableShelves": {
+    "props": {
+      "message": "AdjustableShelves"
+    }
+  },
+  "flex-layout.col#spec-value-adjustableShelves": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-adjustableShelves"]
+  },
+  "product-specification#values-adjustableShelves": {
+    "children": ["product-specification-text#value-adjustableShelves"]
+  },
+
+  "product-specification-text#value-adjustableShelves": {
+    "props": {
+      "message": "Yes"
+    }
+  },
+  // SEVENTH ROW 
+  "flex-layout.row#spec-item#eggTray": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-eggTray",
+      "flex-layout.col#spec-value-eggTray"
+    ]
+  },
+  "flex-layout.col#spec-name-eggTray": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-eggTray"]
+  },
+  "product-specification-text#specification-eggTray": {
+    "props": {
+      "message": "Egg Tray"
+    }
+  },
+  "flex-layout.col#spec-value-eggTray": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-eggTray"]
+  },
+  "product-specification#values-eggTray": {
+    "children": ["product-specification-text#value-eggTray"]
+  },
+
+  "product-specification-text#value-eggTray": {
+    "props": {
+      "message": "Yes"
+    }
+  },
+  // EIGHTH ROW 
+  "flex-layout.row#spec-item#saladCrispers": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-saladCrispers",
+      "flex-layout.col#spec-value-saladCrispers"
+    ]
+  },
+  "flex-layout.col#spec-name-saladCrispers": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-saladCrispers"]
+  },
+  "product-specification-text#specification-saladCrispers": {
+    "props": {
+      "message": "No. of Large Salad crispers"
+    }
+  },
+  "flex-layout.col#spec-value-saladCrispers": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-saladCrispers"]
+  },
+  "product-specification#values-saladCrispers": {
+    "children": ["product-specification-text#value-saladCrispers"]
+  },
+  "product-specification-text#value-saladCrispers": {
+    "props": {
+      "message": "1"
+    }
+  },
+  // NINTH ROW 
+  "flex-layout.row#spec-item#interiorLight": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-interiorLight",
+      "flex-layout.col#spec-value-interiorLight"
+    ]
+  },
+  "flex-layout.col#spec-name-interiorLight": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-interiorLight"]
+  },
+  "product-specification-text#specification-interiorLight": {
+    "props": {
+      "message": "Interio Light in Fridge"
+    }
+  },
+  "flex-layout.col#spec-value-interiorLight": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-interiorLight"]
+  },
+  "product-specification#values-interiorLight": {
+    "children": ["product-specification-text#value-interiorLight"]
+  },
+  "product-specification-text#value-interiorLight": {
+    "props": {
+      "message": "LED"
+    }
+  },
+  // Freezer features 
+  "flex-layout.row#freezer-features": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#freezer-features"]
+  },
+  "disclosure-layout#freezer-features": {
+    "children": [
+      "disclosure-trigger#freezer-features",
+      "disclosure-content#freezer-features",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-trigger#freezer-features": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-freezer-features-group-name"]
+  },
+  "flex-layout.row#spec-freezer-features-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#freezer-features"]
+  },
+  "product-specification-text#freezer-features": {
+    "props": {
+      "message": "freezer features"
+    }
+  },
+  "disclosure-content#freezer-features": {
+    "children": []
+  },
+  // Consumption values 
+  "flex-layout.row#consumption-values": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#consumption-values"]
+  },
+  "disclosure-layout#consumption-values": {
+    "children": [
+      "disclosure-trigger#consumption-values",
+      "disclosure-content#consumption-values",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-trigger#consumption-values": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-consumption-values-group-name"]
+  },
+  "flex-layout.row#spec-consumption-values-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#consumption-values"]
+  },
+  "product-specification-text#consumption-values": {
+    "props": {
+      "message": "Fridge features"
+    }
+  },
+  // GROUP DATA 
+  "disclosure-content#consumption-values": {
+    "children": ["product-specification#consumption-values"]
+  },
+  "product-specification#consumption-values": {
+    "children": [
+      "flex-layout.row#spec-item#noiseLevel",
+      "flex-layout.row#spec-item#noiseEmission",
+      "flex-layout.row#spec-item#energyConsumption",
+      "flex-layout.row#spec-item#climateClass"
+    ]
+  },
+  // FIRST ROW 
+  "flex-layout.row#spec-item#noiseLevel": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-noiseLevel",
+      "flex-layout.col#spec-value-noiseLevel"
+    ]
+  },
+  "flex-layout.col#spec-name-noiseLevel": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-noiseLevel"]
+  },
+  "product-specification-text#specification-noiseLevel": {
+    "props": {
+      "message": "Noise level - db(A)"
+    }
+  },
+  "flex-layout.col#spec-value-noiseLevel": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-noiseLevel"]
+  },
+  "product-specification#values-noiseLevel": {
+    "children": ["product-specification-text#value-noiseLevel"]
+  },
+
+  "product-specification-text#value-noiseLevel": {
+    "props": {
+      "message": "35"
+    }
+  },
+  // SECOND ROW 
+  "flex-layout.row#spec-item#noiseEmission": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-noiseEmission",
+      "flex-layout.col#spec-value-noiseEmission"
+    ]
+  },
+  "flex-layout.col#spec-name-noiseEmission": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-noiseEmission"]
+  },
+  "product-specification-text#specification-noiseEmission": {
+    "props": {
+      "message": "Noise Emission Class"
+    }
+  },
+  "flex-layout.col#spec-value-noiseEmission": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-noiseEmission"]
+  },
+  "product-specification#values-noiseEmission": {
+    "children": ["product-specification-text#value-noiseEmission"]
+  },
+
+  "product-specification-text#value-noiseEmission": {
+    "props": {
+      "message": "B"
+    }
+  },
+  // THIRD ROW 
+  "flex-layout.row#spec-item#energyConsumption": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-energyConsumption",
+      "flex-layout.col#spec-value-energyConsumption"
+    ]
+  },
+  "flex-layout.col#spec-name-energyConsumption": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-energyConsumption"]
+  },
+  "product-specification-text#specification-energyConsumption": {
+    "props": {
+      "message": "Energy consumption - Kwh/Year"
+    }
+  },
+  "flex-layout.col#spec-value-energyConsumption": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-energyConsumption"]
+  },
+  "product-specification#values-energyConsumption": {
+    "children": ["product-specification-text#value-energyConsumption"]
+  },
+
+  "product-specification-text#value-energyConsumption": {
+    "props": {
+      "message": "143"
+    }
+  },
+  // FOURTH ROW 
+  "flex-layout.row#spec-item#climateClass": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-climateClass",
+      "flex-layout.col#spec-value-climateClass"
+    ]
+  },
+  "flex-layout.col#spec-name-climateClass": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-climateClass"]
+  },
+  "product-specification-text#specification-climateClass": {
+    "props": {
+      "message": "Climate class"
+    }
+  },
+  "flex-layout.col#spec-value-climateClass": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-climateClass"]
+  },
+  "product-specification#values-climateClass": {
+    "children": ["product-specification-text#value-climateClass"]
+  },
+  "product-specification-text#value-climateClass": {
+    "props": {
+      "message": "SN/T"
+    }
+  },
+  // Model codes 
+  "flex-layout.row#model-codes": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["disclosure-layout#model-codes"]
+  },
+  "disclosure-layout#model-codes": {
+    "children": [
+      "disclosure-trigger#model-codes",
+      "disclosure-content#model-codes",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-trigger#model-codes": {
+    "props": {
+      "blockClass": "product-specification"
+    },
+    "children": ["flex-layout.row#spec-model-codes-group-name"]
+  },
+  "flex-layout.row#spec-model-codes-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#model-codes"]
+  },
+  "product-specification-text#model-codes": {
+    "props": {
+      "message": "Model Codes"
+    }
+  },
+  "disclosure-content#model-codes": {
+    "children": ["product-specification#model-codes"]
+  },
+  // GROUP DATA 
+  "product-specification#model-codes": {
+    "children": [
+      "flex-layout.row#spec-item#firstCode",
+      "flex-layout.row#spec-item#secondCode"
+    ]
+  },
+  // FIRST ROW 
+  "flex-layout.row#spec-item#firstCode": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-firstCode",
+      "flex-layout.col#spec-value-firstCode"
+    ]
+  },
+  "flex-layout.col#spec-name-firstCode": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-firstCode"]
+  },
+  "product-specification-text#specification-firstCode": {
+    "props": {
+      "message": "LNP4686LvW"
+    }
+  },
+  "flex-layout.col#spec-value-firstCode": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-firstCode"]
+  },
+  "product-specification#values-firstCode": {
+    "children": ["product-specification-text#value-firstCode"]
+  },
+
+  "product-specification-text#value-firstCode": {
+    "props": {
+      "message": "EAN:8690842514289"
+    }
+  },
+  // SECOND ROW 
+  "flex-layout.row#spec-item#secondCode": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": [
+      "flex-layout.col#spec-name-secondCode",
+      "flex-layout.col#spec-value-secondCode"
+    ]
+  },
+  "flex-layout.col#spec-name-secondCode": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification-secondCode"]
+  },
+  "product-specification-text#specification-secondCode": {
+    "props": {
+      "message": "LNP4686LVPS"
+    }
+  },
+  "flex-layout.col#spec-value-secondCode": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification#values-secondCode"]
+  },
+  "product-specification#values-secondCode": {
+    "children": ["product-specification-text#value-secondCode"]
+  },
+
+  "product-specification-text#value-secondCode": {
+    "props": {
+      "message": "EAN:8690842514296"
+    }
+  } */
+}

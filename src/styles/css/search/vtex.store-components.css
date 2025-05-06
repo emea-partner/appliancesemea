@@ -1,0 +1,23 @@
+.productBrandName--summaryListDesktop {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0067C7;
+  font-size: .875rem;
+}
+
+.productBrandName--summaryListMobile {
+  text-decoration: none;
+  color: #0067C7;
+  font-size: .875rem;
+}
+
+.productBrand--quickview {
+  font-size: 20px;
+  color: #343333;
+  font-weight: normal;
+  text-align: center;
+}
+
+.productImageTag--main {
+  max-height: 450px !important;
+}

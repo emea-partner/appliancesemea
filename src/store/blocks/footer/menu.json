@@ -1,0 +1,330 @@
+{
+  "vtex.menu@2.x:menu#Newsletter": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "test"
+    },
+    "children": [
+      "menu-item#newslettertitle",
+      "menu-item#newslettersubtitle",
+      "newsletter-form"
+    ]
+  },
+  "newsletter-form": {
+    "children": ["newsletter-input-email", "newsletter-submit"]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Enter your email address..."
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Sign-up"
+    }
+  },
+  "menu-item#newslettertitle": {
+    "props": {
+      "id": "menu-item-newsletter-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Newsletter",
+        "text": "Newsletter"
+      },
+      "blockClass": "footer"
+    }
+  },
+  "menu-item#newslettersubtitle": {
+    "props": {
+      "id": "menu-item-newsletter-subtitle",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Newsletter",
+        "text": "Sign up today for great news & offers"
+      },
+      "blockClass": "footer"
+    }
+  },
+  "vtex.menu@2.x:menu#beko-world": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#title-beko-world",
+      "menu-item#about-beko",
+      "menu-item#corporatesite",
+      "menu-item#news",
+      "menu-item#partners",
+      "menu-item#carrers"
+    ]
+  },
+  "vtex.menu@2.x:menu#support": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#title-support",
+      "menu-item#product-registration",
+      "menu-item#download-manual",
+      "menu-item#repair-your-appliances",
+      "menu-item#faqs",
+      "menu-item#product-safety-notices",
+      "menu-item#cookie",
+      "menu-item#vulnerability-disclosure",
+      "menu-item#procedure"
+    ]
+  },
+  "menu-item#product-registration": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Product Registration"
+      }
+    }
+  },
+  "menu-item#download-manual": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Download A Manual"
+      }
+    }
+  },
+  "menu-item#repair-your-appliances": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Repair Your Appliances"
+      }
+    }
+  },
+  "menu-item#faqs": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "FAQs"
+      }
+    }
+  },
+  "menu-item#product-safety-notices": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Product Safety Notices"
+      }
+    }
+  },
+  "menu-item#cookie": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Cookie & Privacy Policy"
+      }
+    }
+  },
+  "menu-item#vulnerability-disclosure": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Vulnerability Disclosure"
+      }
+    }
+  },
+  "menu-item#procedure": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Procedure"
+      }
+    }
+  },
+  "menu-item#title-beko-world": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Our World"
+      },
+      "blockClass": "footerBold"
+    }
+  },
+  "menu-item#title-support": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Support"
+      },
+      "blockClass": "footerBold"
+    }
+  },
+  "menu-item#about-beko": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "About Us",
+        "text": "About Us"
+      }
+    }
+  },
+  "menu-item#about-beko-mobile": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "About Us",
+        "text": "About Us"
+      },
+      "blockClass": ["headerMenuItemMobile"]
+    }
+  },
+  "menu-item#corporatesite": {
+    "props": {
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BlackFriday",
+        "text": "Corporate Site"
+      }
+    }
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "News"
+      }
+    }
+  },
+  "menu-item#partners": {
+    "props": {
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Partners"
+      }
+    }
+  },
+  "menu-item#carrers": {
+    "props": {
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Carrers"
+      }
+    }
+  }
+}

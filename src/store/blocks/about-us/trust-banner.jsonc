@@ -1,0 +1,43 @@
+{
+  "flex-layout.row#trust-row": {
+    "children": [
+      "flex-layout.row#revooCol"
+    ],
+    "props": {
+      "blockClass": "trust-row"
+    }
+  },
+  "flex-layout.row#revooCol": {
+    "children": [
+      "image#trust-revoo-image",
+      "image#trust-trustpilot-image",
+      "image#trust-best-buy-image"
+    ],
+    "props": {
+      "blockClass": "trust-row"
+    }
+  },
+  "image#trust-revoo-image": {
+    "props": {
+      "src": "assets/revoo_raccomandation_blue.png",
+      "maxWidth": "100%",
+      "blockClass": ""
+    }
+  },
+  "image#trust-trustpilot-image": {
+    "props": {
+      "src": "assets/trustpilot_reccomandation_blue.png",
+      "maxWidth": "100%",
+      "maxHeight":"78px",
+      "blockClass": ""
+    }
+  },
+  "image#trust-best-buy-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/which.png",
+      "maxHeight": "128px",
+      "maxWidth": "100%",
+      "blockClass": ""
+    }
+  }
+}

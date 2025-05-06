@@ -1,0 +1,142 @@
+.row--menu-row {
+  padding-right: 24px;
+
+  color: black;
+  align-items: flex-start;
+
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+  background-color: blue;
+
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+.styledLinkContent {
+  color: white;
+  text-align: start;
+
+}
+
+.footerLayout {
+  background-color: #5E6E84;
+}
+
+.socialNetworksTitle {
+  font-size: 16px;
+  color: #F71963;
+  font-weight: bold;
+}
+
+.menuItem {
+  align-content: start;
+  text-align: start;
+  align-items: start;
+  padding: 0px;
+}
+
+
+.footerLayout :global(.vtex-menu-2-x-styledLinkContent) {
+  white-space: pre-wrap !important;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  font-size: 12 !important;
+  color: white;
+  text-align: start;
+  align-items: flex-start !important;
+
+}
+
+
+.footerLayout :global(.vtex-menu-2-x-menuItem) {
+  white-space: pre-wrap !important;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  font-size: 12px;
+  color: #F71963;
+  font-weight: bold;
+}
+
+
+
+
+.footerLayout :global(.vtex-menu-2-x-styledLinkContent--footerBold) {
+  white-space: pre-wrap !important;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  font-size: 16px;
+  color: #F71963;
+  font-weight: bold;
+}
+
+.footerLayout :global(.vtex-menu-2-x-styledLinkContent--footer) {
+  white-space: pre-wrap !important;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  font-size: 15px;
+}
+
+
+.footerLayout :global(.vtex-menu-2-x-menuContainerNav--test) {
+  width: 38%;
+  justify-content: start;
+}
+
+.socialNetworksContainer {
+  position: relative;
+}
+
+.socialNetworkImage--facebook,
+.socialNetworkImage--instagram,
+.socialNetworkImage--youtube,
+.socialNetworkImage--twitter,
+.socialNetworkImage--pinterest {
+  display: none;
+}
+
+.socialNetworkLink--twitter::after {
+  position: absolute;
+  content: url(assets/socialtw.svg);
+  height: 100%;
+  width: 100%;
+}
+
+.socialNetworkLink--instagram::after {
+  position: absolute;
+  content: url(assets/socialinst.svg);
+  height: 100%;
+  width: 100%;
+}
+
+.socialNetworkLink--facebook::after {
+  position: absolute;
+  content: url(assets/socialfb.svg);
+  height: 100%;
+  width: 100%;
+}
+
+.socialNetworkLink--youtube::after {
+  position: absolute;
+  content: url(assets/socialyt.svg);
+  height: 100%;
+  width: 100%;
+}
+
+.socialNetworkLink--pinterest::after {
+  position: absolute;
+  content: url(assets/socialpin.svg);
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footerLayout :global(.vtex-menu-2-x-menuContainerNav--test) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}

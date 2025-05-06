@@ -1,0 +1,1630 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#appliances",
+      "menu-item#before-you-buy",
+      "menu-item#support",
+      "menu-item#aboutbekoheader"
+    ],
+    "props": {
+      "blockClass": "size-text"
+    }
+  },
+  "menu-item#appliances": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Appliances"
+      },
+      "blockClass": [
+        "headerAppliances",
+        "headerMenuItem"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#appliances"
+    ]
+  },
+  "menu-item#before-you-buy": {
+    "props": {
+      "id": "menu-item-before-you-buy",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Before you buy"
+      },
+      "blockClass": [
+        "headerMenuItem"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-before-buy"
+    ]
+  },
+  "menu-item#support": {
+    "props": {
+      "id": "menu-item-support",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Support"
+      },
+      "blockClass": [
+        "headerMenuItem"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#support"
+    ]
+  },
+  "menu-item#aboutbekoheader": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "About Us"
+      },
+      "blockClass": [
+        "headerMenuItem"
+      ]
+    }
+  },
+  "vtex.menu@2.x:submenu#appliances": {
+    "title": "[MENU] - [TOP] - Appliances Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "flex-layout.row#appliances"
+    ]
+  },
+  "flex-layout.row#appliances": {
+    "title": "[ROW] - Submenu Before Buy",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prova-width"
+    },
+    "children": [
+      "flex-layout.col#refrigeration",
+      "flex-layout.col#laundry",
+      "flex-layout.col#cooking",
+      "flex-layout.col#small-appliances"
+    ]
+  },
+  "flex-layout.col#refrigeration": {
+    "children": [
+      "flex-layout.row#sub-refrigeration",
+      "flex-layout.col#refrigeration-item"
+    ],
+    "props": {
+      "blockClass": "spacer-col"
+    }
+  },
+  "flex-layout.col#laundry": {
+    "children": [
+      "flex-layout.row#sub-laundry",
+      "flex-layout.col#laundry-item",
+      "flex-layout.row#sub-dishwasher",
+      "flex-layout.col#dishwasher-item"
+    ],
+    "props": {
+      "blockClass": "spacer-col"
+    }
+  },
+  "flex-layout.col#cooking": {
+    "children": [
+      "flex-layout.row#sub-cooking",
+      "flex-layout.col#cooking-item"
+    ],
+    "props": {
+      "blockClass": "spacer-col"
+    }
+  },
+  "flex-layout.col#cooking-item": {
+    "children": [
+      "rich-text#built-in-ovens",
+      "rich-text#built-in-hobs",
+      "rich-text#integrated-cooker-hoods",
+      "rich-text#oven-&-hob-packages",
+      "rich-text#built-in-microwaves",
+      "rich-text#freestanding-cookers",
+      "rich-text#range-cookers",
+      "rich-text#microwaves"
+    ]
+  },
+  "rich-text#built-in-ovens": {
+    "title": "[RICH TEXT] - Built-in Ovens",
+    "props": {
+      "text": "Built-in Ovens",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#built-in-hobs": {
+    "title": "[RICH TEXT] - Built-in Hobs",
+    "props": {
+      "text": "Built-in Hobs",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated-cooker-hoods": {
+    "title": "[RICH TEXT] - Integrated Cooker Hoods",
+    "props": {
+      "text": "Integrated Cooker Hoods",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#oven-&-hob-packages": {
+    "title": "[RICH TEXT] - Oven & Hob Packages",
+    "props": {
+      "text": "Oven & Hob Packages",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#built-in-microwaves": {
+    "title": "[RICH TEXT] - Built-in Microwaves",
+    "props": {
+      "text": "Built-in Microwaves",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#freestanding-cookers": {
+    "title": "[RICH TEXT] - Freestanding Cookers",
+    "props": {
+      "text": "Freestanding Cookers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#range-cookers": {
+    "title": "[RICH TEXT] - Range Cookers",
+    "props": {
+      "text": "Range Cookers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#microwaves": {
+    "title": "[RICH TEXT] - Microwaves",
+    "props": {
+      "text": "Microwaves",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "flex-layout.col#laundry-item": {
+    "children": [
+      "rich-text#washing-machines",
+      "rich-text#washer-dryers",
+      "rich-text#tumble-dryers",
+      "rich-text#integrated-washing-machines",
+      "rich-text#integrated-washer-dryers"
+    ]
+  },
+  "flex-layout.col#dishwasher-item": {
+    "children": [
+      "rich-text#full-size",
+      "rich-text#slimline",
+      "rich-text#integrated"
+    ]
+  },
+  "rich-text#full-size": {
+    "title": "[RICH TEXT] - Full Size",
+    "props": {
+      "text": "Full Size",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#slimline": {
+    "title": "[RICH TEXT] - Slimline",
+    "props": {
+      "text": "Slimline",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated": {
+    "title": "[RICH TEXT] - Integrated",
+    "props": {
+      "text": "Integrated",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#washing-machines": {
+    "title": "[RICH TEXT] - Washing Machines",
+    "props": {
+      "text": "Washing Machines",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#washer-dryers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Washer Dryers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#tumble-dryers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Tumble Dryers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated-washing-machines": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Integrated Washing Machines",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated-washer-dryers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Integrated Washer Dryer",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "flex-layout.row#sub-laundry": {
+    "title": "[ROW] - Laundry",
+    "children": [
+      "image#laundry",
+      // "rich-text#laundry",
+      "link#laundry"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "flex-layout.row#sub-dishwasher": {
+    "title": "[ROW] - Dishwasher",
+    "children": [
+      "image#dishwasher",
+      // "rich-text#dishwasher",
+      "link#dishwasher"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#dishwasher": {
+    "title": "[IMAGE] - Dishwashers",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/DishwasherIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#dishwasher": {
+    "title": "[RICH TEXT] - Dishwashers",
+    "props": {
+      "text": "DISHWASHERS",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#dishwasher": {
+    "props": {
+      "label": "DISHWASHERS",
+      "href": "/appliances/Dishwashers",
+      "blockClass": "submenuText"
+    }
+  },
+  // "flex-layout.row#prova": {
+  //   "children": [
+  //     "image#refrigeration",
+  //     "menu-item#refrigeration-mobile"
+  //   ],
+  //   "props": {
+  //     "blockClass": "refrigeration-mobile"
+  //   }
+  // },
+  // REFRIGERATION MOBILE
+  "menu-item#refrigeration-mobile": {
+    "props": {
+      "id": "menu-item-refrigeration-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/appliances/refrigeration",
+        "noFollow": true,
+        "tagTitle": "Refrigeration",
+        "text": "Refrigeration"
+      },
+      "blockClass": [
+        "menuItemCategoryMobile",
+        "menuItemRefrigerationMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#refrigeration"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#refrigeration": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#refrigeration"
+    ]
+  },
+  "vtex.menu@2.x:menu#refrigeration": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "submenuLink"
+        // "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-refrigeration-header-mobile",
+      // "rich-text#fridges",
+      "link#fridges-header-mobile",
+      // "rich-text#freezers",
+      "link#freezers-header-mobile",
+      "rich-text#american-fridge-freezers",
+      "rich-text#integrated-fridge-freezers",
+      "rich-text#integrated-fridges",
+      "rich-text#integrated-freezers"
+    ]
+  },
+  "link#fridges-header-mobile": {
+    "title": "[LINK] - Fridges Header Mobile",
+    "props": {
+      "label": "Fridges",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#freezers-header-mobile": {
+    "title": "[LINK] - Freezers Header Mobile",
+    "props": {
+      "label": "Freezers",
+      "href": "#",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  // LAUNDRY MOBILE
+  "menu-item#laundry-mobile": {
+    "props": {
+      "id": "menu-item-laundry-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Laundry",
+        "text": "Laundry"
+      },
+      "blockClass": [
+        "menuItemCategoryMobile",
+        "menuItemLaundryMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#laundry-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#laundry-mobile": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#laundry-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#laundry-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "width": "100%",
+      "blockClass": [
+        "submenuLink"
+        // "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-laundry-header-mobile",
+      "link#washing-machine-header-mobile",
+      "link#washer-dryers-header-mobile",
+      "link#tumble-dryers-header-mobile"
+    ]
+  },
+  // DISHWASHER MOBILE
+  "menu-item#dishwasher-mobile": {
+    "props": {
+      "id": "menu-item-dishwasher-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Dishwashers",
+        "text": "Dishwashers"
+      },
+      "blockClass": [
+        "menuItemCategoryMobile",
+        "menuItemDishwasherMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#dishwasher-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#dishwasher-mobile": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#dishwasher-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#dishwasher-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "width": "100%",
+      "blockClass": [
+        "submenuLink"
+        // "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-dishwashers-header-mobile",
+      "rich-text#slimline",
+      "rich-text#integrated"
+    ]
+  },
+  // COOKING MOBILE
+  "menu-item#cooking-mobile": {
+    "props": {
+      "id": "menu-item-cooking-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/#",
+        "noFollow": true,
+        "tagTitle": "Cooking",
+        "text": "Cooking"
+      },
+      "blockClass": [
+        "menuItemCategoryMobile",
+        "menuItemCookingMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#cooking-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#cooking-mobile": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#cooking-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#cooking-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "width": "100%",
+      "blockClass": [
+        "submenuLink"
+        // "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-cooking-header-mobile",
+      "link#washing-machine-header-mobile",
+      "link#washer-dryers-header-mobile",
+      "link#tumble-dryers-header-mobile"
+    ]
+  },
+  // SMALL APPLIANCES MOBILE
+  "menu-item#small-appliances-mobile": {
+    "props": {
+      "id": "menu-item-small-appliances-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Small Appliances",
+        "text": "Small Appliances"
+      },
+      "blockClass": [
+        "menuItemCategoryMobile",
+        "menuItemSmallAppliancesMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#small-appliances-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#small-appliances-mobile": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#small-appliances-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#small-appliances-mobile": {
+    "title": "[MENU] - Small Appliances Mobile",
+    "props": {
+      "orientation": "vertical",
+      // "width": "100%",
+      "blockClass": [
+        "submenuLink"
+        // "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-small-appliances-header-mobile",
+      "link#washing-machine-header-mobile",
+      "link#washer-dryers-header-mobile",
+      "link#tumble-dryers-header-mobile"
+    ]
+  },
+  // ELECTRONICS
+  "menu-item#electronics": {
+    "props": {
+      "id": "menu-item-electronics",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics",
+        "noFollow": true,
+        "tagTitle": "Electronics",
+        "text": "Electronics"
+      },
+      "blockClass": [
+        "menuItemCategoryMobile",
+        "menuItemElectronics"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#electronics"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#electronics": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#electronics"
+    ]
+  },
+  "vtex.menu@2.x:menu#electronics": {
+    "title": "[MENU] - Small Appliances Mobile",
+    "props": {
+      "orientation": "vertical",
+      // "width": "100%",
+      "blockClass": [
+        "submenuLink"
+        // "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-electronics-header-mobile",
+      "link#washing-machine-header-mobile",
+      "link#washer-dryers-header-mobile",
+      "link#tumble-dryers-header-mobile"
+    ]
+  },
+  "link#all-refrigeration-header-mobile": {
+    "title": "[LINK] - All Refrigeration Header Mobile",
+    "props": {
+      "label": "All Refrigeration",
+      "href": "/appliances/refrigeration",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#all-dishwashers-header-mobile": {
+    "title": "[LINK] - All Dishwashers Header Mobile",
+    "props": {
+      "label": "All Dishwashers",
+      "href": "/appliances/dishwashers",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#all-cooking-header-mobile": {
+    "title": "[LINK] - All Cooking Header Mobile",
+    "props": {
+      "label": "All Cooking",
+      "href": "/appliances/cooking",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#all-small-appliances-header-mobile": {
+    "title": "[LINK] - All Small Appliances Header Mobile",
+    "props": {
+      "label": "All Small Appliances",
+      "href": "/appliances/small-appliances",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#all-electronics-header-mobile": {
+    "title": "[LINK] - All Electronics Header Mobile",
+    "props": {
+      "label": "All Electronics",
+      "href": "/electronics",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#all-laundry-header-mobile": {
+    "title": "[LINK] - All Laundry Header Mobile",
+    "props": {
+      "label": "All Laundry",
+      "href": "/appliances/laundry",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#washing-machine-header-mobile": {
+    "title": "[LINK] - All Laundry Header Mobile",
+    "props": {
+      "label": "Washing Machine",
+      "href": "#",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#washer-dryers-header-mobile": {
+    "title": "[LINK] - All Laundry Header Mobile",
+    "props": {
+      "label": "Washer Dryers",
+      "href": "#",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "link#tumble-dryers-header-mobile": {
+    "title": "[LINK] - All Laundry Header Mobile",
+    "props": {
+      "label": "Tumble Dryers",
+      "href": "#",
+      "blockClass": "linkHeaderMobile"
+    }
+  },
+  "flex-layout.row#sub-refrigeration": {
+    "title": "[ROW] - Refrigeration",
+    "children": [
+      "image#refrigeration",
+      // "rich-text#refrigeration"
+      "link#refrigeration"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#refrigeration": {
+    "title": "[IMAGE] - Refrigeration",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/FridgeIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#refrigeration": {
+    "title": "[RICH TEXT] - Refrigeration",
+    "props": {
+      "text": "REFRIGERATION",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#refrigeration": {
+    "title": "[LINK] - Refrigeration",
+    "props": {
+      "label": "REFRIGERATION",
+      "href": "/appliances/refrigeration",
+      "blockClass": "submenuText"
+    }
+  },
+  "flex-layout.col#refrigeration-item": {
+    "children": [
+      "rich-text#fridge-freezers",
+      // "rich-text#fridges",
+      "link#fridges-header",
+      "rich-text#freezers",
+      "rich-text#american-fridge-freezers",
+      "rich-text#integrated-fridge-freezers",
+      "rich-text#integrated-fridges",
+      "rich-text#integrated-freezers"
+    ]
+  },
+  "link#fridges-header": {
+    "title": "[LINK] - Fridges Header",
+    "props": {
+      "label": "Fridges",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": "linkHeader"
+    }
+  },
+  "rich-text#fridge-freezers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Fridge Freezers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#fridges": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Fridges",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#freezers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Freezers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#american-fridge-freezers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "American Fridge Freezers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated-fridge-freezers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Integrated Fridge Freezers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated-fridges": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Integrated Fridges",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "rich-text#integrated-freezers": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "Integrated Freezers",
+      "blockClass": "submenuTextItem"
+    }
+  },
+  "flex-layout.row#laundry": {
+    "title": "[ROW] - Laundry",
+    "children": [
+      "image#laundry",
+      // "rich-text#laundry",
+      "link#laundry"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#laundry": {
+    "title": "[IMAGE] - Laundry",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/LaundryIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#laundry": {
+    "title": "[RICH TEXT] - Laundry",
+    "props": {
+      "text": "LAUNDRY",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#laundry": {
+    "title": "[LINK] - Laundry",
+    "props": {
+      "label": "LAUNDRY",
+      "href": "/appliances/laundry",
+      "blockClass": "submenuText"
+    }
+  },
+  "flex-layout.row#sub-cooking": {
+    "title": "[ROW] - Cooking",
+    "children": [
+      "image#cooking",
+      // "rich-text#cooking",
+      "link#cooking"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#cooking": {
+    "title": "[IMAGE] - Cooking",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/CookingIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#cooking": {
+    "title": "[RICH TEXT] - Cooking",
+    "props": {
+      "text": "COOKING",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#cooking": {
+    "title": "[LINK] - Cooking",
+    "props": {
+      "label": "COOKING",
+      "href": "/appliances/cooking",
+      "blockClass": "submenuText"
+    }
+  },
+  // "link#small-appliances": {
+  //   "title": "[LINK] - Small Appliances",
+  //   "props": {
+  //     "blockClass": "submenuLink"
+  //   },
+  //   "children": [
+  //     "flex-layout.row#small-appliances"
+  //   ]
+  // },
+  "flex-layout.col#small-appliances": {
+    "children": [
+      "flex-layout.row#small-appliances",
+      "flex-layout.row#small-appliances-subrow",
+      "flex-layout.row#electronics",
+      "flex-layout.col#dishwasher-item"
+    ],
+    "props": {
+      "blockClass": "spacer-col"
+    }
+  },
+  "flex-layout.row#electronics": {
+    "title": "[ROW] - Cooking",
+    "children": [
+      "image#electronics",
+      // "rich-text#cooking",
+      "link#electronics"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "flex-layout.row#small-appliances-subrow": {
+    "children": [
+      "flex-layout.col#breakfast"
+      // "flex-layout.col#small-cooking-appliances"
+    ]
+  },
+  "flex-layout.col#small-cooking-appliances": {
+    "children": [
+      "rich-text#small-cooking-appliances",
+      "flex-layout.col#dishwasher-item"
+    ]
+  },
+  "flex-layout.col#breakfast": {
+    "children": [
+      // "rich-text#breakfast",
+      "flex-layout.col#dishwasher-item"
+    ]
+  },
+  "link#small-appliances": {
+    "title": "[LINK] - Small Appliances",
+    "props": {
+      "label": "SMALL APPLIANCES",
+      "href": "/appliances/small-appliances",
+      "blockClass": "submenuText"
+    }
+  },
+  "rich-text#small-cooking-appliances": {
+    "title": "[RICH TEXT] - Small Cooking Appliances",
+    "props": {
+      "text": "Small Cooking Appliances",
+      "blockClass": "submenuText"
+    }
+  },
+  "rich-text#breakfast": {
+    "title": "[RICH TEXT] - Breakfast",
+    "props": {
+      "text": "Breakfast",
+      "blockClass": "submenuText"
+    }
+  },
+  "rich-text#small-domestic-appliances": {
+    "title": "[RICH TEXT] - Small Domestic Appliances",
+    "props": {
+      "text": "Small Domestic Appliances ",
+      "blockClass": "submenuText"
+    }
+  },
+  "image#electronics": {
+    "title": "[IMAGE] - Electronics",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/ManualsIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "link#electronics": {
+    "title": "[LINK] - Electronics",
+    "props": {
+      "label": "ELECTRONICS",
+      "href": "/electronics",
+      "blockClass": "submenuText"
+    }
+  },
+  "flex-layout.row#small-appliances": {
+    "title": "[ROW] - Small Appliances",
+    "children": [
+      "image#small-appliances",
+      // "rich-text#small-appliances",
+      "link#small-appliances"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#small-appliances": {
+    "title": "[IMAGE] - Small Appliances",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/SmallAppIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#small-appliances": {
+    "title": "[RICH TEXT] - Small Appliances",
+    "props": {
+      "text": "SMALL APPLIANCES",
+      "blockClass": "submenuText"
+    }
+  },
+  "vtex.menu@2.x:submenu#sub-before-buy": {
+    "title": "[MENU] - [TOP] - Before Buy Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "flex-layout.row#submenu-before-buy"
+    ]
+  },
+  "vtex.menu@2.x:submenu#support": {
+    "title": "[MENU] - [TOP] - Support Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "flex-layout.col#submenu-support"
+    ]
+  },
+  "flex-layout.row#submenu-before-buy": {
+    "title": "[ROW] - Submenu Before Buy",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prova-width"
+    },
+    "children": [
+      "link#buying-guides",
+      "link#technology-innovation",
+      "link#beko-reviews",
+      "link#tips-at-home"
+    ]
+  },
+  // ITEM BUYING GUIDES
+  "link#buying-guides": {
+    "title": "[LINK] - Buying Guides",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#buying-guides"
+    ]
+  },
+  "flex-layout.row#buying-guides": {
+    "title": "[ROW] - Buying Guides",
+    "children": [
+      "image#buying-guides",
+      "rich-text#buying-guides"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#buying-guides": {
+    "title": "[IMAGE] - Buying Guides",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/BuyingGuideLogo.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#buying-guides": {
+    "title": "[RICH TEXT] - Buying Guides",
+    "props": {
+      "text": "Appliance buying guides",
+      "blockClass": "submenuText"
+    }
+  },
+  // ITEM TECHNOLOGY AND INNOVATION
+  "link#technology-innovation": {
+    "title": "[LINK] - Technology And Innovation",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#technology-innovation"
+    ]
+  },
+  "flex-layout.row#technology-innovation": {
+    "title": "[ROW] - Buying Guides",
+    "children": [
+      "image#technology-innovation",
+      "rich-text#technology-innovation"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#technology-innovation": {
+    "title": "[IMAGE] - Buying Guides",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/TechAndInnovation.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#technology-innovation": {
+    "title": "[RICH TEXT] - Buying Guides",
+    "props": {
+      "text": "Technology and Innnovation",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#beko-reviews": {
+    "title": "[ROW] - Buying Guides",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#beko-reviews"
+    ]
+  },
+  "flex-layout.row#beko-reviews": {
+    "title": "[ROW] - Buying Guides",
+    "children": [
+      "image#beko-reviews",
+      "rich-text#beko-reviews"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#beko-reviews": {
+    "title": "[IMAGE] - Reviews",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/ReviewsIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#beko-reviews": {
+    "title": "[RICH TEXT] - Tips at home",
+    "props": {
+      "text": "Reviews",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#tips-at-home": {
+    "title": "[ROW] - Tips at home",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#tips-at-home"
+    ]
+  },
+  "flex-layout.row#tips-at-home": {
+    "title": "[ROW] - Tips at home",
+    "children": [
+      "image#tips-at-home",
+      "rich-text#tips-at-home"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#tips-at-home": {
+    "title": "[IMAGE] - Tips at home",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/TipsIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#tips-at-home": {
+    "title": "[RICH TEXT] - Tips at home",
+    "props": {
+      "text": "Tips at home",
+      "blockClass": "submenuText"
+    }
+  },
+  "flex-layout.col#submenu-support": {
+    "children": [
+      "flex-layout.row#submenu-support-1",
+      "flex-layout.row#submenu-support-2",
+      "flex-layout.row#submenu-support-3",
+      "rich-text#support-subtitle"
+    ],
+    "props": {
+      "blockClass": "prova-width-support"
+    }
+  },
+  "flex-layout.row#submenu-support-1": {
+    "title": "[ROW] - Submenu Support",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prova-width"
+    },
+    "children": [
+      "link#product-registration",
+      "link#instruction-manuals",
+      "link#model-serial-number"
+    ]
+  },
+  "link#product-registration": {
+    "title": "[ROW] - Product Registration",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#product-registration"
+    ]
+  },
+  "flex-layout.row#product-registration": {
+    "title": "[ROW] - Product Registration",
+    "children": [
+      "image#product-registration",
+      "rich-text#product-registration"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#product-registration": {
+    "title": "[IMAGE] - Product Registration",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/ProductRegIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#product-registration": {
+    "title": "[RICH TEXT] - Product Registration",
+    "props": {
+      "text": "PRODUCT REGISTRATION",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#instruction-manuals": {
+    "title": "[ROW] - Instruction Manual",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#instruction-manuals"
+    ]
+  },
+  "flex-layout.row#instruction-manuals": {
+    "title": "[ROW] - Instruction Manual",
+    "children": [
+      "image#instruction-manuals",
+      "rich-text#instruction-manuals"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#instruction-manuals": {
+    "title": "[IMAGE] - Instruction Manual",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/ManualsIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#instruction-manuals": {
+    "title": "[RICH TEXT] - Instruction Manual",
+    "props": {
+      "text": "INSTRUCTION MANUAL",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#model-serial-number": {
+    "title": "[ROW] - Product Registration",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#model-serial-number"
+    ]
+  },
+  "flex-layout.row#model-serial-number": {
+    "title": "[ROW] - Model serial number",
+    "children": [
+      "image#model-serial-number",
+      "rich-text#model-serial-number"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#model-serial-number": {
+    "title": "[IMAGE] - Model serial number",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/ModelSerialIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#model-serial-number": {
+    "title": "[RICH TEXT] - Model serial number",
+    "props": {
+      "text": "MODEL SERIAL NUMBER",
+      "blockClass": "submenuText"
+    }
+  },
+  "flex-layout.row#submenu-support-2": {
+    "title": "[ROW] - Submenu Support",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prova-width"
+    },
+    "children": [
+      "link#faqs",
+      "link#need-a-repair",
+      "link#parts-and-accessories"
+    ]
+  },
+  "link#faqs": {
+    "title": "[ROW] - Faqs",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#faqs"
+    ]
+  },
+  "flex-layout.row#faqs": {
+    "title": "[ROW] - Faqs",
+    "children": [
+      "image#faqs",
+      "rich-text#faqs"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#faqs": {
+    "title": "[IMAGE] - Faqs",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/FAQSIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#faqs": {
+    "title": "[RICH TEXT] - Faqs",
+    "props": {
+      "text": "FAQS",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#need-a-repair": {
+    "title": "[ROW] - Product Registration",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#need-a-repair"
+    ]
+  },
+  "flex-layout.row#need-a-repair": {
+    "title": "[ROW] - Model serial number",
+    "children": [
+      "image#need-a-repair",
+      "rich-text#need-a-repair"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#need-a-repair": {
+    "title": "[IMAGE] - Need a repair",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/RepairsIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#need-a-repair": {
+    "title": "[RICH TEXT] - Need a repair",
+    "props": {
+      "text": "NEED A REPAIR",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#parts-and-accessories": {
+    "title": "[ROW] - Part and accessories",
+    "props": {
+      "blockClass": "submenuLink",
+      "href": "/spare-parts"
+    },
+    "children": [
+      "flex-layout.row#parts-and-accessories"
+    ]
+  },
+  "flex-layout.row#parts-and-accessories": {
+    "title": "[ROW] - Model serial number",
+    "children": [
+      "image#parts-and-accessories",
+      "rich-text#parts-and-accessories"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#parts-and-accessories": {
+    "title": "[IMAGE] - Part and accessories",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/PartsAccessoriesIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#parts-and-accessories": {
+    "title": "[RICH TEXT] - Part and accessories",
+    "props": {
+      "text": "PART AND ACCESSORIES",
+      "blockClass": "submenuText"
+    }
+  },
+  "flex-layout.row#submenu-support-3": {
+    "title": "[ROW] - Submenu Support",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "prova-width"
+    },
+    "children": [
+      "link#how-to-guides",
+      "link#safety-notices",
+      "link#extended-warranty"
+    ]
+  },
+  "link#how-to-guides": {
+    "title": "[ROW] - How to guides",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#how-to-guides"
+    ]
+  },
+  "flex-layout.row#how-to-guides": {
+    "title": "[ROW] - How to guides",
+    "children": [
+      "image#how-to-guides",
+      "rich-text#how-to-guides"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#how-to-guides": {
+    "title": "[IMAGE] - How to guides",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/HowtoGuidesIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#how-to-guides": {
+    "title": "[RICH TEXT] - How to guides",
+    "props": {
+      "text": "HOW TO GUIDES",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#safety-notices": {
+    "title": "[ROW] - Safety notices",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#safety-notices"
+    ]
+  },
+  "flex-layout.row#safety-notices": {
+    "title": "[ROW] - Safety notices",
+    "children": [
+      "image#safety-notices",
+      "rich-text#safety-notices"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#safety-notices": {
+    "title": "[IMAGE] -  Safety notices",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/SafetyIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#safety-notices": {
+    "title": "[RICH TEXT] - Safety notices",
+    "props": {
+      "text": "SAFETY NOTICES",
+      "blockClass": "submenuText"
+    }
+  },
+  "link#extended-warranty": {
+    "title": "[ROW] - Extended warranty",
+    "props": {
+      "blockClass": "submenuLink"
+    },
+    "children": [
+      "flex-layout.row#extended-warranty"
+    ]
+  },
+  "flex-layout.row#extended-warranty": {
+    "title": "[ROW] - Extended warranty",
+    "children": [
+      "image#extended-warranty",
+      "rich-text#extended-warranty"
+    ],
+    "props": {
+      "blockClass": "prova-height"
+    }
+  },
+  "image#extended-warranty": {
+    "title": "[IMAGE] - Extended warranty",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/header2020/ExtWarIcon.svg",
+      "blockClass": "submenuImage"
+    }
+  },
+  "rich-text#extended-warranty": {
+    "title": "[RICH TEXT] - Extended warranty",
+    "props": {
+      "text": "EXTENDED WARRANTY",
+      "blockClass": "submenuText"
+    }
+  },
+  "rich-text#support-subtitle": {
+    "props": {
+      "text": "Do you require further Customer Service? Click here for more details",
+      "blockClass": "title-support"
+    }
+  },
+  "menu-item#appliances-mobile": {
+    "props": {
+      "id": "menu-item-mobile-appliances",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Appliances",
+        "text": "Appliances"
+      },
+      "blockClass": [
+        "headerAppliancesMobile",
+        "headerMenuItem",
+        "headerMenuItemMobile"
+      ]
+    }
+  },
+  "menu-item#before-you-buy-mobile": {
+    "props": {
+      "id": "menu-item-before-you-buy",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Before you buy"
+      },
+      "blockClass": [
+        "headerMenuItemMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#sub-before-buy-mobile"
+    ]
+  },
+  "menu-item#support-mobile": {
+    "props": {
+      "id": "menu-item-support",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Support"
+      },
+      "blockClass": [
+        "headerMenuItemMobile"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#support-mobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#sub-before-buy-mobile": {
+    "title": "[MENU] - [TOP] - Before Buy Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#sub-before-buy-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#sub-before-buy-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mobile"
+    },
+    "children": [
+      "link#buying-guides",
+      "link#technology-innovation",
+      "link#beko-reviews",
+      "link#tips-at-home"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#support-mobile": {
+    "title": "[MENU] - [TOP] - Support Submenu Mobile",
+    "props": {
+      "width": "100%",
+      "blockClass": "headerSubMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#support-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#support-mobile-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "test-mobile"
+    },
+    "children": [
+      "link#product-registration",
+      "link#instruction-manuals",
+      "link#model-serial-number",
+      "link#faqs",
+      "link#need-a-repair",
+      "link#parts-and-accessories",
+      "link#how-to-guides",
+      "link#safety-notices",
+      "link#extended-warranty"
+    ]
+  }
+}

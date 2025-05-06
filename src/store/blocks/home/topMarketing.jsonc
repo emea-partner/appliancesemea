@@ -1,0 +1,587 @@
+{
+  "info-card#home-oven": {
+    "props": {
+      "id": "info-card-home-oven",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/built-in@1x.jpg",
+      "headline": "The new built-in range is beyond beautiful just like nature",
+      "subhead": "<div class='vtex-flex-layout-0-x-flexRow vtex-flex-layout-0-x-flexRow--infoCard'><section class='vtex-store-components-3-x-container ph3 ph5-m ph2-xl mw9 center '><div class='flex vtex-flex-layout-0-x-flexRowContent vtex-flex-layout-0-x-flexRowContent--infoCard'><div class='pr0 flex' style='width:auto'><div class='vtex-flex-layout-0-x-flexCol vtex-flex-layout-0-x-flexCol--infoCard flex flex-column h-100 w-100'><div class='vtex-flex-layout-0-x-flexColChild vtex-flex-layout-0-x-flexColChild--infoCard pb0' style='height:auto'><div class='vtex-rich-text-0-x-container vtex-rich-text-0-x-container--infoCard flex tl items-start justify-start t-body c-on-base'><div class='vtex-rich-text-0-x-wrapper vtex-rich-text-0-x-wrapper--shelfTitle'><h2 class='vtex-rich-text-0-x-heading vtex-rich-text-0-x-heading--shelfTitle t-heading-2 vtex-rich-text-0-x-headingLevel2 vtex-rich-text-0-x-headingLevel2--shelfTitle vtex-rich-text-0-x-heading-level-2'>Summer</h2></div></div><div class='vtex-flex-layout-0-x-flexRow vtex-flex-layout-0-x-flexRow--infoCardCtas'><section class='vtex-store-components-3-x-container ph3 ph5-m ph2-xl mw9 center '><div class='flex vtex-flex-layout-0-x-flexRowContent vtex-flex-layout-0-x-flexRowContent--infoCardCtas'><a target='_self' href='#' class='vtex-store-components-3-x-infoCardCallActionContainer vtex-store-components-3-x-infoCardCallActionContainer--info-card'><button tabindex='0' class='vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-primary b--action-primary c-on-action-primary hover-bg-action-primary hover-b--action-primary hover-c-on-action-primary pointer ' type='button'><div class='vtex-button__label flex items-center justify-center h-100 ph6 ' style='padding-top: 0.25em; padding-bottom: 0.32em;'>explore range</div></button></a></div></section></div></div></div></div></div></section></div>",
+      "callToActionText": "explore range",
+      "blockClass": "info-card",
+      "textAlignment": "center",
+      "textMode": "html"
+    }
+  },
+  "info-card#home-aer-perfect": {
+    "props": {
+      "id": "info-card-home-aer-perfect",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/aeroperfect@1x.jpg",
+      "headline": "",
+      "subhead": "Fast and even cooking with our Aeroperfect ovens",
+      "callToActionText": "Explore Aeroperfect™ Ovens",
+      "blockClass": "info-card",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#home-harvest-fresh": {
+    "props": {
+      "id": "info-card-home-aer-perfect",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/harvestfresh@1x.jpg",
+      "headline": "Preserves vitamins in fruit and veg for longer",
+      "subhead": "",
+      "callToActionText": "Explore Aeroperfect™ Ovens",
+      "blockClass": "info-card",
+      "textAlignment": "center"
+    }
+  },
+  // HOME CARD 1
+  "flex-layout.row#home-card-1": {
+    "title": "[ROW] - Home Card 1",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-1-background",
+      "flex-layout.col#home-card-1",
+      "image#home-card-1"
+    ]
+  },
+  "image#home-card-1-background": {
+    "title": "[IMAGE] - Card 1 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/built-in@1x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-1": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-1",
+      "flex-layout.row#home-card-1-ctas"
+    ]
+  },
+  "rich-text#home-card-1": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## The new built-in range is beyond beautiful just like nature",
+      "textAlignment": "LEFT",
+      "blockClass": "homeCard"
+    }
+  },
+  "image#home-card-1": {
+    "title": "[IMAGE] - Home Card 1",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/appliances/built-in-oven.png",
+      "blockClass": "homeCard1"
+    }
+  },
+  "flex-layout.row#home-card-1-ctas": {
+    "title": "[ROW] - Home Card 1 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "homeCardCtas"
+    },
+    "children": [
+      "link#home-card-1-cta",
+      "modal-trigger#home-card-1-cta"
+    ]
+  },
+  "link#home-card-1-cta": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Explore range",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaBlue"
+      ]
+    }
+  },
+  "modal-trigger#home-card-1-cta": {
+    "title": "[MODAL TRIGGER] - Home Card 1 CTA",
+    "children": [
+      "rich-text#home-card-1-cta",
+      "image#watch-video-cta",
+      "modal-layout#home-card-1-cta"
+    ],
+    "props": {
+      "blockClass": [
+        "watchVideoCta",
+        "homeCard1Cta"
+      ]
+    }
+  },
+  "rich-text#home-card-1-cta": {
+    "title": "[RICH TEXT] - Home Card 1 CTA",
+    "props": {
+      "text": "Watch video",
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-layout#home-card-1-cta": {
+    "title": "[MODAL LAYOUT] - Home Card 1 CTA",
+    "children": [
+      "modal-header#home-card-1-cta",
+      "modal-content#home-card-1-cta"
+    ],
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-header#home-card-1-cta": {
+    "title": "[MODAL HEADER] - Home Card 1 CTA",
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-content#home-card-1-cta": {
+    "title": "[MODAL CONTENT] - Home Card 1 CTA",
+    "children": [
+      "video#home-card-1"
+    ],
+    "props": {
+      "blockClass": "homeCard"
+    }
+  },
+  "video#home-card-1": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=zizjQHXTEIQ",
+      "width": "80%",
+      "height": "90%",
+      "autoPlay": true,
+      "blockClass": "homeCard"
+    }
+  },
+  // HOME CARD 2
+  "flex-layout.row#home-card-2": {
+    "title": "[ROW] - Home Card 2",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-2-background",
+      "flex-layout.col#home-card-2",
+      "image#home-card-2"
+    ]
+  },
+  "image#home-card-2-background": {
+    "title": "[IMAGE] - Card 2 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/aeroperfect@1x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-2": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#home-card-2-image",
+      "rich-text#home-card-2",
+      "flex-layout.row#home-card-2-ctas"
+    ]
+  },
+  "image#home-card-2-image": {
+    "title": "[IMAGE] - Home Card 2 Image",
+    "props": {
+      "src": "assets/aeroperfect__white.svg",
+      "maxWidth": "356px",
+      "blockClass": "homeCard2Image"
+    }
+  },
+  "rich-text#home-card-2": {
+    "title": "[RICH TEXT] - Home Card 2",
+    "props": {
+      "text": "## Fast and even cooking with our Aeroperfect ovens",
+      "textAlignment": "LEFT",
+      "blockClass": "homeCard"
+    }
+  },
+  "image#home-card-2": {
+    "title": "[IMAGE] - Home Card 2",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/appliances/oven.png",
+      "blockClass": "homeCard1"
+    }
+  },
+  "flex-layout.row#home-card-2-ctas": {
+    "title": "[ROW] - Home Card 2 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "homeCardCtas"
+    },
+    "children": [
+      "link#home-card-2-cta",
+      "modal-trigger#home-card-2-cta"
+    ]
+  },
+  "link#home-card-2-cta": {
+    "title": "[LINK] - Home Card 2 CTA",
+    "props": {
+      "label": "Explore Aeroperfect™ Ovens",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaRed"
+      ]
+    }
+  },
+  "modal-trigger#home-card-2-cta": {
+    "title": "[MODAL TRIGGER] - Home Card 2 CTA",
+    "children": [
+      "rich-text#home-card-2-cta",
+      "image#watch-video-cta",
+      "modal-layout#home-card-2-cta"
+    ],
+    "props": {
+      "blockClass": [
+        "watchVideoCta",
+        "homeCard2Cta"
+      ]
+    }
+  },
+  "image#watch-video-cta": {
+    "title": "[IMAGE] - Watch Video Icon",
+    "props": {
+      "src": "assets/watch_video_icon.svg",
+      "maxHeight": "19px",
+      "maxWidth": "19px",
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "rich-text#home-card-2-cta": {
+    "title": "[RICH TEXT] - Home Card 2 CTA",
+    "props": {
+      "text": "Watch video",
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-layout#home-card-2-cta": {
+    "title": "[MODAL LAYOUT] - Home Card 2 CTA",
+    "children": [
+      "modal-header#home-card-2-cta",
+      "modal-content#home-card-2-cta"
+    ],
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-header#home-card-2-cta": {
+    "title": "[MODAL HEADER] - Home Card 2 CTA",
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-content#home-card-2-cta": {
+    "title": "[MODAL CONTENT] - Home Card 2 CTA",
+    "children": [
+      "video#home-card-2"
+    ],
+    "props": {
+      "blockClass": "homeCard"
+    }
+  },
+  "video#home-card-2": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=_9eTN4hMbDE",
+      "width": "80%",
+      "height": "90%",
+      "autoPlay": true,
+      "blockClass": "homeCard"
+    }
+  },
+  // HOME CARD 3
+  "flex-layout.row#home-card-3": {
+    "title": "[ROW] - Home Card 3",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-3-background",
+      "flex-layout.col#home-card-3",
+      "image#home-card-3"
+    ]
+  },
+  "image#home-card-3-background": {
+    "title": "[IMAGE] - Card 3 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/harvestfresh@1x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-3": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#home-card-3-image",
+      "rich-text#home-card-3",
+      "flex-layout.row#home-card-3-ctas"
+    ]
+  },
+  "image#home-card-3-image": {
+    "title": "[IMAGE] - Home Card 3 Image",
+    "props": {
+      "src": "assets/harvest_fresh.svg",
+      "blockClass": "homeCard3Image"
+    }
+  },
+  "rich-text#home-card-3": {
+    "title": "[RICH TEXT] - Home Card 3",
+    "props": {
+      "text": "## Preserves vitamins in fruit and veg for longer",
+      "textAlignment": "LEFT",
+      "blockClass": "homeCard"
+    }
+  },
+  "image#home-card-3": {
+    "title": "[IMAGE] - Home Card 3",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/appliances/fridge.png",
+      "blockClass": "homeCard3"
+    }
+  },
+  "flex-layout.row#home-card-3-ctas": {
+    "title": "[ROW] - Home Card 3 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "homeCardCtas"
+    },
+    "children": [
+      "link#home-card-3-cta",
+      "modal-trigger#home-card-3-cta"
+    ]
+  },
+  "link#home-card-3-cta": {
+    "title": "[LINK] - Home Card 3 CTA",
+    "props": {
+      "label": "HarvestFresh™ Refrigeration",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaGreen"
+      ]
+    }
+  },
+  "modal-trigger#home-card-3-cta": {
+    "title": "[MODAL TRIGGER] - Home Card 3 CTA",
+    "children": [
+      "rich-text#home-card-3-cta",
+      "image#watch-video-cta",
+      "modal-layout#home-card-3-cta"
+    ],
+    "props": {
+      "blockClass": [
+        "watchVideoCta",
+        "homeCard3Cta"
+      ]
+    }
+  },
+  "rich-text#home-card-3-cta": {
+    "title": "[RICH TEXT] - Home Card 3 CTA",
+    "props": {
+      "text": "Watch video",
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-layout#home-card-3-cta": {
+    "title": "[MODAL LAYOUT] - Home Card 3 CTA",
+    "children": [
+      "modal-header#home-card-3-cta",
+      "modal-content#home-card-3-cta"
+    ],
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-header#home-card-3-cta": {
+    "title": "[MODAL HEADER] - Home Card 3 CTA",
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-content#home-card-3-cta": {
+    "title": "[MODAL CONTENT] - Home Card 3 CTA",
+    "children": [
+      "video#home-card-3"
+    ],
+    "props": {
+      "blockClass": "homeCard"
+    }
+  },
+  "video#home-card-3": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=Skgjit6jlTw",
+      "width": "80%",
+      "height": "90%",
+      "autoPlay": true,
+      "blockClass": "homeCard"
+    }
+  },
+  // HOME CARD 4
+  "flex-layout.row#home-card-4": {
+    "title": "[ROW] - Home Card 4",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-4-background",
+      "flex-layout.col#home-card-4",
+      "image#home-card-4"
+    ]
+  },
+  "image#home-card-4-background": {
+    "title": "[IMAGE] - Card 4 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/ariel-2023@2x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-4": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#home-card-4-image",
+      "rich-text#home-card-4",
+      "flex-layout.row#home-card-4-ctas"
+    ]
+  },
+  "image#home-card-4-image": {
+    "title": "[IMAGE] - Home Card 4 Image",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/beko-aquatech-and-ariel-pods.png",
+      "blockClass": "homeCard4Image"
+    }
+  },
+  "rich-text#home-card-4": {
+    "title": "[RICH TEXT] - Home Card 4",
+    "props": {
+      "text": "## Outstanding cleaning & care",
+      "textAlignment": "LEFT",
+      "blockClass": "homeCard"
+    }
+  },
+  "flex-layout.row#home-card-4-ctas": {
+    "title": "[ROW] - Home Card 4 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "homeCardCtas"
+    },
+    "children": [
+      "link#home-card-4-cta"
+      // "modal-trigger#home-card-3-cta"
+    ]
+  },
+  "link#home-card-4-cta": {
+    "title": "[LINK] - Home Card 4 CTA",
+    "props": {
+      "label": "Explore AquaTech® Washing Machines",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaAzure"
+      ]
+    }
+  },
+  "image#home-card-4": {
+    "title": "[IMAGE] - Home Card 4",
+    "props": {
+      "src": "",
+      "blockClass": "homeCard1"
+    }
+  },
+  // HOME CARD 5
+  "flex-layout.row#home-card-5": {
+    "title": "[ROW] - Home Card 5",
+    "props": {
+      "blockClass": "homeCard",
+      "fullWidth": true
+    },
+    "children": [
+      "image#home-card-5-background",
+      "flex-layout.col#home-card-5",
+      "image#home-card-5"
+    ]
+  },
+  "image#home-card-5-background": {
+    "title": "[IMAGE] - Card 5 Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/hero/tumble-dryers@2x.jpg",
+      "blockClass": "homeCardBackground"
+    }
+  },
+  "flex-layout.col#home-card-5": {
+    "title": "[COL] - Home Card Oven",
+    "props": {
+      "blockClass": "homeCard",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#home-card-5",
+      "flex-layout.row#home-card-5-ctas"
+    ]
+  },
+  "rich-text#home-card-5": {
+    "title": "[RICH TEXT] - Home Card 5",
+    "props": {
+      "text": "## Save on energy bills with our Heat Pump Tumble Dryers",
+      "textAlignment": "LEFT",
+      "blockClass": "homeCard"
+    }
+  },
+  "flex-layout.row#home-card-5-ctas": {
+    "title": "[ROW] - Home Card 5 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "homeCardCtas"
+    },
+    "children": [
+      "link#home-card-5-cta"
+      // "modal-trigger#home-card-3-cta"
+    ]
+  },
+  "link#home-card-5-cta": {
+    "title": "[LINK] - Home Card 5 CTA",
+    "props": {
+      "label": "Explore Heat Pump Tumble Dryers",
+      "href": "#",
+      "blockClass": [
+        "homeCardCta",
+        "cardCtaBlue"
+      ]
+    }
+  },
+  "image#home-card-5": {
+    "title": "[IMAGE] - Home Card 5",
+    "props": {
+      "src": "",
+      "blockClass": "homeCard5"
+    }
+  }
+  // -------------------------
+}

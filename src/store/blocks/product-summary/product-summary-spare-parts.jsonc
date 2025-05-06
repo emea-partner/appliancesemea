@@ -1,0 +1,108 @@
+{
+  "flex-layout.col#product-card-spare-parts": {
+    "title": "[COL] - Product Card Spare Parts",
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-sku-selector",
+      "flex-layout.col#product-details-spare-parts",
+      "flex-layout.row#emptyRow"
+    ],
+    "props": {
+      "blockClass": "productCardSpareParts"
+    }
+  },
+  "flex-layout.col#product-details-spare-parts": {
+    "title": "[COL] - Product Details Container Spare Parts",
+    "props": {
+      "blockClass": ["product-card-details", "product-card-details-spare-parts"]
+    },
+    "children": [
+      "flex-layout.row#product-rating-spare-parts",
+      "product-summary-name",
+      "flex-layout.row#onlyPriceSummaryPLP",
+      "flex-layout.row#button-section-spare-parts"
+    ]
+  },
+  "flex-layout.row#product-rating-spare-parts": {
+    "title": "[ROW] - Product Rating Spare Parts",
+    "props": {
+      "blockClass": "productRating"
+    },
+    "children": [
+      "flex-layout.row#spare-parts-availability",
+      "product-rating-inline",
+      "link.product#reviews"
+    ]
+  },
+  "flex-layout.row#spare-parts-availability": {
+    "title": "[ROW] - Spare Parts Availability Container",
+    "props": {
+      "blockClass": "product-code-container"
+    },
+    "children": ["condition-layout.product#spare-parts-availability"]
+  },
+  "condition-layout.product#spare-parts-availability": {
+    "title": "[CONDITION LAYOUT] - Spare Parts Availability",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#in-stock-spare-parts",
+      "Else": "flex-layout.row#out-of-stock-spare-parts"
+    }
+  },
+  "flex-layout.row#in-stock-spare-parts": {
+    "title": "[ROW] - Spare Parts In Stock Container",
+    "props": {
+      "blockClass": ["product-code-container", "spare-parts-availability"]
+    },
+    "children": ["image#in-stock-spare-parts", "rich-text#in-stock-spare-parts"]
+  },
+  "image#in-stock-spare-parts": {
+    "title": "[IMAGE] - In Stock Image",
+    "props": {
+      "blockClass": ["sparePartsStock", "sparePartsInStock"],
+      "src": "https://bekouk.vtexassets.com/arquivos/green-check-circled.png"
+    }
+  },
+  "rich-text#in-stock-spare-parts": {
+    "title": "[RICH TEXT] - In Stock Spare Parts",
+    "props": {
+      "text": "In stock",
+      "blockClass": "sparePartsInStock"
+    }
+  },
+  "flex-layout.row#out-of-stock-spare-parts": {
+    "title": "[ROW] - Spare Parts In Stock Container",
+    "props": {
+      "blockClass": ["product-code-container", "spare-parts-availability"]
+    },
+    "children": [
+      "image#out-of-stock-spare-parts",
+      "rich-text#out-of-stock-spare-parts"
+    ]
+  },
+  "image#out-of-stock-spare-parts": {
+    "title": "[IMAGE] - Out Of Stock Image",
+    "props": {
+      "blockClass": ["sparePartsStock", "sparePartsOutOfStock"],
+      "src": "https://bekouk.vtexassets.com/arquivos/not-deliverable-circled.png"
+    }
+  },
+  "rich-text#out-of-stock-spare-parts": {
+    "title": "[RICH TEXT] - Out Of Stock Spare Parts",
+    "props": {
+      "text": "Despatched in 28 working days",
+      "blockClass": "sparePartsOutOfStock"
+    }
+  },
+  "flex-layout.row#button-section-spare-parts": {
+    "title": "[ROW] - Spare Parts Button Section Container",
+    "props": {
+      "blockClass": "spare-parts-card-button-section"
+    },
+    "children": ["add-to-cart-button#productCardSpareParts"]
+  }
+}

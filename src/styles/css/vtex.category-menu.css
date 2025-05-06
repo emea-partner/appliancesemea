@@ -1,0 +1,17 @@
+.section--department {
+  background-color: #F71963;
+}
+
+.itemContainer .itemContainer--category {
+  background-color: #5E6E84;
+}
+
+.firstLevelLink {
+  color: white;
+  font-size: 16px;
+}
+
+.departmentLink {
+  color: white;
+  font-size: 1rem;
+}

@@ -1,0 +1,264 @@
+{
+  "product-summary.shelf": {
+    "props": {
+      "blockClass": "product-card"
+    },
+    "children": [
+      "condition-layout.product#spare-parts-or-finished-goods"
+    ]
+  },
+  "condition-layout.product#spare-parts-or-finished-goods": {
+    "title": "[CONDITION LAYOUT - Spare Parts or Finished Goods]",
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "6"
+          }
+        }
+      ],
+      "Then": "flex-layout.col#product-card-spare-parts",
+      "Else": "flex-layout.col#product-card-finished-goods"
+    }
+  },
+  "flex-layout.col#product-card-finished-goods": {
+    "title": "[COL] - Product Card Finished Goods",
+    "children": [
+      "overlay-trigger#10-years",
+      "stack-layout#prodsum",
+      "product-summary-sku-selector",
+      "flex-layout.col#productDetails",
+      "flex-layout.row#emptyRow"
+    ],
+    "props": {
+      "blockClass": "productCardFinishedGoods"
+    }
+  },
+  "flex-layout.col#productDetails": {
+    "props": {
+      "blockClass": "product-card-details"
+    },
+    "children": [
+      "flex-layout.row#productRating",
+      "product-summary-name",
+      "condition-layout.product#priceWithDiscountOrNot",
+      "flex-layout.row#buttonSection"
+    ]
+  },
+  "flex-layout.row#emptyRow": {
+    "props": {
+      "blockClass": "productCardEmptyRow"
+    }
+  },
+  "flex-layout.row#productRating": {
+    "props": {
+      "blockClass": "productRating"
+    },
+    "children": [
+      "flex-layout.row#productCode",
+      "product-rating-inline",
+      "link.product#reviews"
+    ]
+  },
+  "flex-layout.row#productCode": {
+    "props": {
+      "blockClass": "product-code-container"
+    },
+    "children": [
+      "rich-text#productCode",
+      "image#energyLabel"
+    ]
+  },
+  "rich-text#productCode": {
+    "props": {
+      "blockClass": "article-code",
+      "text": "B3D510644U"
+    }
+  },
+  "image#energyLabel": {
+    "props": {
+      "blockClass": "energy-label",
+      "src": "https://storage.beko.co.uk/assets/general/EnergyIcons/AG/D.png"
+    }
+  },
+  "link.product#reviews": {
+    "props": {
+      "blockClass": "review-more-link",
+      "href": "#",
+      "label": "READ REVIEWS"
+    }
+  },
+  "condition-layout.product#priceWithDiscountOrNot": {
+    "title": "[CONDITION LAYOUT - Only Selling Price or Price with Discount]",
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "9"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#priceWithDiscountSummaryPLP",
+      "Else": "flex-layout.row#onlyPriceSummaryPLP"
+    }
+  },
+  "flex-layout.row#priceWithDiscountSummaryPLP": {
+    "title": "[ROW] - Product Price with Discount Container",
+    "props": {
+      "blockClass": "summaryPLP"
+    },
+    "children": [
+      "product-selling-price#summaryPLP",
+      "product-spot-price#summaryPLP"
+    ]
+  },
+  "product-selling-price#summaryPLP": {
+    "props": {
+      // "alwaysShow": true,
+      "message": "{sellingPriceValue}",
+      "blockClass": [
+        "summaryPLP"
+      ]
+    }
+  },
+  "product-spot-price#summaryPLP": {
+    "props": {
+      "alwaysShow": true,
+      "message": "{spotPriceValue}",
+      "blockClass": [
+        "summaryPLP"
+      ]
+    }
+  },
+  "flex-layout.row#onlyPriceSummaryPLP": {
+    "title": "[ROW] - Product Price only Container",
+    "props": {
+      "blockClass": "summaryPLP"
+    },
+    "children": [
+      "product-spot-price#summaryPLP"
+    ]
+  },
+  "link.product#productDetails": {
+    "props": {
+      "blockClass": "details-button",
+      "href": "#",
+      "displayMode": "button",
+      "label": "Details & Buy Online"
+    }
+  },
+  "flex-layout.row#buttonSection": {
+    "props": {
+      "blockClass": "product-card-button-section"
+    },
+    "children": [
+      "add-to-cart-button#productCard",
+      "product-comparison-block.selector"
+    ]
+  },
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf",
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "modal-trigger#quickview" // Check quickview.jsonc
+    ]
+  },
+  "overlay-trigger#10-years": {
+    "props": {
+      "blockClass": "product-card-overlay-trigger",
+      "trigger": "hover"
+    },
+    "children": [
+      "image#10-year",
+      "overlay-layout"
+    ]
+  },
+  "image#10-year": {
+    "props": {
+      "blockClass": "10-years-image",
+      "src": "https://storage.beko.co.uk/assets/beko/cornerflashes/guarantee/10-year-parts.png",
+      "maxWidth": 40
+    }
+  },
+  "overlay-layout": {
+    "props": {
+      "showArrow": true,
+      "blockClass": "overlay-tooltip"
+    },
+    "children": [
+      "rich-text#tooltip"
+    ]
+  },
+  "rich-text#tooltip": {
+    "props": {
+      "blockClass": "tooltip-text",
+      "text": "For added peace of mind, this appliance is eligible for our 10 year Guarantee"
+    }
+  },
+  "product-summary-image#shelf": {
+    "props": {
+      "blockClass": "product-card-image",
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": [
+      "product-highlight-wrapper"
+    ]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": [
+      "product-highlight-text"
+    ]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "product-selling-price#summary",
+      "product-price-savings#summary"
+    ]
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": [
+        "discount"
+      ],
+      "blockClass": "summary"
+    }
+  }
+}

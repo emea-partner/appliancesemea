@@ -1,0 +1,155 @@
+.styledLinkContent {
+  color: white;
+  font-size: 16px;
+}
+
+.styledLinkContainer :global(.vtex-menu-2-x-menuItem--isOpen) {
+  white-space: pre-wrap !important;
+  /* overflow: hidden;
+    text-overflow: ellipsis; */
+  font-size: 12px;
+  color: #F71963;
+  font-weight: bold;
+}
+
+.submenuWrapper--headerSubMenu--isOpen {
+  margin-top: 2%;
+  padding-top: 2%;
+  background-color: #5E6E84;
+  border: none;
+  width: "75%";
+}
+
+.menuContainerNav--mobile {
+  width: 100%;
+}
+
+/* .styledLinkContent {
+  color: color: #F71963; ;
+  font-size: 14px;
+} */
+.styledLinkContent--category-home-menu {
+  color: #464646;
+}
+.menuItem--category-home-menu--isOpen {
+  background-color: rgba(224, 224, 224, 1);
+}
+.menuContainer--home-categories-menu {
+  justify-content: center;
+}
+
+.submenuWrapper--home-category-sub-link {
+  background-color: rgba(224, 224, 224, 1);
+  padding: 1.5rem 0;
+}
+
+.menuContainerNav--home-categories-menu {
+  display: none;
+}
+
+/* HEADER */
+.styledLinkContainer--headerMenuItem {
+  margin: 0 1rem;
+}
+
+.menuContainer--size-text {
+  display: flex;
+  align-items: center;
+}
+
+.styledLink--headerMenuItem {
+  display: block;
+  width: auto;
+}
+
+.styledLink--headerAppliances {
+  background-color: #5E6E84;
+  border-radius: 9999px;
+  padding: 10px 30px;
+}
+
+.styledLink--headerMenuItem:hover {
+  font-weight: bold;
+}
+
+/* HEADER MOBILE */
+.styledLinkContainer--headerMenuItemMobile {
+  padding: 15px 20px;
+  margin: 0;
+  /* border-bottom: 1px solid #F71963; */
+}
+.styledLinkContainer--headerAppliancesMobile {
+  border-bottom: 1px solid #F71963;
+}
+.styledLink--headerAppliancesMobile {
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .menuContainerNav--home-categories-menu {
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.menuItem--refrigeration-mobile {
+  /* border-color: #F71963;
+  border-top-style: solid;
+  border-top-width: 1px; */
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.styledLink--refrigeration-mobile::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 50px;
+  position: absolute;
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/FridgeIcon.svg");
+}
+.styledLinkContainer--menuItemCategoryMobile {
+  margin-left: 0.5rem;
+}
+.menuItemInnerDiv--menuItemCategoryMobile {
+  border-bottom: 1px solid #F71963;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.menuItemInnerDiv--menuItemCategoryMobile::before {
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 35px;
+}
+.menuItemInnerDiv--menuItemRefrigerationMobile::before {
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/FridgeIcon.svg");
+}
+.menuItemInnerDiv--menuItemLaundryMobile::before {
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/LaundryIcon.svg");
+}
+.menuItemInnerDiv--menuItemDishwasherMobile::before {
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/DishwasherIcon.svg");
+}
+.menuItemInnerDiv--menuItemCookingMobile::before {
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/CookingIcon.svg");
+}
+.menuItemInnerDiv--menuItemSmallAppliancesMobile::before {
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/SmallAppIcon.svg");
+}
+.menuItemInnerDiv--menuItemElectronics::before {
+  background-image: url("https://storage.beko.co.uk/assets/beko/header2020/ManualsIcon.svg");
+}
+.accordionIcon--menuItemCategoryMobile {
+  visibility: hidden;
+}
+.accordionIcon--headerMenuItemMobile {
+  visibility: hidden;
+}

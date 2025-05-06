@@ -1,0 +1,32 @@
+{
+  "add-to-cart-button": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  },
+  "add-to-cart-button#productCard": {
+    "props": {
+      "blockClass": "details-button",
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "onClickBehavior": "go-to-product-page",
+      "text": "Details & Buy Online"
+    }
+  },
+  "add-to-cart-button#productCardSpareParts": {
+    "props": {
+      "blockClass": "details-button",
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Add To Cart"
+    }
+  },
+
+  "minicart.v2": {
+    "props": {
+      "customPixelEventId": "add-to-cart-button"
+    },
+    "children": ["minicart-base-content"]
+  }
+}

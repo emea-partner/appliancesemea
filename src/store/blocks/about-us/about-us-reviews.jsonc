@@ -1,0 +1,154 @@
+{
+  "flex-layout.row#reviews-about-us": {
+    "children": [
+      "flex-layout.col#reviews-desc",
+      "flex-layout.col#reviews-img"
+    ],
+    "props": {
+      "blockClass": "reviews"
+    }
+  },
+  "flex-layout.col#reviews-desc": {
+    "children": [
+      "rich-text#review-text-heading",
+      "rich-text#review-text-title",
+      "rich-text#review-text-body",
+      "icon#quote",
+      "slider-layout#quotes-slider"
+    ],
+    "props": {
+      "blockClass": "review-description"
+    }
+  },
+  "flex-layout.col#reviews-img": {
+    "children": [
+      "image#reviews-image"
+    ]
+  },
+  "flex-layout.row#reviews-spacer": {
+    "children": [],
+    "props": {
+      "blockClass": "reviews-spacer"
+    }
+  },
+  "rich-text#review-text-heading": {
+    "props": {
+      "text": "Peace of mind for you",
+      "blockClass": "review-text-heading"
+    }
+  },
+  "rich-text#review-text-title": {
+    "props": {
+      "text": "Our Customer Reviews",
+      "blockClass": "review-text-title"
+    }
+  },
+  "rich-text#review-text-body": {
+    "props": {
+      "text": "We've collected thousands of independent reviews and we're proud to announce our products are **recommended by 95% of our customers** on Reevoo and have over 15087 reviews on TrustPilot, with an overall **rating of 4.1 out of 5**.",
+      "blockClass": "review-text-body",
+      "textColor": "base"
+    }
+  },
+  "icon#quote": {
+    "props": {
+      "id": "quote",
+      "size": "20px",
+      "viewBox": "0 0 19 16"
+    }
+  },
+  "image#reviews-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/reevoo/woman.png",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "blockClass": "reviews-lady"
+    }
+  },
+  "slider-layout#quotes-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "quotes-slider",
+      "arrowSize": "15"
+    },
+    "children": [
+      "rich-text#quote-1",
+      "rich-text#quote-2",
+      "rich-text#quote-3"
+    ]
+  },
+  "rich-text#quote-1": {
+    "props": {
+      "text": "Always been pleased with their range of appliances at a great price. Had their appliances for 11 years.",
+      "blockClass": "quote"
+    }
+  },
+  "rich-text#quote-2": {
+    "props": {
+      "text": "Always been pleased with their range of appliances at a great price. Had their appliances for 11 years.",
+      "blockClass": "quote"
+    }
+  },
+  "rich-text#quote-3": {
+    "props": {
+      "text": "Always been pleased witht heir range of appliances at a great price. Had their appliances for 11 years.",
+      "blockClass": "quote"
+    }
+  },
+  "flex-layout.row#reviews-about-us-mobile": {
+    "children": [
+      "flex-layout.col#reviews-desc-mobile",
+      "flex-layout.col#reviews-img-mobile"
+    ],
+    "props": {
+      "blockClass": "reviews-lady-mobile"
+    }
+  },
+  // "stack-layout#reviews-about-us": {
+  //   "children": [
+  //   ],
+  //   "props": {
+  //     "blockClass": "reviews"
+  //   }
+  // },
+  "flex-layout.col#reviews-img-mobile": {
+    "children": [
+      "image#reviews-image-mobile"
+    ]
+  },
+  "image#reviews-image-mobile": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/about/images/reevoo/woman.png",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "blockClass": "reviews-lady-mobile"
+    }
+  },
+  "flex-layout.col#reviews-desc-mobile": {
+    "children": [
+      "rich-text#review-text-heading-mobile",
+      "rich-text#review-text-title-mobile"
+    ],
+    "props": {
+      "blockClass": "review-col-mobile"
+    }
+  },
+  "rich-text#review-text-heading-mobile": {
+    "props": {
+      "text": "Peace of mind for you",
+      "blockClass": "review-text-heading-mobile"
+    }
+  },
+  "rich-text#review-text-title-mobile": {
+    "props": {
+      "text": "Our Customer Reviews",
+      "blockClass": "review-text-subtext-mobile"
+    }
+  }
+}

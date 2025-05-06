@@ -1,0 +1,162 @@
+{
+  "store.home": {
+    "blocks": [
+      "slider-layout#carousel-homepage",
+      // "flex-layout.row#carousel-homepage",
+      "vtex.menu@2.x:menu#categories",
+      // "flex-layout.row#home-middle-content",
+      "responsive-layout.desktop#home-middle-content",
+      "responsive-layout.mobile#home-middle-content",
+      "rich-text#home-bottom-text",
+      "flex-layout.row#home-safety"
+    ]
+  },
+  "responsive-layout.desktop#home-middle-content": {
+    "title": "[RESPONSIVE LAYOUT - DESKTOP] - Home Middle Content",
+    "children": [
+      "flex-layout.row#home-middle-content"
+    ]
+  },
+  "responsive-layout.mobile#home-middle-content": {
+    "title": "[RESPONSIVE LAYOUT - MOBILE] - Home Middle Content",
+    "children": [
+      "flex-layout.row#home-middle-content-mobile",
+      "info-card#home-middle-3-mobile",
+      "flex-layout.row#diagonal-divider",
+      "info-card#home-middle-4-mobile"
+    ]
+  },
+  // "flex-layout.row#carousel-homepage": {
+  //   "props": {
+  //     "fullWidth": true
+  //   },
+  //   "children": [
+  //     "slider-layout#carousel-homepage"
+  //   ]
+  // },
+  "slider-layout#carousel-homepage": {
+    "title": "[SLIDER LAYOUT] - Carousel Homepage",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "flex-layout.row#home-card-1",
+      "flex-layout.row#home-card-2",
+      "flex-layout.row#home-card-3",
+      "flex-layout.row#home-card-4",
+      "flex-layout.row#home-card-5"
+    ]
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  },
+  // SAFETY 
+  "flex-layout.row#home-safety": {
+    "title": "[ROW] - Home Safety",
+    "props": {
+      "horizontalAlign": "between",
+      "blockClass": "homeSafety"
+    },
+    "children": [
+      "flex-layout.row#safety-row",
+      "link#safety-row"
+    ]
+  },
+  "flex-layout.row#safety-row": {
+    "title": "[ROW] - Safety Row",
+    "props": {
+      "blockClass": "safetyRow"
+    },
+    "children": [
+      "image#safety-row",
+      "rich-text#safety-row"
+    ]
+  },
+  "image#safety-row": {
+    "title": "[IMAGE] - Safety Row",
+    "props": {
+      "src": "assets/safety_icon.svg",
+      "maxWidth": "46px",
+      "maxHeight": "46px",
+      "blockClass": "safetyRow"
+    }
+  },
+  "rich-text#safety-row": {
+    "title": "[RICH TEXT] - Safety Row",
+    "props": {
+      "text": "Important product safety information (Tumble Dryers, Fridge Freezers & Gas Cookers)",
+      "blockClass": "safetyRow"
+    }
+  },
+  "link#safety-row": {
+    "title": "[LINK] - Safety Row",
+    "props": {
+      "label": "See details",
+      "href": "#",
+      "blockClass": "safetyRow"
+    }
+  }
+}

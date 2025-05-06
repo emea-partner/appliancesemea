@@ -1,0 +1,273 @@
+.link--submenuLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* HOME CARDS CTAS */
+.link--homeCardCta {
+  width: auto !important;
+  padding: 0.75rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link--plpPromotionBanner-cta {
+  width: auto !important;
+  padding: 0.75rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link--cardCtaBluePromotionBanner1 {
+  color: rgba(0, 33, 53, 1);
+  background-color: white;
+}
+
+.link--cardCtaBluePromotionBanner1:hover {
+  color: white;
+  background-color: rgba(0, 33, 53, 1);
+
+  border: 2px solid white;
+}
+
+.link--cardCtaBluePromotionBanner2 {
+  color: white !important;
+  background-color: #ff9800 !important;
+}
+
+.link--cardCtaBluePromotionBanner2:hover {
+  color: #ff9800 !important;
+  background-color: white !important;
+  border: 2px solid #ff9800;
+}
+
+.link--plpPromotionBanner-cta-mobile {
+  width: auto !important;
+  padding: 0.45rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link--pdpPromotionBanner-cta-mobile {
+  width: auto !important;
+  padding: 0.35rem 1.8rem;
+  font-size: 13px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link--cardCtaBluePromotionBanner1-mobile {
+  color: rgba(0, 33, 53, 1);
+  background-color: white;
+  font-size: 13px;
+}
+
+.link--cardCtaBluePromotionBanner2-mobile {
+  color: white !important;
+  background-color: #ff9800 !important;
+  font-size: 13px;
+}
+
+.link--cardCtaBlue {
+  color: rgba(0, 33, 53, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.link--cardCtaBlue:hover {
+  background-color: rgba(0, 164, 219, 1);
+}
+
+.link--cardCtaGreenAboutUs:hover {
+  background-color: rgba(0, 33, 53, 1);
+  color: #fff;
+}
+
+.link--cardCtaGreenAboutUs {
+  background-color: #56b632;
+  color: #fff;
+}
+
+.link--cardCtaRed {
+  color: #fff;
+  background-color: rgba(174, 66, 68, 1);
+}
+
+.link--cardCtaRed:hover {
+  background-color: rgba(113, 113, 113, 1);
+}
+
+.link--cardCtaGreen {
+  color: #fff;
+  background-color: rgba(86, 182, 50, 1);
+}
+
+.link--cardCtaGreen:hover {
+  background-color: rgba(255, 147, 0, 1);
+}
+
+.link--cardCtaAzure {
+  color: #fff;
+  background-color: rgba(147, 188, 208, 1);
+}
+
+.link--cardCtaAzure:hover {
+  background-color: rgba(0, 164, 219, 1);
+}
+
+.link--safetyRow {
+  width: auto !important;
+  height: fit-content;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(0, 33, 53, 1);
+}
+
+.link--safetyRow:hover {
+  background-color: rgba(0, 67, 109, 1);
+}
+
+.link--home-category-sub-link {
+  /* color: white;
+  font-size: 14px;
+  margin: 0 2rem;
+  border-color: #007db1;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%; */
+  color: #464646;
+  margin: 0 2rem;
+}
+
+.link--linkHeader {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  margin: 1rem 0;
+}
+
+.link--linkHeaderMobile {
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.label--review-more-link {
+  color: #343333;
+  font-size: 10px;
+  line-height: 10px;
+  margin-left: 10px;
+  padding: 7px 13px 7px 0;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* PRE PLP */
+.link--prePlpCtaWhite {
+  background-color: #fff;
+  color: #002135;
+}
+.link--prePlpCtaWhite:hover {
+  background-color: #002135;
+  color: #fff;
+}
+.link--prePlpCtaLightBlue {
+  background-color: #F71963;
+  color: #fff;
+}
+.link--prePlpCtaLightBlue:hover {
+  background-color: #002135;
+}
+.link--prePlpCatLink {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+.link--prePlpCatLink:hover {
+  background-color: #00436d;
+}
+.link--prePlpCtaGreen {
+  background-color: #56b632;
+  color: #fff;
+}
+.link--prePlpCtaGreen:hover {
+  background-color: #002135;
+  color: #fff;
+}
+.link--prePlpCtaOrange {
+  background-color: #ff9300;
+  color: #fff;
+}
+.link--prePlpCtaOrange:hover {
+  background-color: #002135;
+  color: #fff;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px) {
+  /* PRE PLP */
+  .link--plpPromotionBannerCtaMobile {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+  }
+}
+
+.link--about-us-button:hover {
+  background-color: white;
+  color: #002135;
+}
+
+.link--about-us-button {
+  background-color: #002135;
+  color: rgba(255, 255, 255, 1);
+}
+
+.link--about-us-button-mobile {
+  background-color: #002135;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  width: 90% !important;
+}
+.link--triggerCatCol {
+  color: white;
+  text-decoration: none;
+}
+.link--submenuText {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #F71963;
+  font-size: 14px;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  padding-top: 17px;
+}

@@ -1,0 +1,545 @@
+{
+  "vtex.menu@2.x:menu#categories": {
+    "props": {
+      "blockClass": [
+        "home-categories-menu"
+      ]
+    },
+    "children": [
+      "flex-layout.row#refrigeration",
+      "flex-layout.row#laundry",
+      "flex-layout.row#dishwasher",
+      "flex-layout.row#cooking",
+      "flex-layout.row#smallAppliance"
+    ]
+  },
+  "flex-layout.row#refrigeration": {
+    "props": {
+      "blockClass": "home-categories-menu-item"
+    },
+    "children": [
+      "image#home-refrigeration-category-image",
+      "menu-item#refrigerator"
+    ]
+  },
+  "flex-layout.row#laundry": {
+    "props": {
+      "blockClass": "home-categories-menu-item"
+    },
+    "children": [
+      "image#home-laundry-category-image",
+      "menu-item#laundry"
+    ]
+  },
+  "flex-layout.row#dishwasher": {
+    "props": {
+      "blockClass": "home-categories-menu-item"
+    },
+    "children": [
+      "image#home-dishwasher-category-image",
+      "menu-item#dishwasher"
+    ]
+  },
+  "flex-layout.row#cooking": {
+    "props": {
+      "blockClass": "home-categories-menu-item"
+    },
+    "children": [
+      "image#home-cooking-category-image",
+      "menu-item#cooking"
+    ]
+  },
+  "flex-layout.row#smallAppliance": {
+    "props": {
+      "blockClass": "home-categories-menu-item"
+    },
+    "children": [
+      "image#home-small-appliance-category-image",
+      "menu-item#smallAppliance"
+    ]
+  },
+  "image#home-refrigeration-category-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/product-carousel/refrigeration.png",
+      "blockClass": "imageMenuHome"
+    }
+  },
+  "image#home-laundry-category-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/product-carousel/laundry.png",
+      "blockClass": "imageMenuHome"
+    }
+  },
+  "image#home-dishwasher-category-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/product-carousel/dishwashers.png",
+      "blockClass": "imageMenuHome"
+    }
+  },
+  "image#home-cooking-category-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/product-carousel/cooking.png",
+      "blockClass": "imageMenuHome"
+    }
+  },
+  "image#home-small-appliance-category-image": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/homepage/images/product-carousel/small-appliances.png",
+      "blockClass": "imageMenuHome"
+    }
+  },
+  // REFRIGERATION
+  "menu-item#refrigerator": {
+    "props": {
+      "id": "menu-item-refrigerator",
+      "blockClass": "category-home-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/appliances/refrigeration",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Refrigeration"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-refrigeration"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sub-refrigeration": {
+    "title": "[MENU] - [CATEGORIES] - Refrigeration Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-refrigeration",
+      "link#multidoor",
+      "link#americanStyle",
+      "link#fridges&freezers",
+      "link#fridges",
+      "link#freezers"
+    ]
+  },
+  "link#all-refrigeration": {
+    "title": "[MENU] - [CATEGORIES] - First item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "All refrigeration"
+    }
+  },
+  "link#multidoor": {
+    "title": "[MENU] - [CATEGORIES] - Second item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Multi-Door"
+    }
+  },
+  "link#americanStyle": {
+    "title": "[MENU] - [CATEGORIES] - Third item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "American style"
+    }
+  },
+  "link#fridges&freezers": {
+    "title": "[MENU] - [CATEGORIES] - fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Fridge Freezers"
+    }
+  },
+  "link#fridges": {
+    "title": "[MENU] - [CATEGORIES] - fifth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Fridges"
+    }
+  },
+  "link#freezers": {
+    "title": "[MENU] - [CATEGORIES] - sixth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Freezers"
+    }
+  },
+  // LAUNDRY
+  "menu-item#laundry": {
+    "props": {
+      "id": "menu-item-laundry",
+      "blockClass": "category-home-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Laundry"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-laundry"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sub-laundry": {
+    "title": "[MENU] - [CATEGORIES] - Laundry Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-laundry",
+      "link#washingMachine",
+      "link#washerDryers",
+      "link#tumbleDryers"
+    ]
+  },
+  "link#all-laundry": {
+    "title": "[MENU] - [CATEGORIES] - First item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "All Laundry"
+    }
+  },
+  "link#washingMachine": {
+    "title": "[MENU] - [CATEGORIES] - Second item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Washing machine"
+    }
+  },
+  "link#washerDryers": {
+    "title": "[MENU] - [CATEGORIES] - Third item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Washer Dryers"
+    }
+  },
+  "link#tumbleDryers": {
+    "title": "[MENU] - [CATEGORIES] - fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Tumble Dryers"
+    }
+  },
+  // DISHWASHER
+  "menu-item#dishwasher": {
+    "props": {
+      "id": "menu-item-laundry",
+      "blockClass": "category-home-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Dishwashers"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-dishwasher"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sub-dishwasher": {
+    "title": "[MENU] - [CATEGORIES] - Dishwasher Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-dishwasher",
+      "link#fullSize",
+      "link#slimline"
+    ]
+  },
+  "link#all-dishwasher": {
+    "title": "[MENU] - [CATEGORIES] - First item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "All Dishwashers"
+    }
+  },
+  "link#fullSize": {
+    "title": "[MENU] - [CATEGORIES] - Second item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Full Size"
+    }
+  },
+  "link#slimline": {
+    "title": "[MENU] - [CATEGORIES] - Third item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Slimline"
+    }
+  },
+  // COOKING
+  "menu-item#cooking": {
+    "props": {
+      "id": "menu-item-cooking",
+      "blockClass": "category-home-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Cooking"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-cooking"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sub-cooking": {
+    "title": "[MENU] - [CATEGORIES] - Cooking Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-cooking",
+      "link#builInOvens",
+      "link#builtInHobs",
+      "link#rangeCookers",
+      "link#freestandingCookers",
+      "link#microwaves"
+    ]
+  },
+  "link#all-cooking": {
+    "title": "[MENU] - [CATEGORIES] - First item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "All Cooking"
+    }
+  },
+  "link#builInOvens": {
+    "title": "[MENU] - [CATEGORIES] - Second item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Built-in Ovens"
+    }
+  },
+  "link#builtInHobs": {
+    "title": "[MENU] - [CATEGORIES] - Third item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Built-in Hobs"
+    }
+  },
+  "link#builtInHoods": {
+    "title": "[MENU] - [CATEGORIES] - Fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Built-in Hoods"
+    }
+  },
+  "link#rangeCookers": {
+    "title": "[MENU] - [CATEGORIES] - Fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Range Cookers"
+    }
+  },
+  "link#freestandingCookers": {
+    "title": "[MENU] - [CATEGORIES] - Fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Freestanding Cookers"
+    }
+  },
+  "link#microwaves": {
+    "title": "[MENU] - [CATEGORIES] - Fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Microwaves"
+    }
+  },
+  // SMALL APPLIANCES
+  "menu-item#smallAppliance": {
+    "props": {
+      "id": "menu-item-small-appliance",
+      "blockClass": "category-home-menu",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Small Appliance"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-small-appliance"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sub-small-appliance": {
+    "title": "[MENU] - [CATEGORIES] - Small Appliance Submenu Desktop",
+    "props": {
+      "width": "100%",
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ]
+    },
+    "children": [
+      "link#all-small-appliance",
+      "link#breakfast-appliance",
+      "link#foodPreparation",
+      "link#small-cooking-appliance",
+      "link#small-domestic-appliance"
+    ]
+  },
+  "link#all-small-appliance": {
+    "title": "[MENU] - [CATEGORIES] - First item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "All Small Appliances"
+    }
+  },
+  "link#breakfast-appliance": {
+    "title": "[MENU] - [CATEGORIES] - Second item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Breakfast Appliances"
+    }
+  },
+  "link#foodPreparation": {
+    "title": "[MENU] - [CATEGORIES] - Third item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Food Preparation"
+    }
+  },
+  "link#small-cooking-appliance": {
+    "title": "[MENU] - [CATEGORIES] - fourth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Small Cooking Appliances"
+    }
+  },
+  "link#small-domestic-appliance": {
+    "title": "[MENU] - [CATEGORIES] - fifth item",
+    "props": {
+      "blockClass": [
+        "submenuLink",
+        "home-category-sub-link"
+      ],
+      "href": "#",
+      "label": "Small Domestic Appliances"
+    }
+  }
+}

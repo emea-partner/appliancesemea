@@ -1,0 +1,1297 @@
+{
+  // TOP BANNER
+  "flex-layout.row#pre-plp-banner-top": {
+    "title": "[ROW] - Pre PLP Banner Top",
+    "props": {
+      "blockClass": "plpPromotionBanner",
+      "fullWidth": true
+    },
+    "children": [
+      "image#pre-plp-banner-top-background",
+      "flex-layout.col#pre-plp-banner-top"
+    ]
+  },
+  "image#pre-plp-banner-top-background": {
+    "title": "[IMAGE] - Pre PLP Banner Top Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/hero@1x.jpg",
+      "blockClass": "plpPromotionBanner"
+    }
+  },
+  "flex-layout.col#pre-plp-banner-top": {
+    "title": "[COL] - Pre PLP Banner Top",
+    "props": {
+      "blockClass": "plpPromotionBanner",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#pre-plp-banner-top",
+      "flex-layout.row#pre-plp-banner-top-ctas"
+    ]
+  },
+  "rich-text#pre-plp-banner-top": {
+    "title": "[RICH TEXT] - Home Card 1",
+    "props": {
+      "text": "## Keeping your food fresh",
+      "textAlignment": "LEFT",
+      "blockClass": "plpPromotionBanner"
+    }
+  },
+  "flex-layout.row#pre-plp-banner-top-ctas": {
+    "title": "[ROW] - Home Card 1 CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "plpPromotionBanner-ctas"
+    },
+    "children": [
+      "link#pre-plp-banner-top-cta-1",
+      "link#pre-plp-banner-top-cta-2"
+    ]
+  },
+  "link#pre-plp-banner-top-cta-1": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "View Range",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta",
+        "prePlpCtaWhite"
+      ]
+    }
+  },
+  "link#pre-plp-banner-top-cta-2": {
+    "title": "[LINK] - Home Card 1 CTA",
+    "props": {
+      "label": "Our technology",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta",
+        "prePlpCtaLightBlue"
+      ]
+    }
+  },
+  // BREADCRUMB
+  "flex-layout.row#bread-pre-plp": {
+    "title": "[ROW] - Breadcrumb Pre Plp",
+    "children": [
+      "breadcrumb.search#pre-plp"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": false,
+      "fullWidth": true,
+      "blockClass": "bekoBreadcrumbContainer"
+    }
+  },
+  "breadcrumb.search#pre-plp": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": [
+        "bekoBreadcrumb",
+        "prePlpBreadcrumb"
+      ]
+    }
+  },
+  // DISCLAIMER TOP
+  "flex-layout.row#pre-plp-disclaimer-top": {
+    "title": "[ROW] - Pre Plp Disclaimer Top",
+    "props": {
+      "fullWidth": false,
+      "horizontalAlign": "center",
+      "blockClass": "prePlpDisclaimerTop"
+    },
+    "children": [
+      "image#pre-plp-disclaimer-top",
+      "rich-text#pre-plp-disclaimer-top"
+    ]
+  },
+  "image#pre-plp-disclaimer-top": {
+    "title": "[IMAGE] - Pre Plp Disclaimer Top",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/flame-retardant.png",
+      "maxHeight": "58px"
+    }
+  },
+  "rich-text#pre-plp-disclaimer-top": {
+    "title": "[RICH TEXT] - Pre Plp Disclaimer Top",
+    "props": {
+      "text": "## Flame Retardant Backs\nOn all current refrigeration products – [Read more](/#)",
+      "blockClass": "prePlpDisclaimerTop"
+    }
+  },
+  // SEO TEXT
+  "rich-text#pre-plp-seo-text": {
+    "title": "[RICH TEXT] - Pre Plp SEO Text",
+    "props": {
+      "text": "Enjoy the food you love with the UK’s largest range of quality fridges and freezers. With over 30 years of experience producing reliable refrigeration appliances, our range of stylish fridges and fridge freezers feature the latest cooling technologies that work to save valuable time and effort. Whether you need a fridge that helps keep food fresh for up to 30 days, or a freezer that works in your garage, discover the perfect appliance for you in our fridge and freezer range. For added peace of mind, selected models feature our 10 Year Parts Guarantee.<br><br>**Since 2007, all refrigeration products have been manufactured using a flame retardant back.**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "prePlpSeoText"
+    }
+  },
+  // MAIN CONTENT
+  "flex-layout.row#pre-plp-main-content": {
+    "title": "[ROW] - Pre Plp Main Content",
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass": "prePlpMainContent"
+    },
+    "children": [
+      "flex-layout.col#pre-plp-main-content"
+    ]
+  },
+  "flex-layout.col#pre-plp-main-content": {
+    "title": "[COL] - Pre Plp Main Content",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "prePlpMainContent"
+    },
+    "children": [
+      "image#pre-plp-fruit-1",
+      "image#pre-plp-fruit-2",
+      "image#pre-plp-fruit-3",
+      "image#pre-plp-fruit-4",
+      "flex-layout.row#pre-plp-main-content-row-1",
+      "flex-layout.row#pre-plp-main-content-row-2"
+    ]
+  },
+  "image#pre-plp-fruit-1": {
+    "title": "[IMAGE] - Pre PLP Fruit 1",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/flatlay/2@2x.jpg",
+      "blockClass": [
+        "prePlpFruit",
+        "prePlpFruit1"
+      ]
+    }
+  },
+  "image#pre-plp-fruit-2": {
+    "title": "[IMAGE] - Pre PLP Fruit 2",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/flatlay/1@2x.jpg",
+      "blockClass": [
+        "prePlpFruit",
+        "prePlpFruit2"
+      ]
+    }
+  },
+  "image#pre-plp-fruit-3": {
+    "title": "[IMAGE] - Pre PLP Fruit 3",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/flatlay/3@2x.jpg",
+      "blockClass": [
+        "prePlpFruit",
+        "prePlpFruit3"
+      ]
+    }
+  },
+  "image#pre-plp-fruit-4": {
+    "title": "[IMAGE] - Pre PLP Fruit 4",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/flatlay/4@2x.jpg",
+      "blockClass": [
+        "prePlpFruit",
+        "prePlpFruit4"
+      ]
+    }
+  },
+  // MAIN CONTENT - ROW 1
+  "flex-layout.row#pre-plp-main-content-row-1": {
+    "title": "[ROW] - Pre Plp Main Content Row 1",
+    "props": {
+      // "horizontalAlign": "center",
+      "blockClass": "prePlpMainContentRow"
+    },
+    "children": [
+      "flex-layout.col#pre-plp-cat-col-1",
+      "flex-layout.col#pre-plp-cat-col-2"
+    ]
+  },
+  // MAIN CONTENT - ROW 1 CAT COL 1
+  "flex-layout.col#pre-plp-cat-col-1": {
+    "title": "[COL] - Pre Plp Cat Col 1",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "image#pre-plp-cat-col-1",
+      "rich-text#pre-plp-cat-col-1",
+      "overlay-trigger#pre-plp-cat-col-1"
+    ]
+  },
+  "image#pre-plp-cat-col-1": {
+    "title": "[IMAGE] - Pre Plp Cat Col 1",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/appliances/american-fridge-freezer@2x.jpg",
+      "blockClass": "prePlpCatCol"
+    }
+  },
+  "rich-text#pre-plp-cat-col-1": {
+    "title": "[RICH TEXT] - Pre Plp Cat Col 1",
+    "props": {
+      "text": "### American Style\nLots of space and packed with technology to preserve the freshness of your food.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "prePlpCatCol"
+      ]
+    }
+  },
+  "overlay-trigger#pre-plp-cat-col-1": {
+    "title": "[OVERLAY TRIGGER] - Pre Plp Cat Col 1",
+    "props": {
+      "trigger": "hover",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "link#trigger-cat-col-1",
+      "overlay-layout#pre-plp-cat-col-1"
+    ]
+  },
+  "link#trigger-cat-col-1": {
+    "title": "[LINK] - Trigger Cat Col 1",
+    "props": {
+      "label": "American Style",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": [
+        "triggerCatCol",
+        "triggerCatCol1"
+      ]
+    }
+  },
+  "overlay-layout#pre-plp-cat-col-1": {
+    "title": "[OVERLAY LAYOUT] - Pre Plp Cat Col 1",
+    "props": {
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatCol1"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cat-col-1-links"
+    ]
+  },
+  "flex-layout.col#cat-col-1-links": {
+    "title": "[COL] - Cat Col 1 Links",
+    "props": {
+      "blockClass": [
+        "catColLinks"
+      ]
+    },
+    "children": [
+      "link#cat-1-link-1",
+      "link#cat-1-link-2",
+      "link#cat-1-link-3",
+      "link#cat-1-link-4",
+      "link#cat-1-link-5",
+      "link#cat-1-link-6"
+    ]
+  },
+  "link#cat-1-link-1": {
+    "props": {
+      "label": "Black American Style Fridge",
+      "href": "",
+      "blockClass": [
+        "prePlpCatLink"
+      ]
+    }
+  },
+  "link#cat-1-link-2": {
+    "props": {
+      "label": "American Style Fridge Freezers with Plumbed Water & Ice Dispensers",
+      "href": "",
+      "blockClass": [
+        "prePlpCatLink"
+      ]
+    }
+  },
+  "link#cat-1-link-3": {
+    "props": {
+      "label": "American Style Fridge Freezers with Non-Plumbed Water",
+      "href": "",
+      "blockClass": [
+        "prePlpCatLink"
+      ]
+    }
+  },
+  "link#cat-1-link-4": {
+    "props": {
+      "label": "Side-By-Side Fridge Freezers",
+      "href": "",
+      "blockClass": [
+        "prePlpCatLink"
+      ]
+    }
+  },
+  "link#cat-1-link-5": {
+    "props": {
+      "label": "American Style Neofrost Fridge Freezers",
+      "href": "",
+      "blockClass": [
+        "prePlpCatLink"
+      ]
+    }
+  },
+  "link#cat-1-link-6": {
+    "props": {
+      "label": "Small American Fridge Freezers",
+      "href": "",
+      "blockClass": [
+        "prePlpCatLink"
+      ]
+    }
+  },
+  // MAIN CONTENT - ROW 1 CAT COL 2
+  "flex-layout.col#pre-plp-cat-col-2": {
+    "title": "[COL] - Pre Plp Cat Col 2",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "image#pre-plp-cat-col-2",
+      "rich-text#pre-plp-cat-col-2",
+      "overlay-trigger#pre-plp-cat-col-2"
+    ]
+  },
+  "image#pre-plp-cat-col-2": {
+    "title": "[IMAGE] - Pre Plp Cat Col 2",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/appliances/multi-door-fridge-freezer@2x.jpg",
+      "blockClass": "prePlpCatCol"
+    }
+  },
+  "rich-text#pre-plp-cat-col-2": {
+    "title": "[RICH TEXT] - Pre Plp Cat Col 2",
+    "props": {
+      "text": "### Multi-Door\nStylish design balanced with innovative technology to save you time and keep food fresh.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "prePlpCatCol"
+      ]
+    }
+  },
+  "overlay-trigger#pre-plp-cat-col-2": {
+    "title": "[OVERLAY TRIGGER] - Pre Plp Cat Col 2",
+    "props": {
+      "trigger": "hover",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "link#trigger-cat-col-2",
+      "overlay-layout#pre-plp-cat-col-2"
+    ]
+  },
+  "link#trigger-cat-col-2": {
+    "title": "[LINK] - Trigger Cat Col 2",
+    "props": {
+      "label": "Multi-Door",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": [
+        "triggerCatCol",
+        "triggerCatCol2"
+      ]
+    }
+  },
+  "overlay-layout#pre-plp-cat-col-2": {
+    "title": "[OVERLAY LAYOUT] - Pre Plp Cat Col 2",
+    "props": {
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatCol2"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cat-col-1-links"
+    ]
+  },
+  // MAIN CONTENT - ROW 2
+  "flex-layout.row#pre-plp-main-content-row-2": {
+    "title": "[ROW] - Pre Plp Main Content Row 2",
+    "props": {
+      "blockClass": "prePlpMainContentRow"
+    },
+    "children": [
+      "flex-layout.col#pre-plp-cat-col-3",
+      "flex-layout.col#pre-plp-cat-col-4",
+      "flex-layout.col#pre-plp-cat-col-5"
+    ]
+  },
+  // MAIN CONTENT - ROW 2 CAT COL 3
+  "flex-layout.col#pre-plp-cat-col-3": {
+    "title": "[COL] - Pre Plp Cat Col 3",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "image#pre-plp-cat-col-3",
+      "rich-text#pre-plp-cat-col-3",
+      "overlay-trigger#pre-plp-cat-col-3"
+    ]
+  },
+  "image#pre-plp-cat-col-3": {
+    "title": "[IMAGE] - Pre Plp Cat Col 3",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/appliances/fridge-freezer@2x.jpg",
+      "blockClass": "prePlpCatCol"
+    }
+  },
+  "rich-text#pre-plp-cat-col-3": {
+    "title": "[RICH TEXT] - Pre Plp Cat Col 3",
+    "props": {
+      "text": "### Fridge Freezers\nFridge freezers to suit every kitchen, with clever features to save you time, space and energy.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatColRow2"
+      ]
+    }
+  },
+  "overlay-trigger#pre-plp-cat-col-3": {
+    "title": "[OVERLAY TRIGGER] - Pre Plp Cat Col 3",
+    "props": {
+      "trigger": "hover",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "link#trigger-cat-col-3",
+      "overlay-layout#pre-plp-cat-col-3"
+    ]
+  },
+  "link#trigger-cat-col-3": {
+    "title": "[LINK] - Trigger Cat Col 3",
+    "props": {
+      "label": "Fridge Freezers",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": [
+        "triggerCatCol",
+        "triggerCatCol3"
+      ]
+    }
+  },
+  "overlay-layout#pre-plp-cat-col-3": {
+    "title": "[OVERLAY LAYOUT] - Pre Plp Cat Col 3",
+    "props": {
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatCol3"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cat-col-1-links"
+    ]
+  },
+  // MAIN CONTENT - ROW 2 CAT COL 4
+  "flex-layout.col#pre-plp-cat-col-4": {
+    "title": "[COL] - Pre Plp Cat Col 4",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "image#pre-plp-cat-col-4",
+      "rich-text#pre-plp-cat-col-4",
+      "overlay-trigger#pre-plp-cat-col-4"
+    ]
+  },
+  "image#pre-plp-cat-col-4": {
+    "title": "[IMAGE] - Pre Plp Cat Col 4",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/appliances/fridge@2x.jpg",
+      "blockClass": "prePlpCatCol"
+    }
+  },
+  "rich-text#pre-plp-cat-col-4": {
+    "title": "[RICH TEXT] - Pre Plp Cat Col 4",
+    "props": {
+      "text": "### Fridges\nFridges packed with the latest technology that ensures your food stays fresh.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatColRow2"
+      ]
+    }
+  },
+  "overlay-trigger#pre-plp-cat-col-4": {
+    "title": "[OVERLAY TRIGGER] - Pre Plp Cat Col 4",
+    "props": {
+      "trigger": "hover",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "link#trigger-cat-col-4",
+      "overlay-layout#pre-plp-cat-col-4"
+    ]
+  },
+  "link#trigger-cat-col-4": {
+    "title": "[LINK] - Trigger Cat Col 4",
+    "props": {
+      "label": "Fridges",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": [
+        "triggerCatCol",
+        "triggerCatCol4"
+      ]
+    }
+  },
+  "overlay-layout#pre-plp-cat-col-4": {
+    "title": "[OVERLAY LAYOUT] - Pre Plp Cat Col 4",
+    "props": {
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatCol4"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cat-col-1-links"
+    ]
+  },
+  // MAIN CONTENT - ROW 2 CAT COL 5
+  "flex-layout.col#pre-plp-cat-col-5": {
+    "title": "[COL] - Pre Plp Cat Col 5",
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "image#pre-plp-cat-col-5",
+      "rich-text#pre-plp-cat-col-5",
+      "overlay-trigger#pre-plp-cat-col-5"
+    ]
+  },
+  "image#pre-plp-cat-col-5": {
+    "title": "[IMAGE] - Pre Plp Cat Col 5",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/appliances/freezer@2x.jpg",
+      "blockClass": "prePlpCatCol"
+    }
+  },
+  "rich-text#pre-plp-cat-col-5": {
+    "title": "[RICH TEXT] - Pre Plp Cat Col 5",
+    "props": {
+      "text": "### Freezers\nFrost free and manual defrost options, designed to save you time and energy.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatColRow2"
+      ]
+    }
+  },
+  "overlay-trigger#pre-plp-cat-col-5": {
+    "title": "[OVERLAY TRIGGER] - Pre Plp Cat Col 5",
+    "props": {
+      "trigger": "hover",
+      "blockClass": "prePlpCatCol"
+    },
+    "children": [
+      "link#trigger-cat-col-5",
+      "overlay-layout#pre-plp-cat-col-5"
+    ]
+  },
+  "link#trigger-cat-col-5": {
+    "title": "[LINK] - Trigger Cat Col 5",
+    "props": {
+      "label": "Freezers",
+      "href": "/appliances/refrigeration/fridges",
+      "blockClass": [
+        "triggerCatCol",
+        "triggerCatCol5"
+      ]
+    }
+  },
+  "overlay-layout#pre-plp-cat-col-5": {
+    "title": "[OVERLAY LAYOUT] - Pre Plp Cat Col 5",
+    "props": {
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpCatCol5"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cat-col-1-links"
+    ]
+  },
+  // MARKETING CONTENT
+  "rich-text#pre-plp-marketing": {
+    "title": "[RICH TEXT] - Pre PLP Marketing",
+    "props": {
+      "text": "## Technology within our **refrigeration range**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "prePlpMarketing"
+      ]
+    }
+  },
+  // MARKETING CONTENT - DESKTOP - BANNER
+  "flex-layout.row#pre-plp-marketing-content": {
+    "title": "[ROW] - Pre PLP Marketing Content",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "homeMiddleContent",
+        "prePlpMarketingContent"
+      ]
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-content"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-content": {
+    "title": "[COL] - Pre PLP Marketing Content",
+    "props": {
+      "blockClass": [
+        "homeMiddleContent",
+        "prePlpMarketingContent"
+      ]
+    },
+    "children": [
+      "flex-layout.row#pre-plp-marketing-banner",
+      "flex-layout.row#diagonal-divider",
+      "info-card#pre-plp-marketing-1",
+      "flex-layout.row#diagonal-divider",
+      "flex-layout.row#pre-plp-marketing-2",
+      "flex-layout.row#diagonal-divider"
+      // "flex-layout.row#pre-plp-marketing-slider"
+    ]
+  },
+  "flex-layout.row#pre-plp-marketing-banner": {
+    "title": "[ROW] - Pre PLP Marketing Banner",
+    "props": {
+      "blockClass": [
+        "plpPromotionBanner",
+        "prePlpPromotionBanner",
+        "transformSkewY8Deg"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "image#pre-plp-marketing-banner-background",
+      "flex-layout.col#pre-plp-marketing-banner"
+    ]
+  },
+  "image#pre-plp-marketing-banner-background": {
+    "title": "[IMAGE] - Pre PLP Banner Top Background",
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/features/hero@1x.jpg",
+      "blockClass": "prePlpMarketingBannerBackground"
+    }
+  },
+  "flex-layout.col#pre-plp-marketing-banner": {
+    "title": "[COL] - Pre PLP Marketing Banner",
+    "props": {
+      "blockClass": [
+        "prePlpPromotionBanner",
+        "plpPromotionBanner"
+      ],
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#home-card-3-image",
+      "rich-text#pre-plp-marketing-banner",
+      "flex-layout.row#pre-plp-marketing-banner-ctas"
+    ]
+  },
+  "rich-text#pre-plp-marketing-banner": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Banner",
+    "props": {
+      "text": "## Simulating the Natural 24 Hour Sun Cycle",
+      "textAlignment": "LEFT",
+      "blockClass": [
+        "plpPromotionBanner",
+        "prePlpMarketingBanner"
+      ]
+    }
+  },
+  "flex-layout.row#pre-plp-marketing-banner-ctas": {
+    "title": "[ROW] - Pre PLP Marketing Banner CTAS",
+    "props": {
+      "colGap": 4,
+      "rowGap": 4,
+      "blockClass": "plpPromotionBanner-ctas"
+    },
+    "children": [
+      "link#pre-plp-marketing-banner-cta-1",
+      "modal-trigger#pre-plp-marketing-banner-cta-2"
+    ]
+  },
+  "link#pre-plp-marketing-banner-cta-1": {
+    "title": "[LINK] - Pre PLP Marketing Banner CTA",
+    "props": {
+      "label": "Explore HarvestFresh™ Range",
+      "href": "#",
+      "blockClass": [
+        "plpPromotionBanner-cta",
+        "prePlpCtaGreen"
+      ]
+    }
+  },
+  "modal-trigger#pre-plp-marketing-banner-cta-2": {
+    "title": "[MODAL TRIGGER] - Pre PLP Marketing Banner CTA 2",
+    "children": [
+      "rich-text#pre-plp-marketing-banner-cta",
+      "image#watch-video-cta",
+      "modal-layout#pre-plp-marketing-banner-cta"
+    ],
+    "props": {
+      "blockClass": [
+        "watchVideoCtaPrePlp",
+        "homeCard3Cta"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-banner-cta": {
+    "title": "[RICH TEXT] - Pre Plp Marketing Banner CTA",
+    "props": {
+      "text": "Watch video",
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-layout#pre-plp-marketing-banner-cta": {
+    "title": "[MODAL LAYOUT] - Home Card 3 CTA",
+    "children": [
+      "modal-header#pre-plp-marketing-banner-cta",
+      "modal-content#pre-plp-marketing-banner-cta"
+    ],
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-header#pre-plp-marketing-banner-cta": {
+    "title": "[MODAL HEADER] - Home Card 3 CTA",
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-content#pre-plp-marketing-banner-cta": {
+    "title": "[MODAL CONTENT] - Home Card 3 CTA",
+    "children": [
+      "video#pre-plp-marketing-banner"
+    ],
+    "props": {
+      "blockClass": "homeCard"
+    }
+  },
+  "video#pre-plp-marketing-banner": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=Skgjit6jlTw",
+      "width": "80%",
+      "height": "90%",
+      "autoPlay": true,
+      "blockClass": "homeCard"
+    }
+  },
+  // MARKETING CONTENT - DESKTOP - INFO CARD 1
+  "info-card#pre-plp-marketing-1": {
+    "props": {
+      "id": "info-card-pre-plp-marketing-1",
+      "textPosition": "left",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/features/multizone@2x.jpg",
+      "headline": "## Flexible cooling or freezing with MultiZone® technology",
+      "subhead": "Whether you need more fridge space for a summer barbeque or need more freezer space for Christmas, this compartment can become either at the touch of a button.",
+      "callToActionText": "View MultiZone® Appliances",
+      "blockClass": [
+        "infoCardPrePlpMarketing",
+        "infoCardPrePlpMarketing1",
+        "transformSkewY8Deg"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  // MARKETING CONTENT - DESKTOP - CUSTOM INFO CARD 2
+  "flex-layout.row#pre-plp-marketing-2": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "prePlpMarketing2",
+        "transformSkewY8Deg"
+      ]
+    },
+    "children": [
+      "modal-trigger#pre-plp-marketing-2",
+      "flex-layout.col#pre-plp-marketing-2"
+    ]
+  },
+  "modal-trigger#pre-plp-marketing-2": {
+    "title": "[MODAL TRIGGER] - Pre PLP Marketing 2",
+    "children": [
+      "image#pre-plp-marketing-2",
+      "modal-layout#pre-plp-marketing-2"
+    ],
+    "props": {
+      "blockClass": [
+        "prePlpMarketing2"
+      ]
+    }
+  },
+  "image#pre-plp-marketing-2": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/features/frost-free@2x.jpg",
+      "blockClass": "prePlpMarketing2"
+    }
+  },
+  "modal-layout#pre-plp-marketing-2": {
+    "title": "[MODAL LAYOUT] - Pre PLP Marketing 2",
+    "children": [
+      "modal-header#pre-plp-marketing-2",
+      "modal-content#pre-plp-marketing-2"
+    ],
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-header#pre-plp-marketing-2": {
+    "title": "[MODAL HEADER] - Pre PLP Marketing 2",
+    "props": {
+      "blockClass": "watchVideoCta"
+    }
+  },
+  "modal-content#pre-plp-marketing-2": {
+    "title": "[MODAL CONTENT] - Pre PLP Marketing 2",
+    "children": [
+      "video#pre-plp-marketing-2"
+    ],
+    "props": {
+      "blockClass": "homeCard"
+    }
+  },
+  "video#pre-plp-marketing-2": {
+    "title": "[VIDEO] - Pre PLP Marketing 2",
+    "props": {
+      "src": "https://www.youtube.com/watch?v=Skgjit6jlTw",
+      "width": "80%",
+      "height": "90%",
+      "autoPlay": true,
+      "blockClass": "homeCard"
+    }
+  },
+  "flex-layout.col#pre-plp-marketing-2": {
+    "title": "[COL] - Pre PLP Marketing 2",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "prePlpMarketing2"
+      ]
+    },
+    "children": [
+      "rich-text#pre-plp-marketing-2",
+      "overlay-trigger#pre-plp-marketing-2"
+    ]
+  },
+  "rich-text#pre-plp-marketing-2": {
+    "title": "[RICH TEXT] - Pre PLP Marketing 2",
+    "props": {
+      "text": "## No more defrosting thanks to Frost Free technology\nOur freezers leave no chance for ice to build up thanks to an automatic fan which removes warm air that enters your freezer each time you open the door.",
+      "blockClass": [
+        "prePlpMarketing2"
+      ]
+    }
+  },
+  "overlay-trigger#pre-plp-marketing-2": {
+    "title": "[OVERLAY TRIGGER] - Pre Plp Marketing 2",
+    "props": {
+      "trigger": "hover",
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpMarketing2"
+      ]
+    },
+    "children": [
+      "rich-text#trigger-pre-plp-marketing-2",
+      "overlay-layout#pre-plp-marketing-2"
+    ]
+  },
+  "rich-text#trigger-pre-plp-marketing-2": {
+    "title": "[RICH TEXT] - Trigger Pre Plp Marketing 2",
+    "props": {
+      "text": "View Frost Free Appliances",
+      "blockClass": [
+        "triggerCatCol",
+        "triggerPrePlpMarketing2"
+      ]
+    }
+  },
+  "overlay-layout#pre-plp-marketing-2": {
+    "title": "[OVERLAY LAYOUT] - Pre Plp Marketing 2",
+    "props": {
+      "placement": "top",
+      "blockClass": [
+        "prePlpCatCol",
+        "prePlpMarketing2"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cat-col-1-links"
+    ]
+  },
+  // MARKETING CONTENT - DESKTOP - SLIDER
+  "flex-layout.row#pre-plp-marketing-slider": {
+    "title": "[ROW] - Pre PLP Marketing Slider",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "prePlpMarketingSlider"
+        // "transformSkewY8Deg"
+      ]
+    },
+    "children": [
+      "slider-layout#pre-plp-marketing-slider"
+    ]
+  },
+  "slider-layout#pre-plp-marketing-slider": {
+    "title": "[SLIDER LAYOUT] - Pre PLP Marketing Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "flex-layout.row#pre-plp-marketing-slider-card-1",
+      "flex-layout.row#pre-plp-marketing-slider-card-2",
+      "flex-layout.row#pre-plp-marketing-slider-card-3"
+    ]
+  },
+  // SLIDER CARD 1
+  "flex-layout.row#pre-plp-marketing-slider-card-1": {
+    "title": "[ROW] - Pre PLP Marketing Slider Card 1",
+    "props": {
+      "blockClass": [
+        "prePlpMarketingSliderCard",
+        "prePlpMarketingSliderCard1"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-slider-card-1",
+      "image#pre-plp-marketing-slider-card-1"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-slider-card-1": {
+    "title": "[COL] - Pre PLP Marketing Slider Card 1",
+    "props": {
+      "blockClass": "prePlpMarketingSliderCard1",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#pre-plp-marketing-reevoo-1",
+      "rich-text#pre-plp-marketing-slider-card-1-heading",
+      "flex-layout.row#icon-quote-blue",
+      "rich-text#pre-plp-marketing-slider-card-1-quote",
+      "rich-text#pre-plp-marketing-slider-card-1-postilla"
+    ]
+  },
+  "image#pre-plp-marketing-reevoo-1": {
+    "title": "[IMAGE] - Pre Plp Marketing Reevoo 1",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/pre-plp-slider-bottom-card-1.png",
+      "blockClass": [
+        "prePlpMarketingReevoo"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-1-heading": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 1 Heading",
+    "props": {
+      "text": "## What our customers say",
+      "blockClass": [
+        "prePlpMarketingSliderCardHeading",
+        "prePlpMarketingSliderCard1Heading"
+      ]
+    }
+  },
+  "flex-layout.row#icon-quote-blue": {
+    "title": "[ROW] - Icon Quote Blue",
+    "props": {
+      "marginTop": 4,
+      "fullWidth": true,
+      "blockClass": "iconQuoteBlue"
+    },
+    "children": [
+      "icon#quote-blue"
+    ]
+  },
+  "icon#quote-blue": {
+    "props": {
+      "id": "quote-blue",
+      "size": 20,
+      "viewBox": "0 0 19 16"
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-1-quote": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 1 Quote",
+    "props": {
+      "text": "Enormous capacity. I love the interior design of the fridge. Easy to see what is in the fridge and freezer is spacious. Looks good.",
+      "blockClass": [
+        "prePlpMarketingSliderCardQuote",
+        "prePlpMarketingSliderCard1Quote"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-1-postilla": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 1 Postilla",
+    "props": {
+      "text": "David, Bolton\n(GNE480E20FX, October 2020)",
+      "blockClass": [
+        "prePlpMarketingSliderCardPostilla",
+        "prePlpMarketingSliderCard1Postilla"
+      ]
+    }
+  },
+  "image#pre-plp-marketing-slider-card-1": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/reevoo/1.png",
+      "blockClass": [
+        "prePlpMarketingSliderCard",
+        "prePlpMarketingSliderCard1"
+      ]
+    }
+  },
+  // SLIDER CARD 2
+  "flex-layout.row#pre-plp-marketing-slider-card-2": {
+    "title": "[ROW] - Pre PLP Marketing Slider Card 2",
+    "props": {
+      "blockClass": [
+        "prePlpMarketingSliderCard",
+        "prePlpMarketingSliderCard2"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-slider-card-2",
+      "image#pre-plp-marketing-slider-card-2"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-slider-card-2": {
+    "title": "[COL] - Pre PLP Marketing Slider Card 2",
+    "props": {
+      "blockClass": "prePlpMarketingSliderCard2",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#pre-plp-marketing-reevoo-2",
+      "rich-text#pre-plp-marketing-slider-card-2-heading",
+      "flex-layout.row#icon-quote-orange",
+      "rich-text#pre-plp-marketing-slider-card-2-quote",
+      "rich-text#pre-plp-marketing-slider-card-2-postilla"
+    ]
+  },
+  "image#pre-plp-marketing-reevoo-2": {
+    "title": "[IMAGE] - Pre Plp Marketing Reevoo 2",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/pre-plp-slider-bottom-card-2.png",
+      "blockClass": [
+        "prePlpMarketingReevoo"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-2-heading": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 2 Heading",
+    "props": {
+      "text": "## What our customers say",
+      "blockClass": [
+        "prePlpMarketingSliderCardHeading",
+        "prePlpMarketingSliderCard2Heading"
+      ]
+    }
+  },
+  "flex-layout.row#icon-quote-orange": {
+    "title": "[ROW] - Icon Quote Orange",
+    "props": {
+      "marginTop": 4,
+      "horizontalAlign": "left",
+      "fullWidth": true,
+      "blockClass": "iconQuoteBlue"
+    },
+    "children": [
+      "icon#quote-orange"
+    ]
+  },
+  "icon#quote-orange": {
+    "props": {
+      "id": "quote-orange",
+      "size": 20,
+      "viewBox": "0 0 19 16"
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-2-quote": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 2 Quote",
+    "props": {
+      "text": "Great fridge freezer. The HarvestFresh crisper drawer keeps my fruit and vegetables fresher for much longer.",
+      "blockClass": [
+        "prePlpMarketingSliderCardQuote",
+        "prePlpMarketingSliderCard2Quote"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-2-postilla": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 2 Postilla",
+    "props": {
+      "text": "Andrea, Melton Mowbray\n(CFP3691DV, August 2020)",
+      "blockClass": [
+        "prePlpMarketingSliderCardPostilla",
+        "prePlpMarketingSliderCard2Postilla"
+      ]
+    }
+  },
+  "image#pre-plp-marketing-slider-card-2": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/reevoo/2.png",
+      "blockClass": [
+        "prePlpMarketingSliderCard",
+        "prePlpMarketingSliderCard2"
+      ]
+    }
+  },
+  // SLIDER CARD 3
+  "flex-layout.row#pre-plp-marketing-slider-card-3": {
+    "title": "[ROW] - Pre PLP Marketing Slider Card 1",
+    "props": {
+      "blockClass": [
+        "prePlpMarketingSliderCard",
+        "prePlpMarketingSliderCard3"
+      ],
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#pre-plp-marketing-slider-card-3",
+      "image#pre-plp-marketing-slider-card-3"
+    ]
+  },
+  "flex-layout.col#pre-plp-marketing-slider-card-3": {
+    "title": "[COL] - Pre PLP Marketing Slider Card 3",
+    "props": {
+      "blockClass": "prePlpMarketingSliderCard3",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#pre-plp-marketing-reevoo-3",
+      "rich-text#pre-plp-marketing-slider-card-3-heading",
+      "flex-layout.row#icon-quote-blue",
+      "rich-text#pre-plp-marketing-slider-card-3-quote",
+      "rich-text#pre-plp-marketing-slider-card-3-postilla"
+    ]
+  },
+  "image#pre-plp-marketing-reevoo-3": {
+    "title": "[IMAGE] - Pre Plp Marketing Reevoo 3",
+    "props": {
+      "src": "https://bekouk.vtexassets.com/arquivos/pre-plp-slider-bottom-card-3.png",
+      "blockClass": [
+        "prePlpMarketingReevoo"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-3-heading": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 3 Heading",
+    "props": {
+      "text": "## What our customers say",
+      "blockClass": [
+        "prePlpMarketingSliderCardHeading",
+        "prePlpMarketingSliderCard3Heading"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-3-quote": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 3 Quote",
+    "props": {
+      "text": "Lovely freezer, capacity is surprisingly more than I thought. I am able to stock up and batch cook without worrying about if it will all fit. Looks good.",
+      "blockClass": [
+        "prePlpMarketingSliderCardQuote",
+        "prePlpMarketingSliderCard3Quote"
+      ]
+    }
+  },
+  "rich-text#pre-plp-marketing-slider-card-3-postilla": {
+    "title": "[RICH TEXT] - Pre PLP Marketing Slider Card 3 Postilla",
+    "props": {
+      "text": "Gayle, Northern Ireland\n(FFG1545, October 2020)",
+      "blockClass": [
+        "prePlpMarketingSliderCardPostilla",
+        "prePlpMarketingSliderCard3Postilla"
+      ]
+    }
+  },
+  "image#pre-plp-marketing-slider-card-3": {
+    "props": {
+      "src": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/reevoo/4.png",
+      "blockClass": [
+        "prePlpMarketingSliderCard",
+        "prePlpMarketingSliderCard3"
+      ]
+    }
+  },
+  // MARKETING CONTENT - DESKTOP - INFO CARD BOTTOM
+  "info-card#pre-plp-marketing-bottom": {
+    "title": "[INFO CARD] - Pre PLP Marketing Bottom",
+    "props": {
+      "id": "info-card-pre-plp-marketing-bottom",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/buying-guide@1x.png",
+      "headline": "## Refrigeration Buying Guide",
+      "subhead": "Whether you have a small kitchen, a big kitchen, or are after the latest technologies, our refrigeration buying guide will help you find the best model from our range of fridges and freezers to help you enjoy the food you love every day.",
+      "callToActionText": "Refrigeration Buying Guide",
+      "blockClass": [
+        "prePlpMarketingBottom"
+      ],
+      "textAlignment": "left",
+      "textPosition": "left",
+      "textMode": "rich-text"
+    }
+  },
+  // MARKETING CONTENT - DESKTOP - BOTTOM CARDS
+  "flex-layout.row#pre-plp-marketing-bottom-cards": {
+    "title": "[ROW] - Pre Plp Marketing Bottom Cards",
+    "props": {
+      "fullWidth": true,
+      "colGap": 3,
+      "blockClass": "prePlpMarketingBottomCards"
+    },
+    "children": [
+      "info-card#pre-plp-marketing-bottom-cards-1",
+      "info-card#pre-plp-marketing-bottom-cards-2"
+    ]
+  },
+  "info-card#pre-plp-marketing-bottom-cards-1": {
+    "props": {
+      "id": "info-card-pre-plp-marketing-bottom-cards-1",
+      "textPosition": "center",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/guides/refrigerate-debate@1x.jpg",
+      "isFullModeStyle": true,
+      "headline": "The Great\nRefrigeration Debate",
+      "callToActionText": "See the Findings",
+      "blockClass": [
+        "infoCardPrePlpMarketingBottom",
+        "infoCardPrePlpMarketingBottom1"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  },
+  "info-card#pre-plp-marketing-bottom-cards-2": {
+    "props": {
+      "id": "info-card-pre-plp-marketing-bottom-cards-2",
+      "textPosition": "center",
+      "imageUrl": "https://storage.beko.co.uk/assets/beko/landing-page/category/images/refrigeration/guides/leftover-challenge@1x.jpg",
+      "isFullModeStyle": true,
+      "headline": "The Ultimate\nLeftover Challenge",
+      "callToActionText": "What can you Whip Up?",
+      "blockClass": [
+        "infoCardPrePlpMarketingBottom",
+        "infoCardPrePlpMarketingBottom2"
+      ],
+      "textAlignment": "center",
+      "textMode": "rich-text"
+    }
+  }
+}

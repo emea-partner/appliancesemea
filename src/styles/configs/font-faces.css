@@ -1,0 +1,17 @@
+/* NEW FONTS */
+@font-face {
+  font-family: "coreSansRegular";
+  src: url(assets/fonts/coresansc-45regular.woff2);
+}
+@font-face {
+  font-family: "coreSansBold";
+  src: url(assets/fonts/coresansc-65bold.woff2);
+}
+@font-face {
+  font-family: "openSansRegular";
+  src: url(assets/fonts/OpenSans-Regular.woff);
+}
+@font-face {
+  font-family: "openSansSemibold";
+  src: url(assets/fonts/OpenSans-SemiBold.woff);
+}
